@@ -4,7 +4,6 @@ In this Readme, you will find all information you need for the use of "Stochasti
 
 This python script perform a Stochasticity Analysis to found the minimum number of replicat needed to neutralize the stochasticity.
 
-This script is not totally finish yet, for now, it only works on only one point of the parameter space. We have to found the minimum number of samples with many points of the parameters space.
 
 ## Prerequisite
 - pip install matplotlib

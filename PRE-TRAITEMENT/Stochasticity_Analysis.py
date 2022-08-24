@@ -7,7 +7,6 @@ import argparse
 '''
 This script perform a Stochasticity Analysis to know how many replicat to perform to neutralize the stochasticity
 
-Not totally finish yet, for now, it only works on only one point of the parameter space. We have to found the minimum number of samples with many points of the parameters space.
 '''
 def readProblem(file):
     file = open(file, 'r')
@@ -117,10 +116,8 @@ def nb_replicat_one_point(size,data,threshold,path_save):
     samples = list(range(1, size+1))
     plt.plot(samples, Cv,color="red",label="Coefficient of variation")
     plt.plot(id_sample, Cv[id_sample], marker="o", color="red")
-    plt.text(id_sample, Cv[id_sample], "id_min")
-    plt.legend(loc="best")
-    plt.savefig(path_save)
-    plt.clf()
+    plt.text(id_sample, Cv[id_sample], id_sample)
+    return id_sample
 
 """
     id_sample = find_threshold(size, Se, threshold)
@@ -180,6 +177,7 @@ if __name__ == '__main__':
     output = problem["num_vars"]
 
     print("== STOCHASTICITY ANALYSIS..\n")
+    minimum=0
     for i in range(0,size):
 
         data = np.zeros(replicat)
@@ -187,6 +185,9 @@ if __name__ == '__main__':
             df = pd.read_csv(path_data+"/STOCHASTICITY/Results_"+str(z)+".csv")
             data[z]=df[problem["names"][output]][i]
 
-        nb_replicat_one_point(replicat,data,threshold,path_output)
-
+        minimum=nb_replicat_one_point(replicat,data,threshold,path_output)+minimum
+    minimum=round(minimum/size)	
+    plt.savefig(path_save)
+    print("Global minimum is:")
+    print(minimum)
     print("== END")
