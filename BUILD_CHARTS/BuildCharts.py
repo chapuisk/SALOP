@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import re
-from numpy import genfromtxt
 from math import *
+from matplotlib import cm
 
 def createDF(X,Res,Time,name,output):
     df=pd.DataFrame(columns=[name,"time",output])
@@ -288,16 +288,80 @@ def morris_fit_data(morris):
     momo=morris / np.sqrt(np.sum(morris**2))
     return momo
 
+def chart3D(Innames,Outnames,result,AnalyseName):
+
+    result = np.array(result)
+
+
+    colors=['r', 'b', 'g', 'y', 'b', 'p']
+    fig = plt.figure(figsize=(8, 8), dpi=250)
+    ax1 = fig.add_subplot(111, projection='3d')
+    #ax1.set_xlabel('Parameters', labelpad=10)
+    ax1.set_ylabel('Outputs', labelpad=10)
+    ax1.set_zlabel(AnalyseName)
+
+    xlabels=np.array(Innames)
+    xpos = np.arange(xlabels.shape[0])
+    ylabels= np.array(Outnames)
+    ypos = np.arange(ylabels.shape[0])
+
+    xposM, yposM = np.meshgrid(xpos, ypos, copy=False)
+
+    zpos = result
+    zpos = zpos.ravel()
+
+
+    dx = 0.5
+    dy = 0.4
+    dz = zpos
+    print(dz)
+
+
+    ax1.w_xaxis.set_ticks(xpos + dx / 2.)
+    ax1.w_xaxis.set_ticklabels(xlabels)
+
+    ax1.w_yaxis.set_ticks(ypos + dy / 2.)
+    ax1.w_yaxis.set_ticklabels(ylabels)
+
+    #ax1.w_zaxis.set_ticks(zpos + dz / 2.)
+
+    values = np.linspace(0.2, 1., xposM.ravel().shape[0])
+    colors = cm.rainbow(values)
+    ax1.bar3d(xposM.ravel(), yposM.ravel(), dz * 0, dx, dy, dz, color=colors)
+    ax1.set_zlim(0,1)
+
+    plt.show()
+
+    return None
+
+def analyseResult3D(morris,sobol):
+    parameterNames=[]
+    OutputNames=[]
+    for i in range(0,len(problem["names"])):
+        if i<output:
+            parameterNames.append(problem["names"][i])
+        else:
+            OutputNames.append((problem["names"][i]))
+
+    chart3D(parameterNames,
+            output, [morris], "Analyse")
+
+
 if __name__ == '__main__':
 
-    problem = readProblem("./model_problem_analysis.txt")
+
+    #problem = readProblem("./model_problem_analysis.txt")
 
 
-    df=pd.read_csv("./CHART4/GLOBAL/Results_TESTCHART_0.csv")
+    #df=pd.read_csv("./CHART4/GLOBAL/Results_TESTCHART_0.csv")
 
-    problem["names"]=df.columns
+    #problem["names"]=df.columns
 
-    output=problem["num_vars"]
+    #output=problem["num_vars"]
+    output=4
+    problem=[]
+
+
     nb_replicat=4
     sample=204
     time=502
@@ -306,5 +370,19 @@ if __name__ == '__main__':
     morris=[0.497743,0.482880,0.02996,0.465042]
     morris=np.array(morris)
     morris=morris_fit_data(morris)
-    sobol=[0.398204,0.236124,0.000781,0.52928]
-    build_chart_prio_facteur(problem,morris,sobol,output)
+
+
+    sobol=[0.187035,0.106427,0.003549,0.372382]
+    sobolT = [0.398204, 0.236124, 0.000781, 0.52928]
+
+    morris2=[0.497743,0.482880,0.02996,0.465042]
+    morris2=np.array(morris2)
+    morris2=morris_fit_data(morris2)
+
+
+    sobol2=[0.187035,0.106427,0.003549,0.372382]
+    sobolT2 = [0.398204, 0.236124, 0.000781, 0.52928]
+
+
+
+    chart3D(["Infection Probability","Probability Dodge Disease","Nb initial infected","Probability to cure"],["Infection Rate","Test"],[sobolT,morris],"Analysis")
