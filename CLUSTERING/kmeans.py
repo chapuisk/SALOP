@@ -1,7 +1,8 @@
 import sys
 from sklearn.cluster import KMeans
 from sklearn.mixture import GaussianMixture
-from utils import load_data, spider_plot_comparison, spider_plot, cluster_plot
+from utils import load_data, spider_plot_comparison, spider_plot, cluster_projection_plot, save_clusters, cluster_3d_plot, \
+    cluster_2d_plot
 
 
 def _best_k(X, maxClasses=10):
@@ -52,12 +53,16 @@ if __name__ == '__main__':
                          "init_all_ages_proportion_icu",
                          "init_all_ages_proportion_dead_symptomatic"],
             output_names=["nb_dead",
-                          "nb_recovered",
+                          # "nb_recovered",
                           "step_max_peak",
                           "step_end_epidemiology"]
         )
 
     labels = clustering_with_kmeans(Y, maxClasses=20)
-    cluster_plot(Y, labels, headers_y, "./results/kmeans/clusters.png")
+    cluster_projection_plot(Y, labels, headers_y, "./results/kmeans/clusters.png")
+    # cluster_2d_plot(Y, labels, headers_y, "./results/kmeans/2d_clusters.png")
+    # cluster_3d_plot(Y, labels, headers_y, "./results/kmeans/3d_clusters.png")
     spider_plot(X, labels, headers_x, "./results/kmeans/classes_mean_quantile.png")
     spider_plot_comparison(X, labels, headers_x, "./results/kmeans/classes_comparison.png")
+    # save_clusters('./data/COMOKIT_Final_Results.csv', labels, "./results/kmeans/clustered_data.csv")
+

@@ -1,4 +1,6 @@
 import sys
+
+import matplotlib
 import numpy as np
 import pandas as pd
 import matplotlib.patches as mpatches
@@ -28,14 +30,81 @@ def load_data(path, input_names, output_names, standardize=True):
     return x, headers_x, y, headers_y
 
 
-def cluster_plot(data, labels, headers, path):
+def save_clusters(input_path, labels, output_path):
+    print("Saving clusters to " + output_path + "..")
+    data = pd.read_csv(input_path)
+    data["cluster"] = labels
+    data.to_csv(output_path)
+    print("Saved.\n")
+
+
+def cluster_2d_plot(x, y, labels, headers, path, is_binary=False):
+    print("Building 2d plot..")
+    # Test dim
+    if headers.shape[0] != 2:
+        print("Headers must be in dimension 2, found :", headers.shape[0])
+        return
+
+    # Build colors
+    if is_binary:
+        colors = matplotlib.colors.ListedColormap(['green', 'crimson'])
+    elif len(np.unique(labels)) > 9:
+        colors = plt.cm.get_cmap("tab20", len(np.unique(labels)))
+    else:
+        colors = plt.cm.get_cmap("Set1", len(np.unique(labels)))
+
+    fig, ax = plt.subplots()
+    ax.scatter(x, y, c=labels, cmap=colors)
+    ax.set_xlabel(headers[0])
+    ax.set_ylabel(headers[1])
+    items = []
+    for c in colors.colors:
+        items.append(mpatches.Patch(color=c, label=len(items)))
+    fig.legend(handles=items)
+    fig.savefig(path, transparent=False)
+    plt.close(fig)
+    print("Done.\n")
+
+
+def cluster_3d_plot(x, y, z, labels, headers, path, is_binary=False):
+    print("Building 3d plot..")
+    # Test dim
+    if headers.shape[0] != 3:
+        print("Headers must be in dimension 3, found :", headers.shape[0])
+        return
+    # Build Colors
+    if is_binary:
+        colors = matplotlib.colors.ListedColormap(['green', 'crimson'])
+    elif len(np.unique(labels)) > 9:
+        colors = plt.cm.get_cmap("tab20", len(np.unique(labels)))
+    else:
+        colors = plt.cm.get_cmap("Set1", len(np.unique(labels)))
+
+    fig = plt.figure()
+    ax = plt.axes(projection='3d')
+    ax.scatter3D(x, y, z, c=labels, cmap=colors, alpha=0.3)
+    ax.set_xlabel(headers[0])
+    ax.set_ylabel(headers[1])
+    ax.set_zlabel(headers[2])
+    items = []
+    for c in colors.colors:
+        items.append(mpatches.Patch(color=c, label=len(items)))
+    fig.legend(handles=items)
+    fig.savefig(path, transparent=False)
+    plt.close(fig)
+    print("Done.\n")
+
+
+def cluster_projection_plot(data, labels, headers, path, is_binary=False):
     """
     This function plots 2D projections of the clusters
+
 
     :param headers: headers of the data
     :param data: the data
     :param labels: array containing the cluster labels of the data
     :param path: path to the file to save the plot
+    :param is_binary: if true provide a colormap of dimension 2 for clusters
     """
     nb_param = data.shape[1]
     small = nb_param * 5
@@ -44,8 +113,12 @@ def cluster_plot(data, labels, headers, path):
     print(path + "    Plotting..")
     fig, axs = plt.subplots(nb_param, nb_param, figsize=(medium, medium), frameon=False)
     fig.suptitle("Clusters", fontsize=big)
-    colors = plt.cm.get_cmap("tab20", len(np.unique(labels))) if len(np.unique(labels)) > 9 \
-        else plt.cm.get_cmap("Set1", len(np.unique(labels)))
+    if is_binary:
+        colors = matplotlib.colors.ListedColormap(['green', 'crimson'])
+    elif len(np.unique(labels)) > 9:
+        colors = plt.cm.get_cmap("tab20", len(np.unique(labels)))
+    else:
+        colors = plt.cm.get_cmap("Set1", len(np.unique(labels)))
 
     for i in range(nb_param):
         for j in range(nb_param):

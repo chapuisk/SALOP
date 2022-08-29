@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn_som.som import SOM
-from utils import load_data, spider_plot, spider_plot_comparison, cluster_plot
+from utils import load_data, spider_plot, spider_plot_comparison, cluster_projection_plot
 
 
 def clustering_with_som(data, nrow=10, ncol=10, sigma=0.5, epochs=100):
@@ -48,6 +48,6 @@ if __name__ == '__main__':
                       "step_end_epidemiology"]
     )
     labels = clustering_with_som(data=Y, nrow=1, ncol=7, sigma=0.5, epochs=1000)
-    cluster_plot(Y, labels, headers_y, "./results/SOM/clusters.png")
+    cluster_projection_plot(Y, labels, headers_y, "./results/SOM/clusters.png")
     spider_plot(X, labels, headers_x, "./results/SOM/classes_mean_quantile.png")
     spider_plot_comparison(X, labels, headers_x, "./results/SOM/classes_comparison.png")
