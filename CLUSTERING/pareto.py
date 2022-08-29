@@ -1,6 +1,6 @@
 import numpy as np
 
-from utils import load_data, cluster_projection_plot, cluster_3d_plot, cluster_2d_plot
+from utils import load_data, cluster_projection_plot, cluster_3d_plot, cluster_2d_plot, spider_plot_comparison
 
 
 def is_pareto_efficient(costs, return_mask=True):
@@ -43,15 +43,15 @@ if __name__ == '__main__':
                      "init_all_ages_proportion_dead_symptomatic"],
         output_names=["nb_dead",
                       # "nb_recovered",
-                      "step_max_peak",
+                      # "step_max_peak",
                       "step_end_epidemiology"]
     )
 
     is_efficient = is_pareto_efficient(Y)
     # to plot the pareto front in the foreground
     order = np.argsort(is_efficient)
-    cluster_projection_plot(Y[order], is_efficient[order], headers_y, "./results/pareto/clusters.png", is_binary=True)
-    # cluster_2d_plot(Y[order, 0], Y[order, 1], is_efficient[order], headers_y[:2],
-    #                 "./results/pareto/2d_clusters.png", is_binary=True)
-    cluster_3d_plot(Y[:, 0], Y[:, 1], Y[:, 2], is_efficient, headers_y,
-                    "./results/pareto/3d_clusters.png", is_binary=True)
+    # cluster_projection_plot(Y[order], is_efficient[order], headers_y, "./results/pareto/clusters.png", is_binary=True)
+    cluster_2d_plot(Y[order, 0], Y[order, 1], is_efficient[order], headers_y[:2], "./results/pareto/2d_clusters.png")
+    # cluster_3d_plot(Y[:, 0], Y[:, 1], Y[:, 2], is_efficient, headers_y, "./results/pareto/3d_clusters.png")
+    spider_plot_comparison(X, is_efficient, headers_x, "./results/pareto/classes_comparison.png")
+

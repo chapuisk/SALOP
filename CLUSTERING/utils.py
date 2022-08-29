@@ -38,7 +38,30 @@ def save_clusters(input_path, labels, output_path):
     print("Saved.\n")
 
 
-def cluster_2d_plot(x, y, labels, headers, path, is_binary=False):
+def cmap_builder(n):
+    """
+    Build a color map
+    :param n: Number of desired colors
+    :return:
+    """
+    if n == 2:
+        colors = matplotlib.colors.ListedColormap(['green', 'crimson'])
+    elif n < 9:
+        colors = plt.cm.get_cmap("Set1", n)
+    else:
+        colors = plt.cm.get_cmap("tab20", n)
+    return colors
+
+
+def cluster_2d_plot(x, y, labels, headers, path):
+    """
+    Plot a 2d clustering problem
+    :param x: x coordinates
+    :param y: y coordinates
+    :param labels: array containing the cluster labels of the data
+    :param headers: headers of the data
+    :param path: path to the file to save the plot
+    """
     print("Building 2d plot..")
     # Test dim
     if headers.shape[0] != 2:
@@ -46,12 +69,7 @@ def cluster_2d_plot(x, y, labels, headers, path, is_binary=False):
         return
 
     # Build colors
-    if is_binary:
-        colors = matplotlib.colors.ListedColormap(['green', 'crimson'])
-    elif len(np.unique(labels)) > 9:
-        colors = plt.cm.get_cmap("tab20", len(np.unique(labels)))
-    else:
-        colors = plt.cm.get_cmap("Set1", len(np.unique(labels)))
+    colors = cmap_builder(len(np.unique(labels)))
 
     fig, ax = plt.subplots()
     ax.scatter(x, y, c=labels, cmap=colors)
@@ -66,19 +84,23 @@ def cluster_2d_plot(x, y, labels, headers, path, is_binary=False):
     print("Done.\n")
 
 
-def cluster_3d_plot(x, y, z, labels, headers, path, is_binary=False):
+def cluster_3d_plot(x, y, z, labels, headers, path):
+    """
+    Plot a 3d clustering problem
+    :param x: x coordinates
+    :param y: y coordinates
+    :param z: z coordinates
+    :param labels: array containing the cluster labels of the data
+    :param headers: headers of the data
+    :param path: path to the file to save the plot
+    """
     print("Building 3d plot..")
     # Test dim
     if headers.shape[0] != 3:
         print("Headers must be in dimension 3, found :", headers.shape[0])
         return
     # Build Colors
-    if is_binary:
-        colors = matplotlib.colors.ListedColormap(['green', 'crimson'])
-    elif len(np.unique(labels)) > 9:
-        colors = plt.cm.get_cmap("tab20", len(np.unique(labels)))
-    else:
-        colors = plt.cm.get_cmap("Set1", len(np.unique(labels)))
+    colors = cmap_builder(len(np.unique(labels)))
 
     fig = plt.figure()
     ax = plt.axes(projection='3d')
@@ -95,16 +117,14 @@ def cluster_3d_plot(x, y, z, labels, headers, path, is_binary=False):
     print("Done.\n")
 
 
-def cluster_projection_plot(data, labels, headers, path, is_binary=False):
+def cluster_projection_plot(data, labels, headers, path):
     """
     This function plots 2D projections of the clusters
 
-
-    :param headers: headers of the data
     :param data: the data
     :param labels: array containing the cluster labels of the data
+    :param headers: headers of the data
     :param path: path to the file to save the plot
-    :param is_binary: if true provide a colormap of dimension 2 for clusters
     """
     nb_param = data.shape[1]
     small = nb_param * 5
@@ -113,12 +133,7 @@ def cluster_projection_plot(data, labels, headers, path, is_binary=False):
     print(path + "    Plotting..")
     fig, axs = plt.subplots(nb_param, nb_param, figsize=(medium, medium), frameon=False)
     fig.suptitle("Clusters", fontsize=big)
-    if is_binary:
-        colors = matplotlib.colors.ListedColormap(['green', 'crimson'])
-    elif len(np.unique(labels)) > 9:
-        colors = plt.cm.get_cmap("tab20", len(np.unique(labels)))
-    else:
-        colors = plt.cm.get_cmap("Set1", len(np.unique(labels)))
+    colors = cmap_builder(len(np.unique(labels)))
 
     for i in range(nb_param):
         for j in range(nb_param):
@@ -158,9 +173,9 @@ def spider_plot(data, labels, headers, path):
     """
     This function builds the spider plot of each class with q1 mean and q2 of each parameter
 
-    :param headers: headers of the data
     :param data: the data
     :param labels: array containing the cluster labels of the data
+    :param headers: headers of the data
     :param path: path to the file to save the plot
     """
     print(path + "    Plotting..")
@@ -216,9 +231,9 @@ def spider_plot_comparison(data, labels, headers, path, classes=None):
     """
     This function builds a spider plot the contains the means value of each class for each parameter
 
-    :param headers: headers of the data
     :param data: the data
     :param labels: array containing the cluster labels of the data
+    :param headers: headers of the data
     :param path: path to the file to save the plot
     :param classes: label of classes to compare, if none every classes will be plot
     """
@@ -240,8 +255,7 @@ def spider_plot_comparison(data, labels, headers, path, classes=None):
     ax.set_xticklabels(headers, fontsize=7)
 
     # colors
-    colors = plt.cm.get_cmap("tab20", len(categories)) if len(categories) > 9 \
-        else plt.cm.get_cmap("Set1", len(categories))
+    colors = cmap_builder(len(categories))
     patches = []
 
     # ymin and ymax for y label range
