@@ -1,0 +1,109 @@
+
+REPTree
+============
+
+init_all_ages_proportion_asymptomatic < 0.44
+|   init_all_ages_proportion_dead_symptomatic < 0.39
+|   |   init_all_ages_proportion_dead_symptomatic < 0.19
+|   |   |   init_all_ages_proportion_hospitalisation < 0.75
+|   |   |   |   init_all_ages_proportion_hospitalisation < 0.05 : 17715.5 (4/116.19) [2/252.56]
+|   |   |   |   init_all_ages_proportion_hospitalisation >= 0.05 : 70046.25 (10/70487252.84) [2/1653705424.26]
+|   |   |   init_all_ages_proportion_hospitalisation >= 0.75
+|   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.14 : 133417.5 (2/109171152.25) [2/109401156.25]
+|   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.14 : 192587.14 (6/1494.33) [1/64]
+|   |   init_all_ages_proportion_dead_symptomatic >= 0.19
+|   |   |   init_all_ages_proportion_dead_symptomatic < 0.25 : 254528.23 (16/960092177.44) [6/1891022519.81]
+|   |   |   init_all_ages_proportion_dead_symptomatic >= 0.25
+|   |   |   |   init_all_ages_proportion_asymptomatic < 0.22
+|   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.06 : 385382.57 (4/2937.25) [3/6572.25]
+|   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.06
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.14 : 416450.5 (3/382.89) [1/1248.44]
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.14 : 435606.71 (5/1776.64) [2/816.26]
+|   |   |   |   init_all_ages_proportion_asymptomatic >= 0.22
+|   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.31
+|   |   |   |   |   |   nb_init_infected < 28125.5 : 342617.25 (4/4414.69) [4/1844438436.69]
+|   |   |   |   |   |   nb_init_infected >= 28125.5 : 323169.13 (5/2204.8) [3/3893691579.67]
+|   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.31 : 246597 (2/160757041) [2/158457844]
+|   init_all_ages_proportion_dead_symptomatic >= 0.39
+|   |   init_all_ages_proportion_asymptomatic < 0.22
+|   |   |   init_all_ages_proportion_dead_symptomatic < 0.55
+|   |   |   |   init_all_ages_proportion_asymptomatic < 0.19
+|   |   |   |   |   density_ref_contact < 354.53 : 672890.67 (9/272812784) [3/677027917.33]
+|   |   |   |   |   density_ref_contact >= 354.53 : 631269.17 (5/1821.76) [1/3868.84]
+|   |   |   |   init_all_ages_proportion_asymptomatic >= 0.19 : 511169.25 (3/720.22) [1/186.78]
+|   |   |   init_all_ages_proportion_dead_symptomatic >= 0.55
+|   |   |   |   init_all_ages_proportion_asymptomatic < 0.16
+|   |   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.61 : 837093.14 (5/1039.36) [2/6093.14]
+|   |   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.61
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.09 : 947542.38 (6/611573887.56) [7/626953531.83]
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.09
+|   |   |   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.13 : 902316.86 (9/7133.14) [5/5172.33]
+|   |   |   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.13 : 870669.31 (9/4819.56) [7/5073.06]
+|   |   |   |   init_all_ages_proportion_asymptomatic >= 0.16 : 825221.25 (16/247842424.31) [0/0]
+|   |   init_all_ages_proportion_asymptomatic >= 0.22
+|   |   |   init_all_ages_proportion_dead_symptomatic < 0.61
+|   |   |   |   init_all_ages_proportion_asymptomatic < 0.41 : 536537.88 (17/584125732.85) [8/468894262.69]
+|   |   |   |   init_all_ages_proportion_asymptomatic >= 0.41 : 398477.71 (5/6493.76) [2/11603.54]
+|   |   |   init_all_ages_proportion_dead_symptomatic >= 0.61
+|   |   |   |   init_all_ages_proportion_asymptomatic < 0.34
+|   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.31
+|   |   |   |   |   |   init_all_ages_successful_contact_rate_human < 0.59 : 744769.25 (3/286128.22) [1/914573.44]
+|   |   |   |   |   |   init_all_ages_successful_contact_rate_human >= 0.59 : 712584.14 (5/5043.2) [2/10428.5]
+|   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.31 : 680956 (4/17474) [3/12381.67]
+|   |   |   |   init_all_ages_proportion_asymptomatic >= 0.34
+|   |   |   |   |   init_all_ages_successful_contact_rate_human < 0.09 : 562922.5 (6/9448.25) [0/0]
+|   |   |   |   |   init_all_ages_successful_contact_rate_human >= 0.09 : 620314.47 (10/89325924.44) [9/478194966.6]
+init_all_ages_proportion_asymptomatic >= 0.44
+|   init_all_ages_proportion_asymptomatic < 0.78
+|   |   init_all_ages_proportion_dead_symptomatic < 0.42
+|   |   |   init_all_ages_proportion_dead_symptomatic < 0.19
+|   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.05 : 11585.36 (7/4515158.2) [4/2909875.83]
+|   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.05
+|   |   |   |   |   init_all_ages_successful_contact_rate_human < 0.91 : 89360.28 (14/91637105.82) [4/339359669.15]
+|   |   |   |   |   init_all_ages_successful_contact_rate_human >= 0.91 : 54840.43 (5/1235685.84) [2/258815.86]
+|   |   |   init_all_ages_proportion_dead_symptomatic >= 0.19
+|   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.38 : 175639.69 (19/655581847.64) [13/814000661.92]
+|   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.38 : 225393.94 (8/1290943489.69) [8/1205491793.5]
+|   |   init_all_ages_proportion_dead_symptomatic >= 0.42
+|   |   |   init_all_ages_proportion_asymptomatic < 0.62
+|   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.58 : 351377.25 (11/2079032692.08) [5/2026267222.54]
+|   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.58
+|   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.53
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.5
+|   |   |   |   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.64 : 506659.14 (6/19130.47) [1/25867.36]
+|   |   |   |   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.64 : 543899.83 (5/240782812.4) [1/165920161]
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.5 : 491161.33 (9/4866.67) [0/0]
+|   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.53
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.56 : 459571.29 (5/16197.36) [2/6273.44]
+|   |   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.56 : 423073.15 (7/121205062.2) [6/140177307.96]
+|   |   |   init_all_ages_proportion_asymptomatic >= 0.62
+|   |   |   |   init_all_ages_proportion_asymptomatic < 0.72
+|   |   |   |   |   init_all_ages_proportion_icu < 0.03 : 333125.33 (5/14658.64) [1/16281.76]
+|   |   |   |   |   init_all_ages_proportion_icu >= 0.03 : 302835.5 (11/215019336.2) [5/672529738.75]
+|   |   |   |   init_all_ages_proportion_asymptomatic >= 0.72
+|   |   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.53 : 172999 (2/1) [0/0]
+|   |   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.53
+|   |   |   |   |   |   init_all_ages_successful_contact_rate_human < 0.59 : 239171.47 (9/159194525.51) [10/139787742.54]
+|   |   |   |   |   |   init_all_ages_successful_contact_rate_human >= 0.59 : 267047.85 (10/11675.04) [3/431775945.89]
+|   init_all_ages_proportion_asymptomatic >= 0.78
+|   |   init_all_ages_proportion_dead_symptomatic < 0.72
+|   |   |   init_all_ages_proportion_asymptomatic < 0.81 : 140228.38 (7/1509662049.84) [9/1664118588.51]
+|   |   |   init_all_ages_proportion_asymptomatic >= 0.81
+|   |   |   |   init_all_ages_proportion_dead_symptomatic < 0.2 : 15419.67 (24/48499746.72) [19/68273953.57]
+|   |   |   |   init_all_ages_proportion_dead_symptomatic >= 0.2
+|   |   |   |   |   init_all_ages_proportion_asymptomatic < 0.94 : 69019.65 (15/124552527.45) [5/75246213.42]
+|   |   |   |   |   init_all_ages_proportion_asymptomatic >= 0.94
+|   |   |   |   |   |   density_ref_contact < 247.34 : 14103 (8/3521268.25) [8/15892023.25]
+|   |   |   |   |   |   density_ref_contact >= 247.34 : 44289.71 (5/5003.76) [2/9954.74]
+|   |   init_all_ages_proportion_dead_symptomatic >= 0.72
+|   |   |   init_all_ages_proportion_asymptomatic < 0.87
+|   |   |   |   init_all_ages_proportion_asymptomatic < 0.84 : 182036.78 (7/122175605.96) [2/380470240.76]
+|   |   |   |   init_all_ages_proportion_asymptomatic >= 0.84 : 143309.5 (2/3192.25) [0/0]
+|   |   |   init_all_ages_proportion_asymptomatic >= 0.87 : 75232.31 (10/600589203.25) [3/1335033130.92]
+
+Size of the tree : 99
+Size of training set : 518
+Size of test set : 58
+Mean Absolute Percentage Error : 4.1467190563516905%
+Accuracy : 95.85328094364831
+
