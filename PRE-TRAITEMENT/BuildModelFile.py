@@ -127,6 +127,7 @@ if __name__ == '__main__':
     print("=== Reading .gaml file...\n")
     # 1 _ Gather all parameters
     #
+    parametersList = []
     parametersList = generateExperimentUniverse(gamlFilePath, expName)
 
     print("Number of parameters: " + str(len(parametersList)))
