@@ -106,7 +106,6 @@ if __name__ == '__main__':
     type_analysis,path_to_problem,path_to_data = args.analysis
     path_to_output =args.output
     id_output=args.id_output
-    print(type_analysis)
 
     #Read Problem
     problem=readProblem(path_to_problem)
