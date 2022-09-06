@@ -232,7 +232,7 @@ def generateExperimentUniverse( gamlFilePath ,expName):
     return parametersList
 
 def register_problem(problem):
-    file= open('../SA/model_problem_analysis.txt', 'w')
+    file= open('./model_problem_analysis.txt', 'w')
     file.write(str(problem["num_vars"] )+";")
     file.write(str(problem["names"])+";")
     file.write(str(problem["bounds"]))
