@@ -1,8 +1,5 @@
 import os
 import glob
-from numpy import genfromtxt
-import pandas as pd
-import numpy
 
 if __name__ == '__main__':
 

@@ -1,10 +1,7 @@
 import argparse
 import os
-import re
 import xml.etree.ElementTree as ET
 import numpy as np
-from SALib.sample import saltelli
-import SALib.sample.morris
 import pandas as pd
 
 """
