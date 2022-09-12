@@ -11,7 +11,7 @@ from sklearn import preprocessing
 
 def load_data(path, input_names, output_names, standardize=True):
     """
-    This function load data from a .csv file
+    This function loads data from a .csv file
 
     :param path: path to the .csv file containing the data
     :param input_names: array containing names of input columns
@@ -31,6 +31,13 @@ def load_data(path, input_names, output_names, standardize=True):
 
 
 def save_clusters(input_path, labels, output_path):
+    """
+    Saves the clusters into a .csv file
+    :param input_path: Input file
+    :param labels: Labels corresponding to the input
+    :param output_path: Output file
+    :return:
+    """
     print("Saving clusters to " + output_path + "..")
     data = pd.read_csv(input_path)
     data["cluster"] = labels
@@ -51,6 +58,33 @@ def cmap_builder(n):
     else:
         colors = plt.cm.get_cmap("tab20", n)
     return colors
+
+
+def save_boxes(data, labels, headers, path, classes=None):
+    """
+    This function computes the input box of each class and saves a report
+
+    :param data: the data
+    :param labels: array containing the cluster labels of the data
+    :param headers: headers of the data
+    :param path: path to the file to save the plot
+    :param classes: label of classes to compare, if none every classes will be plot
+    """
+    print("Saving boxes to : " + str(path) + "..")
+    categories = np.unique(labels) if classes is None else classes
+    s = ""
+    for cat in categories:
+        min = np.min(data[labels == cat], axis=0)
+        max = np.max(data[labels == cat], axis=0)
+        s += "Class : " + str(cat) + "\n"
+        for i in range(len(headers)):
+            s += str(headers[i]) + " : [" + str(min[i]) + "; " + str(max[i]) + "]\n"
+        s += "Barycenter : " + str((max + min) / 2) + "\n\n"
+
+    f = open(path, "w")
+    f.write(s)
+    f.close()
+    print("Saved.")
 
 
 def cluster_2d_plot(x, y, labels, headers, path):

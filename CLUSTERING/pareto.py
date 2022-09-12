@@ -1,6 +1,6 @@
 import numpy as np
 
-from utils import load_data, cluster_projection_plot, cluster_3d_plot, cluster_2d_plot, spider_plot_comparison
+from utils import load_data, cluster_2d_plot, spider_plot_comparison, spider_plot, save_boxes, save_clusters
 
 
 def is_pareto_efficient(costs, return_mask=True):
@@ -32,6 +32,7 @@ def is_pareto_efficient(costs, return_mask=True):
 
 
 if __name__ == '__main__':
+    # LOADS DATA
     X, headers_x, Y, headers_y = load_data(
         path='./data/COMOKIT_Final_Results.csv',
         input_names=["density_ref_contact",
@@ -47,11 +48,15 @@ if __name__ == '__main__':
                       "step_end_epidemiology"]
     )
 
+    # COMPUTE PARETO FRONT
     is_efficient = is_pareto_efficient(Y)
-    # to plot the pareto front in the foreground
-    order = np.argsort(is_efficient)
-    # cluster_projection_plot(Y[order], is_efficient[order], headers_y, "./results/pareto/clusters.png", is_binary=True)
-    cluster_2d_plot(Y[order, 0], Y[order, 1], is_efficient[order], headers_y[:2], "./results/pareto/2d_clusters.png")
-    # cluster_3d_plot(Y[:, 0], Y[:, 1], Y[:, 2], is_efficient, headers_y, "./results/pareto/3d_clusters.png")
-    spider_plot_comparison(X, is_efficient, headers_x, "./results/pareto/classes_comparison.png")
 
+    # VISUALIZATION
+    order = np.argsort(is_efficient) # to plot the pareto front in the foreground you need to sort the data
+    cluster_2d_plot(Y[order, 0], Y[order, 1], is_efficient[order], headers_y[:2], "./results/pareto/2d_clusters.png")
+    # cluster_projection_plot(Y[order], is_efficient[order], headers_y, "./results/pareto/clusters.png")
+    # cluster_3d_plot(Y[:, 0], Y[:, 1], Y[:, 2], is_efficient, headers_y, "./results/pareto/3d_clusters.png")
+    spider_plot_comparison(X, is_efficient, headers_x, "./results/pareto/classes_comparison.png", [1])
+    spider_plot(X, is_efficient, headers_x, "./results/pareto/classes_mean_quantile.png")
+    save_clusters('./data/COMOKIT_Final_Results.csv', is_efficient, "./results/pareto/clustered_data.csv")
+    save_boxes(X, is_efficient, headers_x, "./results/pareto/boxes_report.txt", [1])
