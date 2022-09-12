@@ -1,0 +1,472 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python ==2.7.*|>=3.6",
+    "six >=1.7.3"
+  ],
+  "extracted_package_dir": "/home/raphael/anaconda3/pkgs/ppft-1.7.6.5-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "bin/ppserver",
+    "lib/python3.10/site-packages/pp/__init__.py",
+    "lib/python3.10/site-packages/pp/__main__.py",
+    "lib/python3.10/site-packages/pp/_pp.py",
+    "lib/python3.10/site-packages/pp/auto.py",
+    "lib/python3.10/site-packages/pp/common.py",
+    "lib/python3.10/site-packages/pp/server/__init__.py",
+    "lib/python3.10/site-packages/pp/server/__main__.py",
+    "lib/python3.10/site-packages/pp/transport.py",
+    "lib/python3.10/site-packages/pp/worker.py",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/COPYING",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/LICENSE",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/METADATA",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/RECORD",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/WHEEL",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/ppft-1.7.6.5.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/ppft/__init__.py",
+    "lib/python3.10/site-packages/ppft/__main__.py",
+    "lib/python3.10/site-packages/ppft/_pp.py",
+    "lib/python3.10/site-packages/ppft/auto.py",
+    "lib/python3.10/site-packages/ppft/common.py",
+    "lib/python3.10/site-packages/ppft/server/__init__.py",
+    "lib/python3.10/site-packages/ppft/server/__main__.py",
+    "lib/python3.10/site-packages/ppft/tests/__init__.py",
+    "lib/python3.10/site-packages/ppft/tests/__main__.py",
+    "lib/python3.10/site-packages/ppft/tests/auto_diff.py",
+    "lib/python3.10/site-packages/ppft/tests/callback.py",
+    "lib/python3.10/site-packages/ppft/tests/dynamic_ncpus.py",
+    "lib/python3.10/site-packages/ppft/tests/quicksort.py",
+    "lib/python3.10/site-packages/ppft/tests/reverse_md5.py",
+    "lib/python3.10/site-packages/ppft/tests/sum_primes.py",
+    "lib/python3.10/site-packages/ppft/tests/sum_primes_functor.py",
+    "lib/python3.10/site-packages/ppft/transport.py",
+    "lib/python3.10/site-packages/ppft/worker.py",
+    "lib/python3.10/site-packages/pp/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/__pycache__/_pp.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/__pycache__/auto.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/__pycache__/common.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/server/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/server/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/__pycache__/transport.cpython-310.pyc",
+    "lib/python3.10/site-packages/pp/__pycache__/worker.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/__pycache__/_pp.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/__pycache__/auto.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/__pycache__/common.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/server/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/server/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/auto_diff.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/callback.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/dynamic_ncpus.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/quicksort.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/reverse_md5.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/sum_primes.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/tests/__pycache__/sum_primes_functor.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/__pycache__/transport.cpython-310.pyc",
+    "lib/python3.10/site-packages/ppft/__pycache__/worker.cpython-310.pyc"
+  ],
+  "fn": "ppft-1.7.6.5-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/raphael/anaconda3/pkgs/ppft-1.7.6.5-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "d63aebbda353987879ca1516b29dab49",
+  "name": "ppft",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/raphael/anaconda3/pkgs/ppft-1.7.6.5-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/ppserver",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/ppft_1653049182397/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "de74cf0b27365d2de9b291ab83823d683c9ed6a2b81524248ca56ff756e695d1",
+        "sha256_in_prefix": "3a306ebd064bb948eaa9545b36c5f36603ab338183d211aabe620a1c7c54eb97",
+        "size_in_bytes": 15473
+      },
+      {
+        "_path": "site-packages/pp/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e18a4a264bb378112104d15c7e6179b78339c8da2b9634ba806789a93ab92534",
+        "sha256_in_prefix": "e18a4a264bb378112104d15c7e6179b78339c8da2b9634ba806789a93ab92534",
+        "size_in_bytes": 123
+      },
+      {
+        "_path": "site-packages/pp/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "8fb8ff175c3272a6a00d424acef0580b4965447b9066fba1b905aa5a7bfbd217",
+        "sha256_in_prefix": "8fb8ff175c3272a6a00d424acef0580b4965447b9066fba1b905aa5a7bfbd217",
+        "size_in_bytes": 624
+      },
+      {
+        "_path": "site-packages/pp/_pp.py",
+        "path_type": "hardlink",
+        "sha256": "384f2337363a38860a4a2c49346ea20b90b6c426c0002a60ab65562211d09e36",
+        "sha256_in_prefix": "384f2337363a38860a4a2c49346ea20b90b6c426c0002a60ab65562211d09e36",
+        "size_in_bytes": 487
+      },
+      {
+        "_path": "site-packages/pp/auto.py",
+        "path_type": "hardlink",
+        "sha256": "d38afa388ec800f977dc1f6c77b840ae4389719fa686b0ee2b7cc35c993e4cb1",
+        "sha256_in_prefix": "d38afa388ec800f977dc1f6c77b840ae4389719fa686b0ee2b7cc35c993e4cb1",
+        "size_in_bytes": 410
+      },
+      {
+        "_path": "site-packages/pp/common.py",
+        "path_type": "hardlink",
+        "sha256": "333323d1ae3ca9ba093a50d64684786589b4209b3c7d732ee063db58e11debbe",
+        "sha256_in_prefix": "333323d1ae3ca9ba093a50d64684786589b4209b3c7d732ee063db58e11debbe",
+        "size_in_bytes": 414
+      },
+      {
+        "_path": "site-packages/pp/server/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3339031f9856bdd76215eb26374bc0a9a1ee0be173fcfabb565bdd2fddae546a",
+        "sha256_in_prefix": "3339031f9856bdd76215eb26374bc0a9a1ee0be173fcfabb565bdd2fddae546a",
+        "size_in_bytes": 58
+      },
+      {
+        "_path": "site-packages/pp/server/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "61494392e9ce19c804d25d5342a917fe917eedc2c3eb40680d654a09a5283688",
+        "sha256_in_prefix": "61494392e9ce19c804d25d5342a917fe917eedc2c3eb40680d654a09a5283688",
+        "size_in_bytes": 782
+      },
+      {
+        "_path": "site-packages/pp/transport.py",
+        "path_type": "hardlink",
+        "sha256": "172993b5cabc76bc5fac5158785c9652a05283e1a388fb20adde0f25b8137b00",
+        "sha256_in_prefix": "172993b5cabc76bc5fac5158785c9652a05283e1a388fb20adde0f25b8137b00",
+        "size_in_bytes": 420
+      },
+      {
+        "_path": "site-packages/pp/worker.py",
+        "path_type": "hardlink",
+        "sha256": "dfe6232c0a511bf987b65f145c25a12712c19c853d58767349a5cc64a7977316",
+        "sha256_in_prefix": "dfe6232c0a511bf987b65f145c25a12712c19c853d58767349a5cc64a7977316",
+        "size_in_bytes": 620
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/COPYING",
+        "path_type": "hardlink",
+        "sha256": "7f948bcfbc26ae1dc5b01e20e074679debc468ba75672267aa1ddd001a305d2f",
+        "sha256_in_prefix": "7f948bcfbc26ae1dc5b01e20e074679debc468ba75672267aa1ddd001a305d2f",
+        "size_in_bytes": 1580
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d095d43275070f0c2aafd8ca1f9b0bc1cd7312de2fabfc2bbe27687d17f6ed32",
+        "sha256_in_prefix": "d095d43275070f0c2aafd8ca1f9b0bc1cd7312de2fabfc2bbe27687d17f6ed32",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "54afb5eba7e083768df9f65ce8d26244e8976f93a9f5eb109d5abd94f8738a75",
+        "sha256_in_prefix": "54afb5eba7e083768df9f65ce8d26244e8976f93a9f5eb109d5abd94f8738a75",
+        "size_in_bytes": 7116
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "72fd6a57984900324909d0d87da3e5265fe280f7f69f4a4c1d9e8e0a7eb6fc25",
+        "sha256_in_prefix": "72fd6a57984900324909d0d87da3e5265fe280f7f69f4a4c1d9e8e0a7eb6fc25",
+        "size_in_bytes": 4149
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "sha256_in_prefix": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "1355c9d62080353c2165f7fc944dec3c2711c8222757167b2d13783e8c36c2d3",
+        "sha256_in_prefix": "1355c9d62080353c2165f7fc944dec3c2711c8222757167b2d13783e8c36c2d3",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "site-packages/ppft-1.7.6.5.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "515de1cc2bfed7642b683f17c1b814e67a5b0bb4b8072ee38f9f9fe16dcb05ff",
+        "sha256_in_prefix": "515de1cc2bfed7642b683f17c1b814e67a5b0bb4b8072ee38f9f9fe16dcb05ff",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "site-packages/ppft/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ec79ca3935d6e83bde064cb56fff79ed9f2252bdc159f41a816a795d8fe5d74a",
+        "sha256_in_prefix": "ec79ca3935d6e83bde064cb56fff79ed9f2252bdc159f41a816a795d8fe5d74a",
+        "size_in_bytes": 8379
+      },
+      {
+        "_path": "site-packages/ppft/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "2b48f00c96560116e7f46e19f6b57be7be89006c4bf36775a18b051e935a3f51",
+        "sha256_in_prefix": "2b48f00c96560116e7f46e19f6b57be7be89006c4bf36775a18b051e935a3f51",
+        "size_in_bytes": 5231
+      },
+      {
+        "_path": "site-packages/ppft/_pp.py",
+        "path_type": "hardlink",
+        "sha256": "39176151ef5066c974757adab6d0d91d2f0fc7f3a2ed47d0752fe767a28f0e6b",
+        "sha256_in_prefix": "39176151ef5066c974757adab6d0d91d2f0fc7f3a2ed47d0752fe767a28f0e6b",
+        "size_in_bytes": 34074
+      },
+      {
+        "_path": "site-packages/ppft/auto.py",
+        "path_type": "hardlink",
+        "sha256": "77d6e322030833df3545f0d40af534cea031879c3b3561d96c5bdff20142d0d0",
+        "sha256_in_prefix": "77d6e322030833df3545f0d40af534cea031879c3b3561d96c5bdff20142d0d0",
+        "size_in_bytes": 5121
+      },
+      {
+        "_path": "site-packages/ppft/common.py",
+        "path_type": "hardlink",
+        "sha256": "37feb5ec4c4bd3f787a9140e97cfa4fb68c06804470bc77715f2a5c2bb298ecc",
+        "sha256_in_prefix": "37feb5ec4c4bd3f787a9140e97cfa4fb68c06804470bc77715f2a5c2bb298ecc",
+        "size_in_bytes": 5107
+      },
+      {
+        "_path": "site-packages/ppft/server/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8e5fa8261deb7ce7bfc7d0ad0ceb1348bf0d3229d8b1e81520cdfb82dce63864",
+        "sha256_in_prefix": "8e5fa8261deb7ce7bfc7d0ad0ceb1348bf0d3229d8b1e81520cdfb82dce63864",
+        "size_in_bytes": 214
+      },
+      {
+        "_path": "site-packages/ppft/server/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "5d340acf641d60985cfdae88aa289e3f8fe8a14799f5a497f11b87e6c9ea3691",
+        "sha256_in_prefix": "5d340acf641d60985cfdae88aa289e3f8fe8a14799f5a497f11b87e6c9ea3691",
+        "size_in_bytes": 15299
+      },
+      {
+        "_path": "site-packages/ppft/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0bbb6cc2555132386e9f21c2810c5f10da1b205bc4f8bd4e50fd9ee57666e84a",
+        "sha256_in_prefix": "0bbb6cc2555132386e9f21c2810c5f10da1b205bc4f8bd4e50fd9ee57666e84a",
+        "size_in_bytes": 501
+      },
+      {
+        "_path": "site-packages/ppft/tests/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "4246547b98e8fae5de81652291f648080e2fd5795ff7d3a22eedf48fdc001448",
+        "sha256_in_prefix": "4246547b98e8fae5de81652291f648080e2fd5795ff7d3a22eedf48fdc001448",
+        "size_in_bytes": 1016
+      },
+      {
+        "_path": "site-packages/ppft/tests/auto_diff.py",
+        "path_type": "hardlink",
+        "sha256": "f8e6fabb4dce7265e91c7eeacd5ee3305b020528e72a2a2f23d42d59dfaa1453",
+        "sha256_in_prefix": "f8e6fabb4dce7265e91c7eeacd5ee3305b020528e72a2a2f23d42d59dfaa1453",
+        "size_in_bytes": 3628
+      },
+      {
+        "_path": "site-packages/ppft/tests/callback.py",
+        "path_type": "hardlink",
+        "sha256": "0bc24e317b4bac7f0d47348c8dfb80aa1045b8c847a06e04ba05313ea357d4fa",
+        "sha256_in_prefix": "0bc24e317b4bac7f0d47348c8dfb80aa1045b8c847a06e04ba05313ea357d4fa",
+        "size_in_bytes": 2596
+      },
+      {
+        "_path": "site-packages/ppft/tests/dynamic_ncpus.py",
+        "path_type": "hardlink",
+        "sha256": "c1ca56a5bfefea46a454934d1636af99f0a4161a4dce1d825ef00efe9840eb8b",
+        "sha256_in_prefix": "c1ca56a5bfefea46a454934d1636af99f0a4161a4dce1d825ef00efe9840eb8b",
+        "size_in_bytes": 1946
+      },
+      {
+        "_path": "site-packages/ppft/tests/quicksort.py",
+        "path_type": "hardlink",
+        "sha256": "ee83cbc917a85e3918190b1970ee9e33a7f4e05c33a4f905b53864fdee838e74",
+        "sha256_in_prefix": "ee83cbc917a85e3918190b1970ee9e33a7f4e05c33a4f905b53864fdee838e74",
+        "size_in_bytes": 1937
+      },
+      {
+        "_path": "site-packages/ppft/tests/reverse_md5.py",
+        "path_type": "hardlink",
+        "sha256": "c7221db785dcb24af44a1c673ed7149f1dcb5bc29edc927a3aee994e9cdb5b38",
+        "sha256_in_prefix": "c7221db785dcb24af44a1c673ed7149f1dcb5bc29edc927a3aee994e9cdb5b38",
+        "size_in_bytes": 2729
+      },
+      {
+        "_path": "site-packages/ppft/tests/sum_primes.py",
+        "path_type": "hardlink",
+        "sha256": "c3e0fd3d8b40ba09232502ed62aa03946e8deb4a9f438d5d0c27b44b6a48a659",
+        "sha256_in_prefix": "c3e0fd3d8b40ba09232502ed62aa03946e8deb4a9f438d5d0c27b44b6a48a659",
+        "size_in_bytes": 2604
+      },
+      {
+        "_path": "site-packages/ppft/tests/sum_primes_functor.py",
+        "path_type": "hardlink",
+        "sha256": "324759f82977e18b3705f45090265b5011a2bd3ec8e66e6249bf8556ea91a718",
+        "sha256_in_prefix": "324759f82977e18b3705f45090265b5011a2bd3ec8e66e6249bf8556ea91a718",
+        "size_in_bytes": 2724
+      },
+      {
+        "_path": "site-packages/ppft/transport.py",
+        "path_type": "hardlink",
+        "sha256": "af903061c694bd7c2b92b45de9b6c0f80ab8da5246ae9df87dc4fa2b3b9a9b2e",
+        "sha256_in_prefix": "af903061c694bd7c2b92b45de9b6c0f80ab8da5246ae9df87dc4fa2b3b9a9b2e",
+        "size_in_bytes": 9606
+      },
+      {
+        "_path": "site-packages/ppft/worker.py",
+        "path_type": "hardlink",
+        "sha256": "8fb8ff175c3272a6a00d424acef0580b4965447b9066fba1b905aa5a7bfbd217",
+        "sha256_in_prefix": "8fb8ff175c3272a6a00d424acef0580b4965447b9066fba1b905aa5a7bfbd217",
+        "size_in_bytes": 624
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/__pycache__/_pp.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/__pycache__/auto.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/__pycache__/common.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/server/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/server/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/__pycache__/transport.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pp/__pycache__/worker.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/__pycache__/_pp.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/__pycache__/auto.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/__pycache__/common.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/server/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/server/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/auto_diff.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/callback.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/dynamic_ncpus.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/quicksort.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/reverse_md5.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/sum_primes.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/tests/__pycache__/sum_primes_functor.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/__pycache__/transport.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/ppft/__pycache__/worker.cpython-310.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "9abb9bea6bd9db595cd74be9b730458a003d81466d08ce898b1364d54408a301",
+  "size": 33227,
+  "subdir": "noarch",
+  "timestamp": 1653049282209,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/ppft-1.7.6.5-pyhd8ed1ab_0.tar.bz2",
+  "version": "1.7.6.5"
+}

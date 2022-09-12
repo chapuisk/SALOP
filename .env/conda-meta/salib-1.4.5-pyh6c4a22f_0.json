@@ -1,0 +1,720 @@
+{
+  "build": "pyh6c4a22f_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "matplotlib-base",
+    "multiprocess",
+    "numpy >=1.16",
+    "pandas >=1.0.3",
+    "pathos",
+    "python >=3.6",
+    "scipy"
+  ],
+  "extracted_package_dir": "/home/raphael/anaconda3/pkgs/salib-1.4.5-pyh6c4a22f_0",
+  "features": "",
+  "files": [
+    "bin/salib",
+    "bin/salib.py",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/AUTHORS.rst",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/LICENSE.txt",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/METADATA",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/RECORD",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/WHEEL",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/entry_points.txt",
+    "lib/python3.10/site-packages/SALib-1.4.5.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/SALib/__init__.py",
+    "lib/python3.10/site-packages/SALib/analyze/__init__.py",
+    "lib/python3.10/site-packages/SALib/analyze/common_args.py",
+    "lib/python3.10/site-packages/SALib/analyze/delta.py",
+    "lib/python3.10/site-packages/SALib/analyze/dgsm.py",
+    "lib/python3.10/site-packages/SALib/analyze/fast.py",
+    "lib/python3.10/site-packages/SALib/analyze/ff.py",
+    "lib/python3.10/site-packages/SALib/analyze/hdmr.py",
+    "lib/python3.10/site-packages/SALib/analyze/morris.py",
+    "lib/python3.10/site-packages/SALib/analyze/pawn.py",
+    "lib/python3.10/site-packages/SALib/analyze/rbd_fast.py",
+    "lib/python3.10/site-packages/SALib/analyze/sobol.py",
+    "lib/python3.10/site-packages/SALib/plotting/__init__.py",
+    "lib/python3.10/site-packages/SALib/plotting/bar.py",
+    "lib/python3.10/site-packages/SALib/plotting/hdmr.py",
+    "lib/python3.10/site-packages/SALib/plotting/morris.py",
+    "lib/python3.10/site-packages/SALib/sample/__init__.py",
+    "lib/python3.10/site-packages/SALib/sample/common_args.py",
+    "lib/python3.10/site-packages/SALib/sample/directions.py",
+    "lib/python3.10/site-packages/SALib/sample/fast_sampler.py",
+    "lib/python3.10/site-packages/SALib/sample/ff.py",
+    "lib/python3.10/site-packages/SALib/sample/finite_diff.py",
+    "lib/python3.10/site-packages/SALib/sample/latin.py",
+    "lib/python3.10/site-packages/SALib/sample/morris/__init__.py",
+    "lib/python3.10/site-packages/SALib/sample/morris/brute.py",
+    "lib/python3.10/site-packages/SALib/sample/morris/local.py",
+    "lib/python3.10/site-packages/SALib/sample/morris/morris.py",
+    "lib/python3.10/site-packages/SALib/sample/morris/strategy.py",
+    "lib/python3.10/site-packages/SALib/sample/saltelli.py",
+    "lib/python3.10/site-packages/SALib/sample/sobol_sequence.py",
+    "lib/python3.10/site-packages/SALib/scripts/__init__.py",
+    "lib/python3.10/site-packages/SALib/scripts/salib.bat",
+    "lib/python3.10/site-packages/SALib/scripts/salib.py",
+    "lib/python3.10/site-packages/SALib/test_functions/Ishigami.py",
+    "lib/python3.10/site-packages/SALib/test_functions/Sobol_G.py",
+    "lib/python3.10/site-packages/SALib/test_functions/__init__.py",
+    "lib/python3.10/site-packages/SALib/test_functions/lake_problem.py",
+    "lib/python3.10/site-packages/SALib/test_functions/linear_model_1.py",
+    "lib/python3.10/site-packages/SALib/test_functions/linear_model_2.py",
+    "lib/python3.10/site-packages/SALib/test_functions/params/Ishigami.txt",
+    "lib/python3.10/site-packages/SALib/test_functions/params/Ishigami_groups.txt",
+    "lib/python3.10/site-packages/SALib/test_functions/params/Sobol_G.txt",
+    "lib/python3.10/site-packages/SALib/util/__init__.py",
+    "lib/python3.10/site-packages/SALib/util/problem.py",
+    "lib/python3.10/site-packages/SALib/util/results.py",
+    "lib/python3.10/site-packages/SALib/util/util_funcs.py",
+    "lib/python3.10/site-packages/SALib/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/common_args.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/delta.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/dgsm.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/fast.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/ff.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/hdmr.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/morris.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/pawn.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/rbd_fast.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/analyze/__pycache__/sobol.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/plotting/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/plotting/__pycache__/bar.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/plotting/__pycache__/hdmr.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/plotting/__pycache__/morris.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/common_args.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/directions.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/fast_sampler.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/ff.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/finite_diff.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/latin.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/brute.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/local.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/morris.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/strategy.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/saltelli.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/sample/__pycache__/sobol_sequence.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/scripts/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/scripts/__pycache__/salib.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/test_functions/__pycache__/Ishigami.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/test_functions/__pycache__/Sobol_G.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/test_functions/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/test_functions/__pycache__/lake_problem.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/test_functions/__pycache__/linear_model_1.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/test_functions/__pycache__/linear_model_2.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/util/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/util/__pycache__/problem.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/util/__pycache__/results.cpython-310.pyc",
+    "lib/python3.10/site-packages/SALib/util/__pycache__/util_funcs.cpython-310.pyc"
+  ],
+  "fn": "salib-1.4.5-pyh6c4a22f_0.tar.bz2",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/raphael/anaconda3/pkgs/salib-1.4.5-pyh6c4a22f_0",
+    "type": 1
+  },
+  "md5": "93a708c12e5a4256d66877a4207c08e9",
+  "name": "salib",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/raphael/anaconda3/pkgs/salib-1.4.5-pyh6c4a22f_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/salib",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/salib_1630738686823/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "264617798d9769d4f0aab0189588e1062b42e79d851bccc2c67d8b2efdb2f796",
+        "sha256_in_prefix": "0b403569a6ef2bdca4205a493cf29888c0541728bb49cef77be7f8e4f29cb722",
+        "size_in_bytes": 502
+      },
+      {
+        "_path": "python-scripts/salib.py",
+        "path_type": "hardlink",
+        "sha256": "69689ce0be6a98cb8ca5aac52cc90d1162483a335187628d510c8448362782b2",
+        "sha256_in_prefix": "69689ce0be6a98cb8ca5aac52cc90d1162483a335187628d510c8448362782b2",
+        "size_in_bytes": 2015
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/AUTHORS.rst",
+        "path_type": "hardlink",
+        "sha256": "39939a1d2d4d3c7ffb80373a4dc22f1a690e8556270b84c51b3c0b5234aff122",
+        "sha256_in_prefix": "39939a1d2d4d3c7ffb80373a4dc22f1a690e8556270b84c51b3c0b5234aff122",
+        "size_in_bytes": 264
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "b6af29ab0f90416bcf7188b30f95994461cd91b538bd9d7a6d340602d8170f2d",
+        "sha256_in_prefix": "b6af29ab0f90416bcf7188b30f95994461cd91b538bd9d7a6d340602d8170f2d",
+        "size_in_bytes": 1126
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "0d8df6e907db6fd64fd3f67fbf7ab48e3bae95870e87c64c764bbca99726eaf4",
+        "sha256_in_prefix": "0d8df6e907db6fd64fd3f67fbf7ab48e3bae95870e87c64c764bbca99726eaf4",
+        "size_in_bytes": 9919
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "196367695e2c6f731ad4dfa6cc19e6d1a3b9b34077a69123601cafe36e6615ac",
+        "sha256_in_prefix": "196367695e2c6f731ad4dfa6cc19e6d1a3b9b34077a69123601cafe36e6615ac",
+        "size_in_bytes": 7158
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "5b367c7308e1f25d23b542cd8d8ab51e9afe582a824603ebfbe4d7e0fe48d56a",
+        "sha256_in_prefix": "5b367c7308e1f25d23b542cd8d8ab51e9afe582a824603ebfbe4d7e0fe48d56a",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "acca23c122ac84b01af156fc064c7853ba89487de122fb0c8711518a07bd7232",
+        "sha256_in_prefix": "acca23c122ac84b01af156fc064c7853ba89487de122fb0c8711518a07bd7232",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "bf63e7cdcb60a4959baa35c32cd0c29b0074b0c61dcef4e8774f6b5a1d4364b1",
+        "sha256_in_prefix": "bf63e7cdcb60a4959baa35c32cd0c29b0074b0c61dcef4e8774f6b5a1d4364b1",
+        "size_in_bytes": 52
+      },
+      {
+        "_path": "site-packages/SALib-1.4.5.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "bad785bfad8344d08c94d117b3338c26275515455e4f41412a63e9e10c4d534c",
+        "sha256_in_prefix": "bad785bfad8344d08c94d117b3338c26275515455e4f41412a63e9e10c4d534c",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/SALib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fa1af2bf927227a3d36421d296858669acbcf972d14b24ea4730077105eed4ad",
+        "sha256_in_prefix": "fa1af2bf927227a3d36421d296858669acbcf972d14b24ea4730077105eed4ad",
+        "size_in_bytes": 635
+      },
+      {
+        "_path": "site-packages/SALib/analyze/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/SALib/analyze/common_args.py",
+        "path_type": "hardlink",
+        "sha256": "0edb566d0538db5d7cf6a1e3da48382e36d758e6517b2a586dc8c8e596c543cd",
+        "sha256_in_prefix": "0edb566d0538db5d7cf6a1e3da48382e36d758e6517b2a586dc8c8e596c543cd",
+        "size_in_bytes": 1196
+      },
+      {
+        "_path": "site-packages/SALib/analyze/delta.py",
+        "path_type": "hardlink",
+        "sha256": "37e16d82ff7e3dd2bac15b07bc9405ee288ecd98a032d9c0e07841445738f5ed",
+        "sha256_in_prefix": "37e16d82ff7e3dd2bac15b07bc9405ee288ecd98a032d9c0e07841445738f5ed",
+        "size_in_bytes": 5993
+      },
+      {
+        "_path": "site-packages/SALib/analyze/dgsm.py",
+        "path_type": "hardlink",
+        "sha256": "9043aea27233ae3a07751bf230ddb6566cf94734f6678bd98aab452bf58779ae",
+        "sha256_in_prefix": "9043aea27233ae3a07751bf230ddb6566cf94734f6678bd98aab452bf58779ae",
+        "size_in_bytes": 5331
+      },
+      {
+        "_path": "site-packages/SALib/analyze/fast.py",
+        "path_type": "hardlink",
+        "sha256": "538e714a10e12a43514a635a225fcc66592e05c422c7af264a4f6ee3f408b030",
+        "sha256_in_prefix": "538e714a10e12a43514a635a225fcc66592e05c422c7af264a4f6ee3f408b030",
+        "size_in_bytes": 4849
+      },
+      {
+        "_path": "site-packages/SALib/analyze/ff.py",
+        "path_type": "hardlink",
+        "sha256": "dcbaaa4ad4bd941fbdbeb57089db9b3cb248a285e6e14160d881c3a392c09246",
+        "sha256_in_prefix": "dcbaaa4ad4bd941fbdbeb57089db9b3cb248a285e6e14160d881c3a392c09246",
+        "size_in_bytes": 5126
+      },
+      {
+        "_path": "site-packages/SALib/analyze/hdmr.py",
+        "path_type": "hardlink",
+        "sha256": "6700e536fef912c0e415c5efe9c3f4085e007b9ebc3ee02c3579ebda06a6dd33",
+        "sha256_in_prefix": "6700e536fef912c0e415c5efe9c3f4085e007b9ebc3ee02c3579ebda06a6dd33",
+        "size_in_bytes": 29452
+      },
+      {
+        "_path": "site-packages/SALib/analyze/morris.py",
+        "path_type": "hardlink",
+        "sha256": "e8641b245da7340398749f93d4f77095eb90d9694ed8420248952e82b3d5fb4f",
+        "sha256_in_prefix": "e8641b245da7340398749f93d4f77095eb90d9694ed8420248952e82b3d5fb4f",
+        "size_in_bytes": 16678
+      },
+      {
+        "_path": "site-packages/SALib/analyze/pawn.py",
+        "path_type": "hardlink",
+        "sha256": "3ad6ecc8d4980fc1d8180e72fc2b35ab3b02f0e2bc0ae8749560a09ea5725cae",
+        "sha256_in_prefix": "3ad6ecc8d4980fc1d8180e72fc2b35ab3b02f0e2bc0ae8749560a09ea5725cae",
+        "size_in_bytes": 4795
+      },
+      {
+        "_path": "site-packages/SALib/analyze/rbd_fast.py",
+        "path_type": "hardlink",
+        "sha256": "9a54120fa6a0c3ab72f4f72d870e4cc8bdf695b73c909c02997f2ab513fdd8a5",
+        "sha256_in_prefix": "9a54120fa6a0c3ab72f4f72d870e4cc8bdf695b73c909c02997f2ab513fdd8a5",
+        "size_in_bytes": 5694
+      },
+      {
+        "_path": "site-packages/SALib/analyze/sobol.py",
+        "path_type": "hardlink",
+        "sha256": "ca7737f98776fc48886e821b9759c4c2b681ef0ffe84c3b3878992bf56d5c665",
+        "sha256_in_prefix": "ca7737f98776fc48886e821b9759c4c2b681ef0ffe84c3b3878992bf56d5c665",
+        "size_in_bytes": 13419
+      },
+      {
+        "_path": "site-packages/SALib/plotting/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/SALib/plotting/bar.py",
+        "path_type": "hardlink",
+        "sha256": "5fca43744e2db3078151a3d86862e0008cd0b94d3e1ee9a4e90b6464876c3735",
+        "sha256_in_prefix": "5fca43744e2db3078151a3d86862e0008cd0b94d3e1ee9a4e90b6464876c3735",
+        "size_in_bytes": 993
+      },
+      {
+        "_path": "site-packages/SALib/plotting/hdmr.py",
+        "path_type": "hardlink",
+        "sha256": "eda880fb858c2fc243f23ce2ee2885e6765858d938284c847ec4fa99bc3e641e",
+        "sha256_in_prefix": "eda880fb858c2fc243f23ce2ee2885e6765858d938284c847ec4fa99bc3e641e",
+        "size_in_bytes": 3215
+      },
+      {
+        "_path": "site-packages/SALib/plotting/morris.py",
+        "path_type": "hardlink",
+        "sha256": "68212b4a5ad596d11fe96fb831ff2302631f27af44712584d752e1f7b44658ae",
+        "sha256_in_prefix": "68212b4a5ad596d11fe96fb831ff2302631f27af44712584d752e1f7b44658ae",
+        "size_in_bytes": 4417
+      },
+      {
+        "_path": "site-packages/SALib/sample/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/SALib/sample/common_args.py",
+        "path_type": "hardlink",
+        "sha256": "13c0510837eba1a39d482561564b44092acc8dd31831dcbbc6b7d379eab1789e",
+        "sha256_in_prefix": "13c0510837eba1a39d482561564b44092acc8dd31831dcbbc6b7d379eab1789e",
+        "size_in_bytes": 2023
+      },
+      {
+        "_path": "site-packages/SALib/sample/directions.py",
+        "path_type": "hardlink",
+        "sha256": "f0f40aa317b6d509fb894a5d2fa4e9a49e852170e6be90478ddda7c8ac7339bb",
+        "sha256_in_prefix": "f0f40aa317b6d509fb894a5d2fa4e9a49e852170e6be90478ddda7c8ac7339bb",
+        "size_in_bytes": 2058346
+      },
+      {
+        "_path": "site-packages/SALib/sample/fast_sampler.py",
+        "path_type": "hardlink",
+        "sha256": "c9febc05944ecd9c0edfd88662aeb59ef71ea03632138481f4813ccfe12688dd",
+        "sha256_in_prefix": "c9febc05944ecd9c0edfd88662aeb59ef71ea03632138481f4813ccfe12688dd",
+        "size_in_bytes": 3378
+      },
+      {
+        "_path": "site-packages/SALib/sample/ff.py",
+        "path_type": "hardlink",
+        "sha256": "682bce9dada049e22e67cd438b91072cf0014c2a6c39c022ea571959e523d117",
+        "sha256_in_prefix": "682bce9dada049e22e67cd438b91072cf0014c2a6c39c022ea571959e523d117",
+        "size_in_bytes": 3888
+      },
+      {
+        "_path": "site-packages/SALib/sample/finite_diff.py",
+        "path_type": "hardlink",
+        "sha256": "21f84076386615aa5727560bff040fa6dd4d78cbce6ed8a7c84dbea79a6a4b29",
+        "sha256_in_prefix": "21f84076386615aa5727560bff040fa6dd4d78cbce6ed8a7c84dbea79a6a4b29",
+        "size_in_bytes": 3204
+      },
+      {
+        "_path": "site-packages/SALib/sample/latin.py",
+        "path_type": "hardlink",
+        "sha256": "48b6f4d3c868394d7ee12b81f451279874d1fd43bcce5a94454a8f18b6d5363b",
+        "sha256_in_prefix": "48b6f4d3c868394d7ee12b81f451279874d1fd43bcce5a94454a8f18b6d5363b",
+        "size_in_bytes": 2732
+      },
+      {
+        "_path": "site-packages/SALib/sample/morris/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7d676d7b0bd8e4cb191aa6aed9479f3678fc83d0cb8e7adfd55029132ef3faba",
+        "sha256_in_prefix": "7d676d7b0bd8e4cb191aa6aed9479f3678fc83d0cb8e7adfd55029132ef3faba",
+        "size_in_bytes": 169
+      },
+      {
+        "_path": "site-packages/SALib/sample/morris/brute.py",
+        "path_type": "hardlink",
+        "sha256": "a475fff061d8708db4165ee0bdf3c98e0d856811af6c60e605fc1b5d0ab70965",
+        "sha256_in_prefix": "a475fff061d8708db4165ee0bdf3c98e0d856811af6c60e605fc1b5d0ab70965",
+        "size_in_bytes": 5750
+      },
+      {
+        "_path": "site-packages/SALib/sample/morris/local.py",
+        "path_type": "hardlink",
+        "sha256": "887ac7639e1d703bb6d5156572e63c748d092141a0aebf04dc12ecc2661a1d29",
+        "sha256_in_prefix": "887ac7639e1d703bb6d5156572e63c748d092141a0aebf04dc12ecc2661a1d29",
+        "size_in_bytes": 5696
+      },
+      {
+        "_path": "site-packages/SALib/sample/morris/morris.py",
+        "path_type": "hardlink",
+        "sha256": "0d2ff2c556c1313f6ecc7f9a5b18ba7798b5b4277d7b499dc3d3f261eb8896c3",
+        "sha256_in_prefix": "0d2ff2c556c1313f6ecc7f9a5b18ba7798b5b4277d7b499dc3d3f261eb8896c3",
+        "size_in_bytes": 13272
+      },
+      {
+        "_path": "site-packages/SALib/sample/morris/strategy.py",
+        "path_type": "hardlink",
+        "sha256": "0f41a99727e9e8482815cdb6cf540076e69c8056e32a1edc1c72f710fffd1c24",
+        "sha256_in_prefix": "0f41a99727e9e8482815cdb6cf540076e69c8056e32a1edc1c72f710fffd1c24",
+        "size_in_bytes": 9277
+      },
+      {
+        "_path": "site-packages/SALib/sample/saltelli.py",
+        "path_type": "hardlink",
+        "sha256": "0489e7c0e09609a2ef5fbc2daa0ccf506a5ca585d75347710b18ece02d5d00dc",
+        "sha256_in_prefix": "0489e7c0e09609a2ef5fbc2daa0ccf506a5ca585d75347710b18ece02d5d00dc",
+        "size_in_bytes": 8560
+      },
+      {
+        "_path": "site-packages/SALib/sample/sobol_sequence.py",
+        "path_type": "hardlink",
+        "sha256": "05004ff9dd3bdf66cd8417af62d5b4ce405a48aa17bd21ae297ad0b351c4e2ee",
+        "sha256_in_prefix": "05004ff9dd3bdf66cd8417af62d5b4ce405a48aa17bd21ae297ad0b351c4e2ee",
+        "size_in_bytes": 3708
+      },
+      {
+        "_path": "site-packages/SALib/scripts/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/SALib/scripts/salib.bat",
+        "path_type": "hardlink",
+        "sha256": "2f80e2c4426b1df50a00e21631fea0500efeb764cb6079717c48e45e854d04b1",
+        "sha256_in_prefix": "2f80e2c4426b1df50a00e21631fea0500efeb764cb6079717c48e45e854d04b1",
+        "size_in_bytes": 142
+      },
+      {
+        "_path": "site-packages/SALib/scripts/salib.py",
+        "path_type": "hardlink",
+        "sha256": "69689ce0be6a98cb8ca5aac52cc90d1162483a335187628d510c8448362782b2",
+        "sha256_in_prefix": "69689ce0be6a98cb8ca5aac52cc90d1162483a335187628d510c8448362782b2",
+        "size_in_bytes": 2015
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/Ishigami.py",
+        "path_type": "hardlink",
+        "sha256": "3de1900e07cd60a6dc1f90bab29472402b97320aa399428135727e460e698f18",
+        "sha256_in_prefix": "3de1900e07cd60a6dc1f90bab29472402b97320aa399428135727e460e698f18",
+        "size_in_bytes": 1856
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/Sobol_G.py",
+        "path_type": "hardlink",
+        "sha256": "e81cfa89ef48196a2a52a825dfe1cafbdb61d6a2551f9e5724502c20ea93bf80",
+        "sha256_in_prefix": "e81cfa89ef48196a2a52a825dfe1cafbdb61d6a2551f9e5724502c20ea93bf80",
+        "size_in_bytes": 3563
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "608d2c33fd71e4c6155cfeecb28656b00a9dca4962649477c638e9cd17eaa656",
+        "sha256_in_prefix": "608d2c33fd71e4c6155cfeecb28656b00a9dca4962649477c638e9cd17eaa656",
+        "size_in_bytes": 22
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/lake_problem.py",
+        "path_type": "hardlink",
+        "sha256": "85ac940ac07a4b5b8ba6fc9087c5444914f4efe8739735a7a96fd62b4bbc84ad",
+        "sha256_in_prefix": "85ac940ac07a4b5b8ba6fc9087c5444914f4efe8739735a7a96fd62b4bbc84ad",
+        "size_in_bytes": 5703
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/linear_model_1.py",
+        "path_type": "hardlink",
+        "sha256": "0c5e4419bf038cfd0b64bd6722c339631affa5371aa5c2fd567fcd990521c514",
+        "sha256_in_prefix": "0c5e4419bf038cfd0b64bd6722c339631affa5371aa5c2fd567fcd990521c514",
+        "size_in_bytes": 648
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/linear_model_2.py",
+        "path_type": "hardlink",
+        "sha256": "d530308c4d7d2bb9b57ab591dfdb3be8017be28a9de100782e8ea28f7a0d4b98",
+        "sha256_in_prefix": "d530308c4d7d2bb9b57ab591dfdb3be8017be28a9de100782e8ea28f7a0d4b98",
+        "size_in_bytes": 714
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/params/Ishigami.txt",
+        "path_type": "hardlink",
+        "sha256": "ca69d87909ada77ab8b5b7a30e90a956dcb293aa406d386c044753df951279f9",
+        "sha256_in_prefix": "ca69d87909ada77ab8b5b7a30e90a956dcb293aa406d386c044753df951279f9",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/params/Ishigami_groups.txt",
+        "path_type": "hardlink",
+        "sha256": "b4c7247dc81b57f3570b8a583a6ec3bc340e499bd4bb05592916a3bf8b62e0cc",
+        "sha256_in_prefix": "b4c7247dc81b57f3570b8a583a6ec3bc340e499bd4bb05592916a3bf8b62e0cc",
+        "size_in_bytes": 123
+      },
+      {
+        "_path": "site-packages/SALib/test_functions/params/Sobol_G.txt",
+        "path_type": "hardlink",
+        "sha256": "152f6eb5ab4bd7aed5b77a55ebe68bb800fdd3dde6ff111671acb6982893b618",
+        "sha256_in_prefix": "152f6eb5ab4bd7aed5b77a55ebe68bb800fdd3dde6ff111671acb6982893b618",
+        "size_in_bytes": 96
+      },
+      {
+        "_path": "site-packages/SALib/util/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4febddde5607aa11d66c459d48f37530889e290e1440f4723b29169036a47084",
+        "sha256_in_prefix": "4febddde5607aa11d66c459d48f37530889e290e1440f4723b29169036a47084",
+        "size_in_bytes": 9950
+      },
+      {
+        "_path": "site-packages/SALib/util/problem.py",
+        "path_type": "hardlink",
+        "sha256": "0dc51b80f3d85449d4288da267da542a899fc35d7c7bfb98f2440e717ea2ea65",
+        "sha256_in_prefix": "0dc51b80f3d85449d4288da267da542a899fc35d7c7bfb98f2440e717ea2ea65",
+        "size_in_bytes": 17886
+      },
+      {
+        "_path": "site-packages/SALib/util/results.py",
+        "path_type": "hardlink",
+        "sha256": "a4c9115224601db24de0e8ffe0acf8f681aba2e7d2daa9e43d6ea36fc20abf30",
+        "sha256_in_prefix": "a4c9115224601db24de0e8ffe0acf8f681aba2e7d2daa9e43d6ea36fc20abf30",
+        "size_in_bytes": 1051
+      },
+      {
+        "_path": "site-packages/SALib/util/util_funcs.py",
+        "path_type": "hardlink",
+        "sha256": "f2b1ba47c2744b396c89af40a4391849feeae87c4ad4fbf5fd73e37c0bfe730c",
+        "sha256_in_prefix": "f2b1ba47c2744b396c89af40a4391849feeae87c4ad4fbf5fd73e37c0bfe730c",
+        "size_in_bytes": 3932
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/common_args.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/delta.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/dgsm.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/fast.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/ff.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/hdmr.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/morris.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/pawn.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/rbd_fast.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/analyze/__pycache__/sobol.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/plotting/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/plotting/__pycache__/bar.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/plotting/__pycache__/hdmr.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/plotting/__pycache__/morris.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/common_args.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/directions.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/fast_sampler.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/ff.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/finite_diff.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/latin.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/brute.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/local.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/morris.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/morris/__pycache__/strategy.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/saltelli.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/sample/__pycache__/sobol_sequence.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/scripts/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/scripts/__pycache__/salib.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/test_functions/__pycache__/Ishigami.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/test_functions/__pycache__/Sobol_G.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/test_functions/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/test_functions/__pycache__/lake_problem.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/test_functions/__pycache__/linear_model_1.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/test_functions/__pycache__/linear_model_2.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/util/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/util/__pycache__/problem.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/util/__pycache__/results.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/SALib/util/__pycache__/util_funcs.cpython-310.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "salib",
+  "sha256": "6b42e9d118a089c87de58fc9df176e25fb0bd8de6bcb4950e6dedf9847e696a8",
+  "size": 1219023,
+  "subdir": "noarch",
+  "timestamp": 1630738843895,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/salib-1.4.5-pyh6c4a22f_0.tar.bz2",
+  "version": "1.4.5"
+}

@@ -1,0 +1,38 @@
+{
+  "build": "py310h06a4308_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "matplotlib-base >=3.5.2,<3.5.3.0a0",
+    "pyqt",
+    "python >=3.10,<3.11.0a0",
+    "tornado"
+  ],
+  "extracted_package_dir": "/home/raphael/anaconda3/pkgs/matplotlib-3.5.2-py310h06a4308_0",
+  "features": "",
+  "files": [],
+  "fn": "matplotlib-3.5.2-py310h06a4308_0.conda",
+  "legacy_bz2_md5": "aed7802084f1057b04a89ea6e36c84cb",
+  "license": "LicenseRef-PSF-based",
+  "license_family": "PSF",
+  "link": {
+    "source": "/home/raphael/anaconda3/pkgs/matplotlib-3.5.2-py310h06a4308_0",
+    "type": 1
+  },
+  "md5": "2b031165bbdd41c2d6bd5252a814da70",
+  "name": "matplotlib",
+  "package_tarball_full_path": "/home/raphael/anaconda3/pkgs/matplotlib-3.5.2-py310h06a4308_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "matplotlib",
+  "sha256": "924522216f4a65cbb93757e82dedbdc93831ba86492b5f8cbccbe66f409ef11a",
+  "size": 6673,
+  "subdir": "linux-64",
+  "timestamp": 1660168339775,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/matplotlib-3.5.2-py310h06a4308_0.conda",
+  "version": "3.5.2"
+}

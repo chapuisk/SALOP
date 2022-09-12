@@ -1,0 +1,229 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python ==2.7.*|>=3.6"
+  ],
+  "extracted_package_dir": "/home/raphael/anaconda3/pkgs/pox-0.3.1-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "bin/pox",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/LICENSE",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/METADATA",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/RECORD",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/WHEEL",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/pox-0.3.1.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/pox/__init__.py",
+    "lib/python3.10/site-packages/pox/__main__.py",
+    "lib/python3.10/site-packages/pox/_disk.py",
+    "lib/python3.10/site-packages/pox/shutils.py",
+    "lib/python3.10/site-packages/pox/tests/__init__.py",
+    "lib/python3.10/site-packages/pox/tests/__main__.py",
+    "lib/python3.10/site-packages/pox/tests/test_shutils.py",
+    "lib/python3.10/site-packages/pox/tests/test_utils.py",
+    "lib/python3.10/site-packages/pox/utils.py",
+    "lib/python3.10/site-packages/pox/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/__pycache__/_disk.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/__pycache__/shutils.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/tests/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/tests/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/tests/__pycache__/test_shutils.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/tests/__pycache__/test_utils.cpython-310.pyc",
+    "lib/python3.10/site-packages/pox/__pycache__/utils.cpython-310.pyc"
+  ],
+  "fn": "pox-0.3.1-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/raphael/anaconda3/pkgs/pox-0.3.1-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "abb549a7b32df1b21932ef8299941237",
+  "name": "pox",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/raphael/anaconda3/pkgs/pox-0.3.1-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/pox",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/pox_1653039529021/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho",
+        "sha256": "f2c43cdce73168af2458c18aa92c86ee0c52522b71b33381e0417a4987dfb1c9",
+        "sha256_in_prefix": "ffc24eb81a10af1621eda5528a3af0f9a255f0d51b0f53b66270df383b739c07",
+        "size_in_bytes": 939
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7af3414fed1e59b7b898ef122a76a7d8668775d95d0556c8ea76de44a5d9a197",
+        "sha256_in_prefix": "7af3414fed1e59b7b898ef122a76a7d8668775d95d0556c8ea76de44a5d9a197",
+        "size_in_bytes": 1790
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "8cfbf1f794e2dd5e16af66cd1c0edb27029d41c8b9b07d8428ab0ee1f5d3b8f6",
+        "sha256_in_prefix": "8cfbf1f794e2dd5e16af66cd1c0edb27029d41c8b9b07d8428ab0ee1f5d3b8f6",
+        "size_in_bytes": 8146
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "0b9c6d437c56a1e8ad2b572d6230f73d21f666bb4b9ee38ad745e0aea0c45f3f",
+        "sha256_in_prefix": "0b9c6d437c56a1e8ad2b572d6230f73d21f666bb4b9ee38ad745e0aea0c45f3f",
+        "size_in_bytes": 1802
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "sha256_in_prefix": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "17d46926331b4c2b4735878309373d94af4a36b63bef01bb20127c9b1d5ddf95",
+        "sha256_in_prefix": "17d46926331b4c2b4735878309373d94af4a36b63bef01bb20127c9b1d5ddf95",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "site-packages/pox-0.3.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "dfd3bab9dbe538824489fa1bb006578ca8b83f8858ac825f6848723a168045fb",
+        "sha256_in_prefix": "dfd3bab9dbe538824489fa1bb006578ca8b83f8858ac825f6848723a168045fb",
+        "size_in_bytes": 4
+      },
+      {
+        "_path": "site-packages/pox/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a6c033e991ea7ff75494169c9689b7136fd657f7f495b3c20788f591a1339601",
+        "sha256_in_prefix": "a6c033e991ea7ff75494169c9689b7136fd657f7f495b3c20788f591a1339601",
+        "size_in_bytes": 9545
+      },
+      {
+        "_path": "site-packages/pox/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "bde558e7b4fea3f0e2930c4ae7e71fe9140f09c4b7722b75f5cc97235b36ff8c",
+        "sha256_in_prefix": "bde558e7b4fea3f0e2930c4ae7e71fe9140f09c4b7722b75f5cc97235b36ff8c",
+        "size_in_bytes": 1673
+      },
+      {
+        "_path": "site-packages/pox/_disk.py",
+        "path_type": "hardlink",
+        "sha256": "65dc206dd787ee370d981fa040760900c25f186366899b222b8f51c2584f157d",
+        "sha256_in_prefix": "65dc206dd787ee370d981fa040760900c25f186366899b222b8f51c2584f157d",
+        "size_in_bytes": 4269
+      },
+      {
+        "_path": "site-packages/pox/shutils.py",
+        "path_type": "hardlink",
+        "sha256": "63b0abe3c98168d653e7fa1fec47cbd51d53cad9eaa939a306470343a380cacb",
+        "sha256_in_prefix": "63b0abe3c98168d653e7fa1fec47cbd51d53cad9eaa939a306470343a380cacb",
+        "size_in_bytes": 18167
+      },
+      {
+        "_path": "site-packages/pox/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f481e9c87386a151750671358fa82ad3295d10bff846d3c15097259960399bfa",
+        "sha256_in_prefix": "f481e9c87386a151750671358fa82ad3295d10bff846d3c15097259960399bfa",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "site-packages/pox/tests/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "907d052cb2e942e99905d513a421eb31a14abfe8699ad6269a1c81e917ad307c",
+        "sha256_in_prefix": "907d052cb2e942e99905d513a421eb31a14abfe8699ad6269a1c81e917ad307c",
+        "size_in_bytes": 803
+      },
+      {
+        "_path": "site-packages/pox/tests/test_shutils.py",
+        "path_type": "hardlink",
+        "sha256": "57a0cc18f700fa2d2a358f721aa32b58bbde8b83d35926b5a94cae6b3dc3d16e",
+        "sha256_in_prefix": "57a0cc18f700fa2d2a358f721aa32b58bbde8b83d35926b5a94cae6b3dc3d16e",
+        "size_in_bytes": 3802
+      },
+      {
+        "_path": "site-packages/pox/tests/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "fcab0bd7ce3d4fbb69d108ab8e3f82b581f8edf68c353a14d4f6fe192f5429c2",
+        "sha256_in_prefix": "fcab0bd7ce3d4fbb69d108ab8e3f82b581f8edf68c353a14d4f6fe192f5429c2",
+        "size_in_bytes": 4781
+      },
+      {
+        "_path": "site-packages/pox/utils.py",
+        "path_type": "hardlink",
+        "sha256": "767cd63fcae0bebfe769688b71d7cd1cd29f4668a3d6c595bb0af67734c115d5",
+        "sha256_in_prefix": "767cd63fcae0bebfe769688b71d7cd1cd29f4668a3d6c595bb0af67734c115d5",
+        "size_in_bytes": 20679
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/__pycache__/_disk.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/__pycache__/shutils.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/tests/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/tests/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/tests/__pycache__/test_shutils.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/tests/__pycache__/test_utils.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pox/__pycache__/utils.cpython-310.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "8def771aa22f40ffe7089e2ff933ef4e8b9ebd57ffc74957cc7ecdd7cf99de4d",
+  "size": 25000,
+  "subdir": "noarch",
+  "timestamp": 1653039654706,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pox-0.3.1-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.3.1"
+}

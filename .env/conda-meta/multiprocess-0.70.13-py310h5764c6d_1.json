@@ -1,0 +1,623 @@
+{
+  "build": "py310h5764c6d_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "dill >=0.3.5.1",
+    "libgcc-ng >=12",
+    "python >=3.10,<3.11.0a0",
+    "python_abi 3.10.* *_cp310"
+  ],
+  "extracted_package_dir": "/home/raphael/anaconda3/pkgs/multiprocess-0.70.13-py310h5764c6d_1",
+  "features": "",
+  "files": [
+    "lib/python3.10/site-packages/_multiprocess/__init__.py",
+    "lib/python3.10/site-packages/_multiprocess/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/COPYING",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/LICENSE",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/METADATA",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/RECORD",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/WHEEL",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/multiprocess/__init__.py",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/connection.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/context.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/forkserver.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/heap.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/managers.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/pool.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/popen_fork.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/popen_forkserver.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/popen_spawn_posix.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/popen_spawn_win32.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/process.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/queues.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/reduction.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/resource_sharer.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/resource_tracker.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/shared_memory.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/sharedctypes.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/spawn.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/synchronize.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/__pycache__/util.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/connection.py",
+    "lib/python3.10/site-packages/multiprocess/context.py",
+    "lib/python3.10/site-packages/multiprocess/dummy/__init__.py",
+    "lib/python3.10/site-packages/multiprocess/dummy/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/dummy/__pycache__/connection.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/dummy/connection.py",
+    "lib/python3.10/site-packages/multiprocess/forkserver.py",
+    "lib/python3.10/site-packages/multiprocess/heap.py",
+    "lib/python3.10/site-packages/multiprocess/managers.py",
+    "lib/python3.10/site-packages/multiprocess/pool.py",
+    "lib/python3.10/site-packages/multiprocess/popen_fork.py",
+    "lib/python3.10/site-packages/multiprocess/popen_forkserver.py",
+    "lib/python3.10/site-packages/multiprocess/popen_spawn_posix.py",
+    "lib/python3.10/site-packages/multiprocess/popen_spawn_win32.py",
+    "lib/python3.10/site-packages/multiprocess/process.py",
+    "lib/python3.10/site-packages/multiprocess/queues.py",
+    "lib/python3.10/site-packages/multiprocess/reduction.py",
+    "lib/python3.10/site-packages/multiprocess/resource_sharer.py",
+    "lib/python3.10/site-packages/multiprocess/resource_tracker.py",
+    "lib/python3.10/site-packages/multiprocess/shared_memory.py",
+    "lib/python3.10/site-packages/multiprocess/sharedctypes.py",
+    "lib/python3.10/site-packages/multiprocess/spawn.py",
+    "lib/python3.10/site-packages/multiprocess/synchronize.py",
+    "lib/python3.10/site-packages/multiprocess/tests/__init__.py",
+    "lib/python3.10/site-packages/multiprocess/tests/__main__.py",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/mp_fork_bomb.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/mp_preload.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_fork.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_forkserver.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_main_handling.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_spawn.cpython-310.pyc",
+    "lib/python3.10/site-packages/multiprocess/tests/mp_fork_bomb.py",
+    "lib/python3.10/site-packages/multiprocess/tests/mp_preload.py",
+    "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_fork.py",
+    "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_forkserver.py",
+    "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_main_handling.py",
+    "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_spawn.py",
+    "lib/python3.10/site-packages/multiprocess/util.py"
+  ],
+  "fn": "multiprocess-0.70.13-py310h5764c6d_1.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/raphael/anaconda3/pkgs/multiprocess-0.70.13-py310h5764c6d_1",
+    "type": 1
+  },
+  "md5": "a932b931f58b3f8b5c349d73477abe3d",
+  "name": "multiprocess",
+  "package_tarball_full_path": "/home/raphael/anaconda3/pkgs/multiprocess-0.70.13-py310h5764c6d_1.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.10/site-packages/_multiprocess/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cee275ff4cabfa00a9d2801ee7ebcb342a759b21c05ee2957393112eff65ccb0",
+        "sha256_in_prefix": "cee275ff4cabfa00a9d2801ee7ebcb342a759b21c05ee2957393112eff65ccb0",
+        "size_in_bytes": 31
+      },
+      {
+        "_path": "lib/python3.10/site-packages/_multiprocess/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "2bb2012c9d5ebde7139bb5e211482a14369387328c2ffd62704dacc8096ada89",
+        "sha256_in_prefix": "2bb2012c9d5ebde7139bb5e211482a14369387328c2ffd62704dacc8096ada89",
+        "size_in_bytes": 180
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/COPYING",
+        "path_type": "hardlink",
+        "sha256": "9f7ff27cb930d2c3202ee07e3d2d6146f4de676d069a33da3166c98cdba83a95",
+        "sha256_in_prefix": "9f7ff27cb930d2c3202ee07e3d2d6146f4de676d069a33da3166c98cdba83a95",
+        "size_in_bytes": 1493
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e01437153fef64eb6d1f397bc05bab0556316430f8ffc2aadb433361a668d4a4",
+        "sha256_in_prefix": "e01437153fef64eb6d1f397bc05bab0556316430f8ffc2aadb433361a668d4a4",
+        "size_in_bytes": 1934
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5c268a918106adb843358f7b63284fb5d2d3379c8574dec3bed8b24ccd2979b3",
+        "sha256_in_prefix": "5c268a918106adb843358f7b63284fb5d2d3379c8574dec3bed8b24ccd2979b3",
+        "size_in_bytes": 6753
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e9e9bd935c377306c284e1a9192f050ed013d7ba189ea6f206818c13d7fd87cb",
+        "sha256_in_prefix": "e9e9bd935c377306c284e1a9192f050ed013d7ba189ea6f206818c13d7fd87cb",
+        "size_in_bytes": 5530
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "9d3cbf67c8af18407aa85c152e0eff87aaead09b74254e4fcf670bdbf16348c4",
+        "sha256_in_prefix": "9d3cbf67c8af18407aa85c152e0eff87aaead09b74254e4fcf670bdbf16348c4",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "93c6915697f67703f7d13fab93112d4f748a5b2f30981b5dc8569bc989e218ba",
+        "sha256_in_prefix": "93c6915697f67703f7d13fab93112d4f748a5b2f30981b5dc8569bc989e218ba",
+        "size_in_bytes": 108
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess-0.70.13.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "aad25cf0635dbe2eacb8da48497d0cca59fd01724162b36e6acd4c0aa44f3ea8",
+        "sha256_in_prefix": "aad25cf0635dbe2eacb8da48497d0cca59fd01724162b36e6acd4c0aa44f3ea8",
+        "size_in_bytes": 27
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "69c82586af81075ab078977b6db4ec6ded84dcbec3ce5b56dfb1b63c3ca37a8f",
+        "sha256_in_prefix": "69c82586af81075ab078977b6db4ec6ded84dcbec3ce5b56dfb1b63c3ca37a8f",
+        "size_in_bytes": 8411
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "3b5f153729dd9552aa1d94ec45226c742d847eeb787ce29821c93744e1b02205",
+        "sha256_in_prefix": "3b5f153729dd9552aa1d94ec45226c742d847eeb787ce29821c93744e1b02205",
+        "size_in_bytes": 8178
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/connection.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "40b4b8e221b49654c3263fe0ba31f003d127ef46216c8bcc4966e341f3309c6c",
+        "sha256_in_prefix": "40b4b8e221b49654c3263fe0ba31f003d127ef46216c8bcc4966e341f3309c6c",
+        "size_in_bytes": 25758
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/context.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "caa1f59ba9df141759a838b31e38f230b6a100852f7df5f79bcace206dea215a",
+        "sha256_in_prefix": "caa1f59ba9df141759a838b31e38f230b6a100852f7df5f79bcace206dea215a",
+        "size_in_bytes": 12437
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/forkserver.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "f153a8bbf4a6aafafda7dd296385d16dbfb5090469adccf75e036209fc253c8f",
+        "sha256_in_prefix": "f153a8bbf4a6aafafda7dd296385d16dbfb5090469adccf75e036209fc253c8f",
+        "size_in_bytes": 8429
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/heap.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "1541009a297c036ee10e2ff320a91b7a5ab7dc76afb88a306884c1d66d166b38",
+        "sha256_in_prefix": "1541009a297c036ee10e2ff320a91b7a5ab7dc76afb88a306884c1d66d166b38",
+        "size_in_bytes": 7674
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/managers.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "7504eb23358f87481782f92310923d016f2737f3e6aad4b6ffdd6fb3a34933fa",
+        "sha256_in_prefix": "7504eb23358f87481782f92310923d016f2737f3e6aad4b6ffdd6fb3a34933fa",
+        "size_in_bytes": 40806
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/pool.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ce78eb9b6f7133840267f100ea5feab84c484e177997ea316c433948f41c7833",
+        "sha256_in_prefix": "ce78eb9b6f7133840267f100ea5feab84c484e177997ea316c433948f41c7833",
+        "size_in_bytes": 25106
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/popen_fork.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "7b53ebde91700300c6873fe1d01607796ffe7cc7e2858538e0f0dd92b17fe5ed",
+        "sha256_in_prefix": "7b53ebde91700300c6873fe1d01607796ffe7cc7e2858538e0f0dd92b17fe5ed",
+        "size_in_bytes": 2524
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/popen_forkserver.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "dd1a80a477df06ee2090ffbbd428f2a8a9b0c2cb259e03fd91696df416e8466f",
+        "sha256_in_prefix": "dd1a80a477df06ee2090ffbbd428f2a8a9b0c2cb259e03fd91696df416e8466f",
+        "size_in_bytes": 2469
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/popen_spawn_posix.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a75498d22586d9cc8c35b6140024a037830ae950f5826932bf3548ca866c5c62",
+        "sha256_in_prefix": "a75498d22586d9cc8c35b6140024a037830ae950f5826932bf3548ca866c5c62",
+        "size_in_bytes": 2355
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/popen_spawn_win32.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a121f2fc55c35d66fc56893c0d8514530b0b5a25d792654d1f01a31c8fecd825",
+        "sha256_in_prefix": "a121f2fc55c35d66fc56893c0d8514530b0b5a25d792654d1f01a31c8fecd825",
+        "size_in_bytes": 3480
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/process.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "8122187c4fd869c665f9fb571f484eb67958d59193e3a0456af69e8bd5e40771",
+        "sha256_in_prefix": "8122187c4fd869c665f9fb571f484eb67958d59193e3a0456af69e8bd5e40771",
+        "size_in_bytes": 11076
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/queues.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "535504bebbf6b864b3eb02c95c065042c8363efd79d7874971764c83e0e3e787",
+        "sha256_in_prefix": "535504bebbf6b864b3eb02c95c065042c8363efd79d7874971764c83e0e3e787",
+        "size_in_bytes": 10408
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/reduction.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "51ab3702569c251b866502517f8e7f08d5fb1252dcdce6c4befda9a6dfc7dc9f",
+        "sha256_in_prefix": "51ab3702569c251b866502517f8e7f08d5fb1252dcdce6c4befda9a6dfc7dc9f",
+        "size_in_bytes": 8425
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/resource_sharer.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "0ba702a1b9de8885c780e28fc62b1a1becd2fe8e3e5a6217550e9da2fcaaec85",
+        "sha256_in_prefix": "0ba702a1b9de8885c780e28fc62b1a1becd2fe8e3e5a6217550e9da2fcaaec85",
+        "size_in_bytes": 5307
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/resource_tracker.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "5bd5bfdc9590e69ab2b779fa9f179b4d09fec8caab870d6051559cdc271f5573",
+        "sha256_in_prefix": "5bd5bfdc9590e69ab2b779fa9f179b4d09fec8caab870d6051559cdc271f5573",
+        "size_in_bytes": 5557
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/shared_memory.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "13153faa3663c7caecf13177436ecc750437378a06d52ea718507eb2c2395235",
+        "sha256_in_prefix": "13153faa3663c7caecf13177436ecc750437378a06d52ea718507eb2c2395235",
+        "size_in_bytes": 14563
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/sharedctypes.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "9ae024008f5aba63fb7b87915984aba83e457779373b0692f400bbe6bbbee902",
+        "sha256_in_prefix": "9ae024008f5aba63fb7b87915984aba83e457779373b0692f400bbe6bbbee902",
+        "size_in_bytes": 7106
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/spawn.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "73d20024d1f9d1dc1f3026f3ffad5622fb8bad64af5aac9e29fdb839a6340f5b",
+        "sha256_in_prefix": "73d20024d1f9d1dc1f3026f3ffad5622fb8bad64af5aac9e29fdb839a6340f5b",
+        "size_in_bytes": 6742
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/synchronize.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d5ec3159b4f613e1e53193789abed8d808ba51b82dae06d26653097c7ddc7a25",
+        "sha256_in_prefix": "d5ec3159b4f613e1e53193789abed8d808ba51b82dae06d26653097c7ddc7a25",
+        "size_in_bytes": 11466
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/__pycache__/util.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "c81e6a5568cce1c1756b302cfdcd7ba0d7c27aa95a4ecea964dc2632740a68d5",
+        "sha256_in_prefix": "c81e6a5568cce1c1756b302cfdcd7ba0d7c27aa95a4ecea964dc2632740a68d5",
+        "size_in_bytes": 11498
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/connection.py",
+        "path_type": "hardlink",
+        "sha256": "1a1bf19cc363eec93c25bd12f7481f4f1f121caf5829baae88d1664d9eae040e",
+        "sha256_in_prefix": "1a1bf19cc363eec93c25bd12f7481f4f1f121caf5829baae88d1664d9eae040e",
+        "size_in_bytes": 32182
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/context.py",
+        "path_type": "hardlink",
+        "sha256": "ce9270d116f54213cefce5075bb3c8a17856b74c800b683d3f486d2351313736",
+        "sha256_in_prefix": "ce9270d116f54213cefce5075bb3c8a17856b74c800b683d3f486d2351313736",
+        "size_in_bytes": 11270
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/dummy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9127a40ea0ff342cb414383b5e7c594a05be2dd835fe246bd3bb0dc036a32a90",
+        "sha256_in_prefix": "9127a40ea0ff342cb414383b5e7c594a05be2dd835fe246bd3bb0dc036a32a90",
+        "size_in_bytes": 3061
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/dummy/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d5752f458dbe26f856bf68e1a236e2a7d8e0f5a1f35b588eeeb0ddb656dcd241",
+        "sha256_in_prefix": "d5752f458dbe26f856bf68e1a236e2a7d8e0f5a1f35b588eeeb0ddb656dcd241",
+        "size_in_bytes": 3874
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/dummy/__pycache__/connection.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a4a72a28a8eedec55e9a862960eb1428b523e961b7b2e4e7f4bfcceda0ae2a34",
+        "sha256_in_prefix": "a4a72a28a8eedec55e9a862960eb1428b523e961b7b2e4e7f4bfcceda0ae2a34",
+        "size_in_bytes": 2574
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/dummy/connection.py",
+        "path_type": "hardlink",
+        "sha256": "d63dd1979fde9c133efe430ee870e6ba6de43c0a0513866ce3ce475791fe57ab",
+        "sha256_in_prefix": "d63dd1979fde9c133efe430ee870e6ba6de43c0a0513866ce3ce475791fe57ab",
+        "size_in_bytes": 1598
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/forkserver.py",
+        "path_type": "hardlink",
+        "sha256": "86296d29f2c8983609c8071eccd020303690ce70762ed616830aded10ae82d18",
+        "sha256_in_prefix": "86296d29f2c8983609c8071eccd020303690ce70762ed616830aded10ae82d18",
+        "size_in_bytes": 12138
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/heap.py",
+        "path_type": "hardlink",
+        "sha256": "f6bb79bb99b9ae484935f0d68822e9603a1622dd0b6c4966c79db232a93ba614",
+        "sha256_in_prefix": "f6bb79bb99b9ae484935f0d68822e9603a1622dd0b6c4966c79db232a93ba614",
+        "size_in_bytes": 11626
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/managers.py",
+        "path_type": "hardlink",
+        "sha256": "2aba3b10ba531dc7c3d004c1311ff7243a264b6ed49bfd0fa189531c1fa1bf3b",
+        "sha256_in_prefix": "2aba3b10ba531dc7c3d004c1311ff7243a264b6ed49bfd0fa189531c1fa1bf3b",
+        "size_in_bytes": 47573
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/pool.py",
+        "path_type": "hardlink",
+        "sha256": "b3cf915bfb015a3654a276e03b2ad624312bfb25be9fb80fb2925359171e29b8",
+        "sha256_in_prefix": "b3cf915bfb015a3654a276e03b2ad624312bfb25be9fb80fb2925359171e29b8",
+        "size_in_bytes": 32555
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/popen_fork.py",
+        "path_type": "hardlink",
+        "sha256": "36fab9bd521ddb851f90e4315e1c596dc5eea3c77a60c738d3dc915c06a64ddd",
+        "sha256_in_prefix": "36fab9bd521ddb851f90e4315e1c596dc5eea3c77a60c738d3dc915c06a64ddd",
+        "size_in_bytes": 2374
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/popen_forkserver.py",
+        "path_type": "hardlink",
+        "sha256": "4ab11b57c5afd14bbf51e824696f9c6b25d17634c65ebe7ad18cb2f74a63fb21",
+        "sha256_in_prefix": "4ab11b57c5afd14bbf51e824696f9c6b25d17634c65ebe7ad18cb2f74a63fb21",
+        "size_in_bytes": 2227
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/popen_spawn_posix.py",
+        "path_type": "hardlink",
+        "sha256": "97b5d25aa479516894489877e6a7921252ee35f51e118c2f1f91f32919e7caa8",
+        "sha256_in_prefix": "97b5d25aa479516894489877e6a7921252ee35f51e118c2f1f91f32919e7caa8",
+        "size_in_bytes": 2029
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/popen_spawn_win32.py",
+        "path_type": "hardlink",
+        "sha256": "03dbaf94f9a13bc241ccd70453f1a68b1d90fea6095b53576605cfc2d379028d",
+        "sha256_in_prefix": "03dbaf94f9a13bc241ccd70453f1a68b1d90fea6095b53576605cfc2d379028d",
+        "size_in_bytes": 4011
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/process.py",
+        "path_type": "hardlink",
+        "sha256": "dce0e05617af80e97645758cbf757f1125f9fc21c930e5243907edb7ad7eaab1",
+        "sha256_in_prefix": "dce0e05617af80e97645758cbf757f1125f9fc21c930e5243907edb7ad7eaab1",
+        "size_in_bytes": 12000
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/queues.py",
+        "path_type": "hardlink",
+        "sha256": "5d166ab28adf1bd4e533c07ab4aab09086f4ddd9f2190d9aed6ed36640612d83",
+        "sha256_in_prefix": "5d166ab28adf1bd4e533c07ab4aab09086f4ddd9f2190d9aed6ed36640612d83",
+        "size_in_bytes": 12109
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/reduction.py",
+        "path_type": "hardlink",
+        "sha256": "35043a29b0e19ae0326837966886ab4d94289063e170575ad69a0d9cf9b9b8d7",
+        "sha256_in_prefix": "35043a29b0e19ae0326837966886ab4d94289063e170575ad69a0d9cf9b9b8d7",
+        "size_in_bytes": 9637
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/resource_sharer.py",
+        "path_type": "hardlink",
+        "sha256": "9c40292e1310a9df0aba77da34a9779fcbdd7a20863f12ab48bd496b49cd0049",
+        "sha256_in_prefix": "9c40292e1310a9df0aba77da34a9779fcbdd7a20863f12ab48bd496b49cd0049",
+        "size_in_bytes": 5132
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/resource_tracker.py",
+        "path_type": "hardlink",
+        "sha256": "ab673918e9fea423648e9f78febb9d6c994367670104236afea3fa2be8a24423",
+        "sha256_in_prefix": "ab673918e9fea423648e9f78febb9d6c994367670104236afea3fa2be8a24423",
+        "size_in_bytes": 9058
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/shared_memory.py",
+        "path_type": "hardlink",
+        "sha256": "ddcfa59f0d2d1906aa5a5b0f1b27e99021d087f290bf2d495fa585d4844ccc9d",
+        "sha256_in_prefix": "ddcfa59f0d2d1906aa5a5b0f1b27e99021d087f290bf2d495fa585d4844ccc9d",
+        "size_in_bytes": 18521
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/sharedctypes.py",
+        "path_type": "hardlink",
+        "sha256": "77ef522912474652490b7df523112858e51721e63dcf109b8567a35ce9b31b0d",
+        "sha256_in_prefix": "77ef522912474652490b7df523112858e51721e63dcf109b8567a35ce9b31b0d",
+        "size_in_bytes": 6306
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/spawn.py",
+        "path_type": "hardlink",
+        "sha256": "720b55eba1e157fc88573bdd6e573c6d5752a5e9b5e8ab3404e16efdb5793c34",
+        "sha256_in_prefix": "720b55eba1e157fc88573bdd6e573c6d5752a5e9b5e8ab3404e16efdb5793c34",
+        "size_in_bytes": 9293
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/synchronize.py",
+        "path_type": "hardlink",
+        "sha256": "eaad628f05b258b58b3bcb94b5a613f4c29ea4060a7ddcd63d21191b22453f8b",
+        "sha256_in_prefix": "eaad628f05b258b58b3bcb94b5a613f4c29ea4060a7ddcd63d21191b22453f8b",
+        "size_in_bytes": 11829
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "16bfa346dcd12a9b9fbb1a881fef55341d5b318990ec98197b74845005d476b7",
+        "sha256_in_prefix": "16bfa346dcd12a9b9fbb1a881fef55341d5b318990ec98197b74845005d476b7",
+        "size_in_bytes": 196707
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "c00c2a1dd5cba0cb36561bf5cbf78789a116317056037da06bc7134f58142067",
+        "sha256_in_prefix": "c00c2a1dd5cba0cb36561bf5cbf78789a116317056037da06bc7134f58142067",
+        "size_in_bytes": 948
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a6eff5bdf7a0d158418e85010ae1e905c81da0f9fad671adbc025655ce669593",
+        "sha256_in_prefix": "a6eff5bdf7a0d158418e85010ae1e905c81da0f9fad671adbc025655ce669593",
+        "size_in_bytes": 169361
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d92167e0af4cd7172a3e0f4e9ee31aa8f1b7baf9c2114d953c5f095963fdb6a5",
+        "sha256_in_prefix": "d92167e0af4cd7172a3e0f4e9ee31aa8f1b7baf9c2114d953c5f095963fdb6a5",
+        "size_in_bytes": 897
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/mp_fork_bomb.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "4444ef202ffe71615242d39e644694cf449d832e29f7f8c2fc9a2e5a17581717",
+        "sha256_in_prefix": "4444ef202ffe71615242d39e644694cf449d832e29f7f8c2fc9a2e5a17581717",
+        "size_in_bytes": 499
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/mp_preload.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e8656803375549c758ffc4ca2a243bda559e4836e8f15a4e00a4b012a1c8cc28",
+        "sha256_in_prefix": "e8656803375549c758ffc4ca2a243bda559e4836e8f15a4e00a4b012a1c8cc28",
+        "size_in_bytes": 551
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_fork.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "58759cb2a86a24fc7bce5246218648d9fb2bafa938b55d8b24512a5ad0f4abb7",
+        "sha256_in_prefix": "58759cb2a86a24fc7bce5246218648d9fb2bafa938b55d8b24512a5ad0f4abb7",
+        "size_in_bytes": 604
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_forkserver.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ecd20ce99b8c5deadffce3eb54577cad4e034eef52e55736f14fa803ddc22404",
+        "sha256_in_prefix": "ecd20ce99b8c5deadffce3eb54577cad4e034eef52e55736f14fa803ddc22404",
+        "size_in_bytes": 553
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_main_handling.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "2c9a1fb9a2ed7c3488aa7b7c273e97294e5aa79c22d4998ceb0cbd699d3681ea",
+        "sha256_in_prefix": "2c9a1fb9a2ed7c3488aa7b7c273e97294e5aa79c22d4998ceb0cbd699d3681ea",
+        "size_in_bytes": 10712
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/__pycache__/test_multiprocessing_spawn.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a9ca5459f250d3a26dcaff0a942ced37a3bf66a8308a7f9944a413555d46cd56",
+        "sha256_in_prefix": "a9ca5459f250d3a26dcaff0a942ced37a3bf66a8308a7f9944a413555d46cd56",
+        "size_in_bytes": 447
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/mp_fork_bomb.py",
+        "path_type": "hardlink",
+        "sha256": "e800ce1338756971d9db568e1a804f84a720079b23d791bdb5056049ce86ae56",
+        "sha256_in_prefix": "e800ce1338756971d9db568e1a804f84a720079b23d791bdb5056049ce86ae56",
+        "size_in_bytes": 448
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/mp_preload.py",
+        "path_type": "hardlink",
+        "sha256": "723dad5223d042a1a13eb5c13bd2df698f25d03936f547651cc25d1beecb4e94",
+        "sha256_in_prefix": "723dad5223d042a1a13eb5c13bd2df698f25d03936f547651cc25d1beecb4e94",
+        "size_in_bytes": 351
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_fork.py",
+        "path_type": "hardlink",
+        "sha256": "07317a9a6b9bf250273866c917cf3c62b5a329dcdc8394cffafeb7a5c90a1aab",
+        "sha256_in_prefix": "07317a9a6b9bf250273866c917cf3c62b5a329dcdc8394cffafeb7a5c90a1aab",
+        "size_in_bytes": 479
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_forkserver.py",
+        "path_type": "hardlink",
+        "sha256": "69e7eac3df19e27ae2156c628dd42a27dc7588adf3375456e750dde4d3b85d45",
+        "sha256_in_prefix": "69e7eac3df19e27ae2156c628dd42a27dc7588adf3375456e750dde4d3b85d45",
+        "size_in_bytes": 394
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_main_handling.py",
+        "path_type": "hardlink",
+        "sha256": "9ad98dd0afaca6a64271954d2dffc7ae13f5f3afa49e963a79aa05a272f55385",
+        "sha256_in_prefix": "9ad98dd0afaca6a64271954d2dffc7ae13f5f3afa49e963a79aa05a272f55385",
+        "size_in_bytes": 12018
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/tests/test_multiprocessing_spawn.py",
+        "path_type": "hardlink",
+        "sha256": "8db9b8ff223f0f18f708097cdddc2a6cd043c213f228fb4f5bae69f4a9521960",
+        "sha256_in_prefix": "8db9b8ff223f0f18f708097cdddc2a6cd043c213f228fb4f5bae69f4a9521960",
+        "size_in_bytes": 279
+      },
+      {
+        "_path": "lib/python3.10/site-packages/multiprocess/util.py",
+        "path_type": "hardlink",
+        "sha256": "c05034d5d87e39d121b788b36da97c44066d29337e0508cc631f83ee11c13164",
+        "sha256_in_prefix": "c05034d5d87e39d121b788b36da97c44066d29337e0508cc631f83ee11c13164",
+        "size_in_bytes": 14011
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "12b17bb1d30840c5383346da6cf8a54c3772c93f864850024a0c1866d1d1727e",
+  "size": 224014,
+  "subdir": "linux-64",
+  "timestamp": 1653595641394,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/multiprocess-0.70.13-py310h5764c6d_1.tar.bz2",
+  "version": "0.70.13"
+}

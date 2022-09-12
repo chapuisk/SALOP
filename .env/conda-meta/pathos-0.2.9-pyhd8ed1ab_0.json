@@ -1,0 +1,633 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "dill >=0.3.5.1",
+    "multiprocess >=0.70.13",
+    "pox >=0.3.1",
+    "ppft >=1.7.6.5",
+    "python ==2.7.*|>=3.6"
+  ],
+  "extracted_package_dir": "/home/raphael/anaconda3/pkgs/pathos-0.2.9-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "bin/pathos_connect",
+    "bin/portpicker",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/LICENSE",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/METADATA",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/RECORD",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/WHEEL",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/pathos-0.2.9.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/pathos/__init__.py",
+    "lib/python3.10/site-packages/pathos/__main__.py",
+    "lib/python3.10/site-packages/pathos/_ppserver_config.py",
+    "lib/python3.10/site-packages/pathos/abstract_launcher.py",
+    "lib/python3.10/site-packages/pathos/connection.py",
+    "lib/python3.10/site-packages/pathos/core.py",
+    "lib/python3.10/site-packages/pathos/helpers/__init__.py",
+    "lib/python3.10/site-packages/pathos/helpers/mp_helper.py",
+    "lib/python3.10/site-packages/pathos/helpers/pp_helper.py",
+    "lib/python3.10/site-packages/pathos/hosts.py",
+    "lib/python3.10/site-packages/pathos/mp_map.py",
+    "lib/python3.10/site-packages/pathos/multiprocessing.py",
+    "lib/python3.10/site-packages/pathos/parallel.py",
+    "lib/python3.10/site-packages/pathos/pools.py",
+    "lib/python3.10/site-packages/pathos/portpicker.py",
+    "lib/python3.10/site-packages/pathos/pp.py",
+    "lib/python3.10/site-packages/pathos/pp_map.py",
+    "lib/python3.10/site-packages/pathos/profile.py",
+    "lib/python3.10/site-packages/pathos/python.py",
+    "lib/python3.10/site-packages/pathos/secure/__init__.py",
+    "lib/python3.10/site-packages/pathos/secure/connection.py",
+    "lib/python3.10/site-packages/pathos/secure/copier.py",
+    "lib/python3.10/site-packages/pathos/secure/tunnel.py",
+    "lib/python3.10/site-packages/pathos/selector.py",
+    "lib/python3.10/site-packages/pathos/serial.py",
+    "lib/python3.10/site-packages/pathos/server.py",
+    "lib/python3.10/site-packages/pathos/tests/__init__.py",
+    "lib/python3.10/site-packages/pathos/tests/__main__.py",
+    "lib/python3.10/site-packages/pathos/tests/test_decorate.py",
+    "lib/python3.10/site-packages/pathos/tests/test_join.py",
+    "lib/python3.10/site-packages/pathos/tests/test_map.py",
+    "lib/python3.10/site-packages/pathos/tests/test_mp.py",
+    "lib/python3.10/site-packages/pathos/tests/test_pp.py",
+    "lib/python3.10/site-packages/pathos/tests/test_star.py",
+    "lib/python3.10/site-packages/pathos/tests/test_with.py",
+    "lib/python3.10/site-packages/pathos/threading.py",
+    "lib/python3.10/site-packages/pathos/util.py",
+    "lib/python3.10/site-packages/pathos/xmlrpc/__init__.py",
+    "lib/python3.10/site-packages/pathos/xmlrpc/server.py",
+    "lib/python3.10/site-packages/pathos/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/_ppserver_config.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/abstract_launcher.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/connection.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/core.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/helpers/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/helpers/__pycache__/mp_helper.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/helpers/__pycache__/pp_helper.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/hosts.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/mp_map.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/multiprocessing.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/parallel.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/pools.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/portpicker.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/pp.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/pp_map.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/profile.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/python.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/secure/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/secure/__pycache__/connection.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/secure/__pycache__/copier.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/secure/__pycache__/tunnel.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/selector.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/serial.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/server.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/test_decorate.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/test_join.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/test_map.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/test_mp.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/test_pp.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/test_star.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/tests/__pycache__/test_with.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/threading.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/__pycache__/util.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/xmlrpc/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/pathos/xmlrpc/__pycache__/server.cpython-310.pyc"
+  ],
+  "fn": "pathos-0.2.9-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/raphael/anaconda3/pkgs/pathos-0.2.9-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "2c391fd048dcda2332245ea8f70d9c73",
+  "name": "pathos",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/raphael/anaconda3/pkgs/pathos-0.2.9-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/pathos_connect",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/pathos_1653487227329/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "58c081cd05508b00386fc27b97b15d7c96a632b6f6000f158dc2e299a4bf661e",
+        "sha256_in_prefix": "86e28da542e1a5482389444e45535c27fe2fcfdf23fff7ac80feee9f6f64f077",
+        "size_in_bytes": 6209
+      },
+      {
+        "_path": "python-scripts/portpicker",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/pathos_1653487227329/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac",
+        "sha256": "849e40d865e3607fa48a5c6c50c8b7deb7ed4cbedda458250fc34a0bb7e8931d",
+        "sha256_in_prefix": "caca6aeddc46a0f4f3e1c70b25bae459f910f7f593f6033427996d5d46f3c0cd",
+        "size_in_bytes": 674
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7af3414fed1e59b7b898ef122a76a7d8668775d95d0556c8ea76de44a5d9a197",
+        "sha256_in_prefix": "7af3414fed1e59b7b898ef122a76a7d8668775d95d0556c8ea76de44a5d9a197",
+        "size_in_bytes": 1790
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "a31f017140f2ca00847c7f8332ad9eac99a552538a3c17fc98c79f384c57603e",
+        "sha256_in_prefix": "a31f017140f2ca00847c7f8332ad9eac99a552538a3c17fc98c79f384c57603e",
+        "size_in_bytes": 11487
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "633a1f48757710a231f1a8c33659194078ecd802b67c417eebeb28e2f0f0569c",
+        "sha256_in_prefix": "633a1f48757710a231f1a8c33659194078ecd802b67c417eebeb28e2f0f0569c",
+        "size_in_bytes": 5858
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "1b5e87e00dc87a84269cead8578b9e6462928e18a95f1f3373c9eef451a5bcc0",
+        "sha256_in_prefix": "1b5e87e00dc87a84269cead8578b9e6462928e18a95f1f3373c9eef451a5bcc0",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "07fac1364bf94b092d7f5b810ed2a1fbad235dab2db31d68c3b6ad1fe5d1f69d",
+        "sha256_in_prefix": "07fac1364bf94b092d7f5b810ed2a1fbad235dab2db31d68c3b6ad1fe5d1f69d",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "site-packages/pathos-0.2.9.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "97c23f90f7693eba56fd42797e2a21dad2028c4189a7d2cd1b7649fa43ed1012",
+        "sha256_in_prefix": "97c23f90f7693eba56fd42797e2a21dad2028c4189a7d2cd1b7649fa43ed1012",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/pathos/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "acb2acad4d6657d1c70dd126276ab7634c9084066e67bbd0160a161fa2725485",
+        "sha256_in_prefix": "acb2acad4d6657d1c70dd126276ab7634c9084066e67bbd0160a161fa2725485",
+        "size_in_bytes": 13559
+      },
+      {
+        "_path": "site-packages/pathos/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "e5f4c33d9d48aa602b0db2952671fdb9a719d88b1feb4bbc9c27f683bdb58f2e",
+        "sha256_in_prefix": "e5f4c33d9d48aa602b0db2952671fdb9a719d88b1feb4bbc9c27f683bdb58f2e",
+        "size_in_bytes": 5962
+      },
+      {
+        "_path": "site-packages/pathos/_ppserver_config.py",
+        "path_type": "hardlink",
+        "sha256": "0e16087f55fe049aaa89a4b3b9381e49652802e29e5d3010900f6c78e77b92a7",
+        "sha256_in_prefix": "0e16087f55fe049aaa89a4b3b9381e49652802e29e5d3010900f6c78e77b92a7",
+        "size_in_bytes": 530
+      },
+      {
+        "_path": "site-packages/pathos/abstract_launcher.py",
+        "path_type": "hardlink",
+        "sha256": "a416723f114f2134c93e0ae17becc5d138dd32097936db75cfecdf99312866eb",
+        "sha256_in_prefix": "a416723f114f2134c93e0ae17becc5d138dd32097936db75cfecdf99312866eb",
+        "size_in_bytes": 10230
+      },
+      {
+        "_path": "site-packages/pathos/connection.py",
+        "path_type": "hardlink",
+        "sha256": "0ab5e3290e0d3c021dd2a1e6add24f5b3af6cc814c7d91ea2825eb8b4676a68b",
+        "sha256_in_prefix": "0ab5e3290e0d3c021dd2a1e6add24f5b3af6cc814c7d91ea2825eb8b4676a68b",
+        "size_in_bytes": 6771
+      },
+      {
+        "_path": "site-packages/pathos/core.py",
+        "path_type": "hardlink",
+        "sha256": "a206eea37fe83ada2fe17028bc5bd067c50cc549a94a5fe2d75700e124492384",
+        "sha256_in_prefix": "a206eea37fe83ada2fe17028bc5bd067c50cc549a94a5fe2d75700e124492384",
+        "size_in_bytes": 11163
+      },
+      {
+        "_path": "site-packages/pathos/helpers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "676231dc7905ab9b49cc2b15fa3363ab4925a631a7fc8a93c232be2a076f169b",
+        "sha256_in_prefix": "676231dc7905ab9b49cc2b15fa3363ab4925a631a7fc8a93c232be2a076f169b",
+        "size_in_bytes": 2364
+      },
+      {
+        "_path": "site-packages/pathos/helpers/mp_helper.py",
+        "path_type": "hardlink",
+        "sha256": "4116d1722f66101012b1408214044cbbda31ba506e72a27bd6ad18d9911c724c",
+        "sha256_in_prefix": "4116d1722f66101012b1408214044cbbda31ba506e72a27bd6ad18d9911c724c",
+        "size_in_bytes": 2866
+      },
+      {
+        "_path": "site-packages/pathos/helpers/pp_helper.py",
+        "path_type": "hardlink",
+        "sha256": "f2466f11cd26c906df35a8bc68bdfe0ee6b8ff1316de577dbfda4b766274dd19",
+        "sha256_in_prefix": "f2466f11cd26c906df35a8bc68bdfe0ee6b8ff1316de577dbfda4b766274dd19",
+        "size_in_bytes": 8615
+      },
+      {
+        "_path": "site-packages/pathos/hosts.py",
+        "path_type": "hardlink",
+        "sha256": "d1c49d73403842662ca4635ed278919632522dccfd664fd6e24465ace7ce5f3e",
+        "sha256_in_prefix": "d1c49d73403842662ca4635ed278919632522dccfd664fd6e24465ace7ce5f3e",
+        "size_in_bytes": 1332
+      },
+      {
+        "_path": "site-packages/pathos/mp_map.py",
+        "path_type": "hardlink",
+        "sha256": "b958597e5c80fe2095ebb90d0142ad41965447ac2c6cf5ec4743fc24234f9f29",
+        "sha256_in_prefix": "b958597e5c80fe2095ebb90d0142ad41965447ac2c6cf5ec4743fc24234f9f29",
+        "size_in_bytes": 2929
+      },
+      {
+        "_path": "site-packages/pathos/multiprocessing.py",
+        "path_type": "hardlink",
+        "sha256": "c316680b16efeaea2f11d3a5770c0706ad97e591ddaeb8095a5ab26e87341cf8",
+        "sha256_in_prefix": "c316680b16efeaea2f11d3a5770c0706ad97e591ddaeb8095a5ab26e87341cf8",
+        "size_in_bytes": 8606
+      },
+      {
+        "_path": "site-packages/pathos/parallel.py",
+        "path_type": "hardlink",
+        "sha256": "bb284aace7ac7b93e16aa5ccc2201f96fdf721c671f81e39d9b5f768fbd6e000",
+        "sha256_in_prefix": "bb284aace7ac7b93e16aa5ccc2201f96fdf721c671f81e39d9b5f768fbd6e000",
+        "size_in_bytes": 17665
+      },
+      {
+        "_path": "site-packages/pathos/pools.py",
+        "path_type": "hardlink",
+        "sha256": "23f38230df4b23aca21d382fc638fcd84d545a797e0f52119933a2104c88c80b",
+        "sha256_in_prefix": "23f38230df4b23aca21d382fc638fcd84d545a797e0f52119933a2104c88c80b",
+        "size_in_bytes": 1258
+      },
+      {
+        "_path": "site-packages/pathos/portpicker.py",
+        "path_type": "hardlink",
+        "sha256": "3369cc30ff582f75dd6e1672a8c80c7cb5e7d8334e8e2e9dfceb437a0b6efd84",
+        "sha256_in_prefix": "3369cc30ff582f75dd6e1672a8c80c7cb5e7d8334e8e2e9dfceb437a0b6efd84",
+        "size_in_bytes": 1948
+      },
+      {
+        "_path": "site-packages/pathos/pp.py",
+        "path_type": "hardlink",
+        "sha256": "c0551546e4b9cea1d63ba1d8068a97d4dddffe974ffc8716dc6499337a776820",
+        "sha256_in_prefix": "c0551546e4b9cea1d63ba1d8068a97d4dddffe974ffc8716dc6499337a776820",
+        "size_in_bytes": 691
+      },
+      {
+        "_path": "site-packages/pathos/pp_map.py",
+        "path_type": "hardlink",
+        "sha256": "a9855a90438ca66798160143c0562dee9c44c1da16c55672d7919fda3cdf63a0",
+        "sha256_in_prefix": "a9855a90438ca66798160143c0562dee9c44c1da16c55672d7919fda3cdf63a0",
+        "size_in_bytes": 7647
+      },
+      {
+        "_path": "site-packages/pathos/profile.py",
+        "path_type": "hardlink",
+        "sha256": "7ccd53201dbd27d211b62c5d315ddab584689ae15d91b79727a87fcc1a37c52c",
+        "sha256_in_prefix": "7ccd53201dbd27d211b62c5d315ddab584689ae15d91b79727a87fcc1a37c52c",
+        "size_in_bytes": 14208
+      },
+      {
+        "_path": "site-packages/pathos/python.py",
+        "path_type": "hardlink",
+        "sha256": "675ad88168689f7e99660048990c9ba9bb551c57e606e28993df424da15da5db",
+        "sha256_in_prefix": "675ad88168689f7e99660048990c9ba9bb551c57e606e28993df424da15da5db",
+        "size_in_bytes": 646
+      },
+      {
+        "_path": "site-packages/pathos/secure/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6c1dd9687d3d0788ef504d6beb90b3624b89fe5bf23fa1aa42af5cc1c71bb427",
+        "sha256_in_prefix": "6c1dd9687d3d0788ef504d6beb90b3624b89fe5bf23fa1aa42af5cc1c71bb427",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "site-packages/pathos/secure/connection.py",
+        "path_type": "hardlink",
+        "sha256": "22f2b423e645e8c52a2b011c09e8d65b78b94a69dc1e06d6bf7b56636538cc63",
+        "sha256_in_prefix": "22f2b423e645e8c52a2b011c09e8d65b78b94a69dc1e06d6bf7b56636538cc63",
+        "size_in_bytes": 4369
+      },
+      {
+        "_path": "site-packages/pathos/secure/copier.py",
+        "path_type": "hardlink",
+        "sha256": "3476b7d559e5b26a3c05db3415c506283b4d4d759236e95c01fa18e9ec020525",
+        "sha256_in_prefix": "3476b7d559e5b26a3c05db3415c506283b4d4d759236e95c01fa18e9ec020525",
+        "size_in_bytes": 4194
+      },
+      {
+        "_path": "site-packages/pathos/secure/tunnel.py",
+        "path_type": "hardlink",
+        "sha256": "93767d2f36e979cdd676ec94a939aabd6628402306ea7a75460dac403801bc87",
+        "sha256_in_prefix": "93767d2f36e979cdd676ec94a939aabd6628402306ea7a75460dac403801bc87",
+        "size_in_bytes": 5139
+      },
+      {
+        "_path": "site-packages/pathos/selector.py",
+        "path_type": "hardlink",
+        "sha256": "12251497d88151732ce35edc18c4bf6f4e73a42a0ac706479ea37d5c7a31dc2d",
+        "sha256_in_prefix": "12251497d88151732ce35edc18c4bf6f4e73a42a0ac706479ea37d5c7a31dc2d",
+        "size_in_bytes": 6002
+      },
+      {
+        "_path": "site-packages/pathos/serial.py",
+        "path_type": "hardlink",
+        "sha256": "9e81b0d22306566fcf4a21915fd7e70434a3bf6e1ab5e51494b7ba4bec666ee3",
+        "sha256_in_prefix": "9e81b0d22306566fcf4a21915fd7e70434a3bf6e1ab5e51494b7ba4bec666ee3",
+        "size_in_bytes": 5172
+      },
+      {
+        "_path": "site-packages/pathos/server.py",
+        "path_type": "hardlink",
+        "sha256": "9d1f716df85a7de2edcd4c23e53f4624410ab9051e05d1aa27d258389fd5a61a",
+        "sha256_in_prefix": "9d1f716df85a7de2edcd4c23e53f4624410ab9051e05d1aa27d258389fd5a61a",
+        "size_in_bytes": 1987
+      },
+      {
+        "_path": "site-packages/pathos/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "10ccd520aa6694eb5a877ce28205603024948fa9a66ea733e4d6221e85b967df",
+        "sha256_in_prefix": "10ccd520aa6694eb5a877ce28205603024948fa9a66ea733e4d6221e85b967df",
+        "size_in_bytes": 507
+      },
+      {
+        "_path": "site-packages/pathos/tests/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "4049423ce3a01a77906494322fab1e213c7dac966f9fb5bc80f5d20f97b8fb5e",
+        "sha256_in_prefix": "4049423ce3a01a77906494322fab1e213c7dac966f9fb5bc80f5d20f97b8fb5e",
+        "size_in_bytes": 837
+      },
+      {
+        "_path": "site-packages/pathos/tests/test_decorate.py",
+        "path_type": "hardlink",
+        "sha256": "41312f09d6cdfe49cf203776aa6e4b2f187b71b2c4e78f187215b0cf170f061e",
+        "sha256_in_prefix": "41312f09d6cdfe49cf203776aa6e4b2f187b71b2c4e78f187215b0cf170f061e",
+        "size_in_bytes": 1897
+      },
+      {
+        "_path": "site-packages/pathos/tests/test_join.py",
+        "path_type": "hardlink",
+        "sha256": "8104625fa2a5fe62e91b98fd8e143bbdd2e03ee2ada345959418692b251de78a",
+        "sha256_in_prefix": "8104625fa2a5fe62e91b98fd8e143bbdd2e03ee2ada345959418692b251de78a",
+        "size_in_bytes": 7186
+      },
+      {
+        "_path": "site-packages/pathos/tests/test_map.py",
+        "path_type": "hardlink",
+        "sha256": "cae4ccbce01853ee6274c317a9bbb33033fbde2d9ab145d6ffc13d7d2451028a",
+        "sha256_in_prefix": "cae4ccbce01853ee6274c317a9bbb33033fbde2d9ab145d6ffc13d7d2451028a",
+        "size_in_bytes": 2170
+      },
+      {
+        "_path": "site-packages/pathos/tests/test_mp.py",
+        "path_type": "hardlink",
+        "sha256": "540f6769e8cfd14191432eb9c8e721a13e5bd6f9922bb20f757ef1936d372e47",
+        "sha256_in_prefix": "540f6769e8cfd14191432eb9c8e721a13e5bd6f9922bb20f757ef1936d372e47",
+        "size_in_bytes": 1152
+      },
+      {
+        "_path": "site-packages/pathos/tests/test_pp.py",
+        "path_type": "hardlink",
+        "sha256": "c0c04ef149294d6beec46babb54f0b01de81a23596c6cf78bfb13c02d2e7133d",
+        "sha256_in_prefix": "c0c04ef149294d6beec46babb54f0b01de81a23596c6cf78bfb13c02d2e7133d",
+        "size_in_bytes": 1041
+      },
+      {
+        "_path": "site-packages/pathos/tests/test_star.py",
+        "path_type": "hardlink",
+        "sha256": "5849fe40c55bf842d09a2e2778b23064d7b9484e3c06b7293d494eecdd68dc2f",
+        "sha256_in_prefix": "5849fe40c55bf842d09a2e2778b23064d7b9484e3c06b7293d494eecdd68dc2f",
+        "size_in_bytes": 4908
+      },
+      {
+        "_path": "site-packages/pathos/tests/test_with.py",
+        "path_type": "hardlink",
+        "sha256": "8923a6f9f7bd7a55c9740b10034ebd0bd57cedeae8818a4a3c942dce9d85929a",
+        "sha256_in_prefix": "8923a6f9f7bd7a55c9740b10034ebd0bd57cedeae8818a4a3c942dce9d85929a",
+        "size_in_bytes": 1827
+      },
+      {
+        "_path": "site-packages/pathos/threading.py",
+        "path_type": "hardlink",
+        "sha256": "c1a81697178e32fc6b40523d6e3e7e428a88f2c7357ff2b8e8238da0e9cb1d0c",
+        "sha256_in_prefix": "c1a81697178e32fc6b40523d6e3e7e428a88f2c7357ff2b8e8238da0e9cb1d0c",
+        "size_in_bytes": 8416
+      },
+      {
+        "_path": "site-packages/pathos/util.py",
+        "path_type": "hardlink",
+        "sha256": "832f5ea07dc76c02f5b10ccea06cba44974ce40811676d753ab8362ddc8083ee",
+        "sha256_in_prefix": "832f5ea07dc76c02f5b10ccea06cba44974ce40811676d753ab8362ddc8083ee",
+        "size_in_bytes": 2436
+      },
+      {
+        "_path": "site-packages/pathos/xmlrpc/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6934f60432e9c2cc5e80c86eb91355f93eca477436dbbf0d6376bb4ef6047d02",
+        "sha256_in_prefix": "6934f60432e9c2cc5e80c86eb91355f93eca477436dbbf0d6376bb4ef6047d02",
+        "size_in_bytes": 55
+      },
+      {
+        "_path": "site-packages/pathos/xmlrpc/server.py",
+        "path_type": "hardlink",
+        "sha256": "d6f6935a056d5f2c98408b17f79c7a74cb5fc6f30f36d301a84c506471813ed6",
+        "sha256_in_prefix": "d6f6935a056d5f2c98408b17f79c7a74cb5fc6f30f36d301a84c506471813ed6",
+        "size_in_bytes": 8855
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/_ppserver_config.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/abstract_launcher.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/connection.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/core.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/helpers/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/helpers/__pycache__/mp_helper.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/helpers/__pycache__/pp_helper.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/hosts.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/mp_map.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/multiprocessing.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/parallel.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/pools.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/portpicker.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/pp.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/pp_map.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/profile.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/python.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/secure/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/secure/__pycache__/connection.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/secure/__pycache__/copier.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/secure/__pycache__/tunnel.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/selector.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/serial.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/server.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/test_decorate.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/test_join.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/test_map.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/test_mp.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/test_pp.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/test_star.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/tests/__pycache__/test_with.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/threading.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/__pycache__/util.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/xmlrpc/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/pathos/xmlrpc/__pycache__/server.cpython-310.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "eeb9a87660a39f4bf09d776a99757cf661ea2105fc8408599c9a4ba32dbcf233",
+  "size": 49903,
+  "subdir": "noarch",
+  "timestamp": 1653487322187,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pathos-0.2.9-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.2.9"
+}

@@ -1,0 +1,590 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "python >=3.5"
+  ],
+  "extracted_package_dir": "/home/raphael/anaconda3/pkgs/dill-0.3.5.1-pyhd8ed1ab_0",
+  "features": "",
+  "files": [
+    "bin/get_objgraph",
+    "bin/undill",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/INSTALLER",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/LICENSE",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/METADATA",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/RECORD",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/REQUESTED",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/WHEEL",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/direct_url.json",
+    "lib/python3.10/site-packages/dill-0.3.5.1.dist-info/top_level.txt",
+    "lib/python3.10/site-packages/dill/__diff.py",
+    "lib/python3.10/site-packages/dill/__init__.py",
+    "lib/python3.10/site-packages/dill/_dill.py",
+    "lib/python3.10/site-packages/dill/_objects.py",
+    "lib/python3.10/site-packages/dill/_shims.py",
+    "lib/python3.10/site-packages/dill/detect.py",
+    "lib/python3.10/site-packages/dill/objtypes.py",
+    "lib/python3.10/site-packages/dill/pointers.py",
+    "lib/python3.10/site-packages/dill/settings.py",
+    "lib/python3.10/site-packages/dill/source.py",
+    "lib/python3.10/site-packages/dill/temp.py",
+    "lib/python3.10/site-packages/dill/tests/__init__.py",
+    "lib/python3.10/site-packages/dill/tests/__main__.py",
+    "lib/python3.10/site-packages/dill/tests/test_check.py",
+    "lib/python3.10/site-packages/dill/tests/test_classdef.py",
+    "lib/python3.10/site-packages/dill/tests/test_detect.py",
+    "lib/python3.10/site-packages/dill/tests/test_dictviews.py",
+    "lib/python3.10/site-packages/dill/tests/test_diff.py",
+    "lib/python3.10/site-packages/dill/tests/test_extendpickle.py",
+    "lib/python3.10/site-packages/dill/tests/test_fglobals.py",
+    "lib/python3.10/site-packages/dill/tests/test_file.py",
+    "lib/python3.10/site-packages/dill/tests/test_functions.py",
+    "lib/python3.10/site-packages/dill/tests/test_functors.py",
+    "lib/python3.10/site-packages/dill/tests/test_mixins.py",
+    "lib/python3.10/site-packages/dill/tests/test_module.py",
+    "lib/python3.10/site-packages/dill/tests/test_moduledict.py",
+    "lib/python3.10/site-packages/dill/tests/test_nested.py",
+    "lib/python3.10/site-packages/dill/tests/test_objects.py",
+    "lib/python3.10/site-packages/dill/tests/test_properties.py",
+    "lib/python3.10/site-packages/dill/tests/test_recursive.py",
+    "lib/python3.10/site-packages/dill/tests/test_restricted.py",
+    "lib/python3.10/site-packages/dill/tests/test_selected.py",
+    "lib/python3.10/site-packages/dill/tests/test_session.py",
+    "lib/python3.10/site-packages/dill/tests/test_source.py",
+    "lib/python3.10/site-packages/dill/tests/test_temp.py",
+    "lib/python3.10/site-packages/dill/tests/test_weakref.py",
+    "lib/python3.10/site-packages/dill/__pycache__/__diff.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/_dill.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/_objects.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/_shims.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/detect.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/objtypes.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/pointers.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/settings.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/source.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/__pycache__/temp.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/__init__.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/__main__.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_check.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_classdef.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_detect.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_dictviews.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_diff.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_extendpickle.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_fglobals.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_file.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_functions.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_functors.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_mixins.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_module.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_moduledict.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_nested.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_objects.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_properties.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_recursive.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_restricted.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_selected.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_session.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_source.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_temp.cpython-310.pyc",
+    "lib/python3.10/site-packages/dill/tests/__pycache__/test_weakref.cpython-310.pyc"
+  ],
+  "fn": "dill-0.3.5.1-pyhd8ed1ab_0.tar.bz2",
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "link": {
+    "source": "/home/raphael/anaconda3/pkgs/dill-0.3.5.1-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "d713e993cf5e84bfe522ca1520b095b3",
+  "name": "dill",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/raphael/anaconda3/pkgs/dill-0.3.5.1-pyhd8ed1ab_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "python-scripts/get_objgraph",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/dill_1653058582944/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "1326a384a17e44a7262a0358ffed6e943187faf5cb6a9d406fb8721a4a0716cd",
+        "sha256_in_prefix": "bf2190a905e4e4c3e22f47620080858f43f2bc70fca13afb44a291663ed58cc8",
+        "size_in_bytes": 1901
+      },
+      {
+        "_path": "python-scripts/undill",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/dill_1653058582944/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeh",
+        "sha256": "182d88d987dcd3475bc49886c4a5d19a7520581506c3c7c2b0955c471e76c696",
+        "sha256_in_prefix": "b1ac370c73734e172d3781c4d2a5e9f5de14b4f13894e7c7f35e018cd9db821e",
+        "size_in_bytes": 837
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7af3414fed1e59b7b898ef122a76a7d8668775d95d0556c8ea76de44a5d9a197",
+        "sha256_in_prefix": "7af3414fed1e59b7b898ef122a76a7d8668775d95d0556c8ea76de44a5d9a197",
+        "size_in_bytes": 1790
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "b4b4993d73c1ecbf05064cbda784502974bf9cf8ba54af0155107610b948aa81",
+        "sha256_in_prefix": "b4b4993d73c1ecbf05064cbda784502974bf9cf8ba54af0155107610b948aa81",
+        "size_in_bytes": 9725
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d1ef9a8bbae4f17d5d5adbdb333869ab41a3bff9174a1e392205f2e9724ea832",
+        "sha256_in_prefix": "d1ef9a8bbae4f17d5d5adbdb333869ab41a3bff9174a1e392205f2e9724ea832",
+        "size_in_bytes": 5568
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "sha256_in_prefix": "cfd8f4c406bf26650a3299b3ef62b464600b48cfe7fb04159866e5797c765478",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "84dfa0bc11cfde592ff3d5a329d38a77d70dc5ebdbd77675008519c5dc01965d",
+        "sha256_in_prefix": "84dfa0bc11cfde592ff3d5a329d38a77d70dc5ebdbd77675008519c5dc01965d",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "site-packages/dill-0.3.5.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "1cb488c9822343326206fb37ffed7a9ed7b31378fa9961935b40d3d710dded7d",
+        "sha256_in_prefix": "1cb488c9822343326206fb37ffed7a9ed7b31378fa9961935b40d3d710dded7d",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/dill/__diff.py",
+        "path_type": "hardlink",
+        "sha256": "eba5786378c26572fbaa90abc69d849af93c5d6f9352a81ca3f0f891d8efb2ee",
+        "sha256_in_prefix": "eba5786378c26572fbaa90abc69d849af93c5d6f9352a81ca3f0f891d8efb2ee",
+        "size_in_bytes": 7211
+      },
+      {
+        "_path": "site-packages/dill/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "871a182b2746153acd527400ad62ab33f213cbcdf1580776d1f8e3810acaeaf5",
+        "sha256_in_prefix": "871a182b2746153acd527400ad62ab33f213cbcdf1580776d1f8e3810acaeaf5",
+        "size_in_bytes": 13437
+      },
+      {
+        "_path": "site-packages/dill/_dill.py",
+        "path_type": "hardlink",
+        "sha256": "91cddfc948194195b16bfea73640913bccae995bcc8b3074d4ffd2b54eba3135",
+        "sha256_in_prefix": "91cddfc948194195b16bfea73640913bccae995bcc8b3074d4ffd2b54eba3135",
+        "size_in_bytes": 81628
+      },
+      {
+        "_path": "site-packages/dill/_objects.py",
+        "path_type": "hardlink",
+        "sha256": "3a36b3d7f806ad37a04526021fffae57c77746f2d71b035d24a8ada9c8d3649a",
+        "sha256_in_prefix": "3a36b3d7f806ad37a04526021fffae57c77746f2d71b035d24a8ada9c8d3649a",
+        "size_in_bytes": 20432
+      },
+      {
+        "_path": "site-packages/dill/_shims.py",
+        "path_type": "hardlink",
+        "sha256": "47343ca4637ef80b4e739aa7944a6b8dc54fbe9893efd43bed376d572976d868",
+        "sha256_in_prefix": "47343ca4637ef80b4e739aa7944a6b8dc54fbe9893efd43bed376d572976d868",
+        "size_in_bytes": 9730
+      },
+      {
+        "_path": "site-packages/dill/detect.py",
+        "path_type": "hardlink",
+        "sha256": "aa96872573163249450cebab172c8de4f2d4824a7fc03da7aba69cc8436a2953",
+        "sha256_in_prefix": "aa96872573163249450cebab172c8de4f2d4824a7fc03da7aba69cc8436a2953",
+        "size_in_bytes": 12336
+      },
+      {
+        "_path": "site-packages/dill/objtypes.py",
+        "path_type": "hardlink",
+        "sha256": "97795f9c8a31e982505cdfa45de8e56a3b9bbbeac001f67c6a5405ef79765775",
+        "sha256_in_prefix": "97795f9c8a31e982505cdfa45de8e56a3b9bbbeac001f67c6a5405ef79765775",
+        "size_in_bytes": 736
+      },
+      {
+        "_path": "site-packages/dill/pointers.py",
+        "path_type": "hardlink",
+        "sha256": "ecd222b4590bf75674fbf9130475c612a2fcb1e23da96568b856f29200e5714c",
+        "sha256_in_prefix": "ecd222b4590bf75674fbf9130475c612a2fcb1e23da96568b856f29200e5714c",
+        "size_in_bytes": 4467
+      },
+      {
+        "_path": "site-packages/dill/settings.py",
+        "path_type": "hardlink",
+        "sha256": "59a6b9ecf2dc88ca87cd584590610f98e6dec1e2d7aee0e5f3ab6c597ba16fd6",
+        "sha256_in_prefix": "59a6b9ecf2dc88ca87cd584590610f98e6dec1e2d7aee0e5f3ab6c597ba16fd6",
+        "size_in_bytes": 719
+      },
+      {
+        "_path": "site-packages/dill/source.py",
+        "path_type": "hardlink",
+        "sha256": "2ba19db3859b01ad41cafef25fecaa6cefe78ddb7f0872d8c1caf63625694043",
+        "sha256_in_prefix": "2ba19db3859b01ad41cafef25fecaa6cefe78ddb7f0872d8c1caf63625694043",
+        "size_in_bytes": 44917
+      },
+      {
+        "_path": "site-packages/dill/temp.py",
+        "path_type": "hardlink",
+        "sha256": "ca157e6a05da1307837f3cc554d2500b343ca2c4dee32c02be84a3a427edf8b3",
+        "sha256_in_prefix": "ca157e6a05da1307837f3cc554d2500b343ca2c4dee32c02be84a3a427edf8b3",
+        "size_in_bytes": 8242
+      },
+      {
+        "_path": "site-packages/dill/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bd969b4e3467c1868dfafdee2f67c906a2aa8f44fbffd3a6c32eb72528a0bd30",
+        "sha256_in_prefix": "bd969b4e3467c1868dfafdee2f67c906a2aa8f44fbffd3a6c32eb72528a0bd30",
+        "size_in_bytes": 501
+      },
+      {
+        "_path": "site-packages/dill/tests/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "971481396429afc0962eb96bc191e120ec12e5b6ef9d4d30cd3cf0127269155b",
+        "sha256_in_prefix": "971481396429afc0962eb96bc191e120ec12e5b6ef9d4d30cd3cf0127269155b",
+        "size_in_bytes": 834
+      },
+      {
+        "_path": "site-packages/dill/tests/test_check.py",
+        "path_type": "hardlink",
+        "sha256": "6a8aa7f2219a27fbf980fdb0acc48341e12bdd02dbbaf90046fec53c0908d7f5",
+        "sha256_in_prefix": "6a8aa7f2219a27fbf980fdb0acc48341e12bdd02dbbaf90046fec53c0908d7f5",
+        "size_in_bytes": 1278
+      },
+      {
+        "_path": "site-packages/dill/tests/test_classdef.py",
+        "path_type": "hardlink",
+        "sha256": "d609333be45eea6d0bbf3ac429b75d84f5166ced8d39d6c28015c30c78cfbaf3",
+        "sha256_in_prefix": "d609333be45eea6d0bbf3ac429b75d84f5166ced8d39d6c28015c30c78cfbaf3",
+        "size_in_bytes": 6944
+      },
+      {
+        "_path": "site-packages/dill/tests/test_detect.py",
+        "path_type": "hardlink",
+        "sha256": "6eda10289f8ae23789966bc6a089136856a4ee51cce0eca09603dd6c9f3212c7",
+        "sha256_in_prefix": "6eda10289f8ae23789966bc6a089136856a4ee51cce0eca09603dd6c9f3212c7",
+        "size_in_bytes": 4143
+      },
+      {
+        "_path": "site-packages/dill/tests/test_dictviews.py",
+        "path_type": "hardlink",
+        "sha256": "fc0dc388490ecfc698b7c5d643180c623b0c58ea1feaa4ce8d9ac1ed62ff56de",
+        "sha256_in_prefix": "fc0dc388490ecfc698b7c5d643180c623b0c58ea1feaa4ce8d9ac1ed62ff56de",
+        "size_in_bytes": 1240
+      },
+      {
+        "_path": "site-packages/dill/tests/test_diff.py",
+        "path_type": "hardlink",
+        "sha256": "452d67c746a95d47bc8caf96dc1ec4d254b21dc43133a7ea0f91965360336ad5",
+        "sha256_in_prefix": "452d67c746a95d47bc8caf96dc1ec4d254b21dc43133a7ea0f91965360336ad5",
+        "size_in_bytes": 2761
+      },
+      {
+        "_path": "site-packages/dill/tests/test_extendpickle.py",
+        "path_type": "hardlink",
+        "sha256": "2edaffa648ed13480506e330c76b7e1b96895f45d48be7cb8b16d752dccab12f",
+        "sha256_in_prefix": "2edaffa648ed13480506e330c76b7e1b96895f45d48be7cb8b16d752dccab12f",
+        "size_in_bytes": 1368
+      },
+      {
+        "_path": "site-packages/dill/tests/test_fglobals.py",
+        "path_type": "hardlink",
+        "sha256": "6b7c4685c284a7b972dd80c4d732932f4356b69e87cfb3669820ffd883c30cb0",
+        "sha256_in_prefix": "6b7c4685c284a7b972dd80c4d732932f4356b69e87cfb3669820ffd883c30cb0",
+        "size_in_bytes": 1679
+      },
+      {
+        "_path": "site-packages/dill/tests/test_file.py",
+        "path_type": "hardlink",
+        "sha256": "5c2b76bd84d3bea843ac8fb0f772016c8a2ec54d128d878caadcbf2b6a51fcb3",
+        "sha256_in_prefix": "5c2b76bd84d3bea843ac8fb0f772016c8a2ec54d128d878caadcbf2b6a51fcb3",
+        "size_in_bytes": 13642
+      },
+      {
+        "_path": "site-packages/dill/tests/test_functions.py",
+        "path_type": "hardlink",
+        "sha256": "0ea0508fdba75e037c967343701e820436b7b848b416c27148c69c59a8aaa195",
+        "sha256_in_prefix": "0ea0508fdba75e037c967343701e820436b7b848b416c27148c69c59a8aaa195",
+        "size_in_bytes": 2745
+      },
+      {
+        "_path": "site-packages/dill/tests/test_functors.py",
+        "path_type": "hardlink",
+        "sha256": "49cf67a489768d36885a2f50ff544fdfb9a12e8d62a5aa6296b28df0f7bd2730",
+        "sha256_in_prefix": "49cf67a489768d36885a2f50ff544fdfb9a12e8d62a5aa6296b28df0f7bd2730",
+        "size_in_bytes": 930
+      },
+      {
+        "_path": "site-packages/dill/tests/test_mixins.py",
+        "path_type": "hardlink",
+        "sha256": "a151edbf55b7bfb560a6204ab49211d67a9ad83ea80cae81af8cdb21f56e5ce2",
+        "sha256_in_prefix": "a151edbf55b7bfb560a6204ab49211d67a9ad83ea80cae81af8cdb21f56e5ce2",
+        "size_in_bytes": 4007
+      },
+      {
+        "_path": "site-packages/dill/tests/test_module.py",
+        "path_type": "hardlink",
+        "sha256": "1ca9690e7d0b5ba6d9d83e10bfdb0902d89a12f5ebf662e5f5ad63cd8b53b780",
+        "sha256_in_prefix": "1ca9690e7d0b5ba6d9d83e10bfdb0902d89a12f5ebf662e5f5ad63cd8b53b780",
+        "size_in_bytes": 1973
+      },
+      {
+        "_path": "site-packages/dill/tests/test_moduledict.py",
+        "path_type": "hardlink",
+        "sha256": "190fa0ac7b89975bb011aaeb8551688b336fc5c7d1e694090cb1137e38f8f353",
+        "sha256_in_prefix": "190fa0ac7b89975bb011aaeb8551688b336fc5c7d1e694090cb1137e38f8f353",
+        "size_in_bytes": 1182
+      },
+      {
+        "_path": "site-packages/dill/tests/test_nested.py",
+        "path_type": "hardlink",
+        "sha256": "e4c2fda743a180823d3ffcb8c1a4b0557dcb5f0877f2e6a5d3dba34ae2b0869c",
+        "sha256_in_prefix": "e4c2fda743a180823d3ffcb8c1a4b0557dcb5f0877f2e6a5d3dba34ae2b0869c",
+        "size_in_bytes": 3134
+      },
+      {
+        "_path": "site-packages/dill/tests/test_objects.py",
+        "path_type": "hardlink",
+        "sha256": "cc9b4b05ead83a605af5330c8303892e6c26fb1bd76742041215c3772e5586f1",
+        "sha256_in_prefix": "cc9b4b05ead83a605af5330c8303892e6c26fb1bd76742041215c3772e5586f1",
+        "size_in_bytes": 1779
+      },
+      {
+        "_path": "site-packages/dill/tests/test_properties.py",
+        "path_type": "hardlink",
+        "sha256": "d66051ac879802eff8c75e2f88eb4df2e31e79f43c670bfa3afbeedc43c383d8",
+        "sha256_in_prefix": "d66051ac879802eff8c75e2f88eb4df2e31e79f43c670bfa3afbeedc43c383d8",
+        "size_in_bytes": 1346
+      },
+      {
+        "_path": "site-packages/dill/tests/test_recursive.py",
+        "path_type": "hardlink",
+        "sha256": "3ef4f2d517d5a576d476d528f830614fdaeb3507c7798de42297c75024959406",
+        "sha256_in_prefix": "3ef4f2d517d5a576d476d528f830614fdaeb3507c7798de42297c75024959406",
+        "size_in_bytes": 4209
+      },
+      {
+        "_path": "site-packages/dill/tests/test_restricted.py",
+        "path_type": "hardlink",
+        "sha256": "7dc11b35f2db6f56abe04b91fcda7d4283aa7672de4685d24179c832fa7bdcb8",
+        "sha256_in_prefix": "7dc11b35f2db6f56abe04b91fcda7d4283aa7672de4685d24179c832fa7bdcb8",
+        "size_in_bytes": 783
+      },
+      {
+        "_path": "site-packages/dill/tests/test_selected.py",
+        "path_type": "hardlink",
+        "sha256": "63a53b0f8265351c5758a4f333f4081a348fbbc7507d9079548268069945db2d",
+        "sha256_in_prefix": "63a53b0f8265351c5758a4f333f4081a348fbbc7507d9079548268069945db2d",
+        "size_in_bytes": 2533
+      },
+      {
+        "_path": "site-packages/dill/tests/test_session.py",
+        "path_type": "hardlink",
+        "sha256": "92e5f6c8e92177e3f5d25feb2b8c2c95e2aa3027fb2a95199e7cb71559c900eb",
+        "sha256_in_prefix": "92e5f6c8e92177e3f5d25feb2b8c2c95e2aa3027fb2a95199e7cb71559c900eb",
+        "size_in_bytes": 8741
+      },
+      {
+        "_path": "site-packages/dill/tests/test_source.py",
+        "path_type": "hardlink",
+        "sha256": "dcadb22edb37d452abb80b27becffc5bf55e37c1024bacb8a6542d2ae836a132",
+        "sha256_in_prefix": "dcadb22edb37d452abb80b27becffc5bf55e37c1024bacb8a6542d2ae836a132",
+        "size_in_bytes": 6375
+      },
+      {
+        "_path": "site-packages/dill/tests/test_temp.py",
+        "path_type": "hardlink",
+        "sha256": "c3667e183871cf71b1d635cc5a99c4d7bdbcb3b8b47867d7c1cd553561a5d4e4",
+        "sha256_in_prefix": "c3667e183871cf71b1d635cc5a99c4d7bdbcb3b8b47867d7c1cd553561a5d4e4",
+        "size_in_bytes": 2619
+      },
+      {
+        "_path": "site-packages/dill/tests/test_weakref.py",
+        "path_type": "hardlink",
+        "sha256": "4bea7f15b8b228fcdda5632c4c0f2d57e9e560a3012eb82cff276620d70717dc",
+        "sha256_in_prefix": "4bea7f15b8b228fcdda5632c4c0f2d57e9e560a3012eb82cff276620d70717dc",
+        "size_in_bytes": 2056
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/__diff.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/_dill.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/_objects.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/_shims.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/detect.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/objtypes.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/pointers.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/settings.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/source.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/__pycache__/temp.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/__main__.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_check.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_classdef.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_detect.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_dictviews.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_diff.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_extendpickle.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_fglobals.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_file.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_functions.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_functors.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_mixins.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_module.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_moduledict.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_nested.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_objects.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_properties.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_recursive.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_restricted.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_selected.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_session.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_source.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_temp.cpython-310.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.10/site-packages/dill/tests/__pycache__/test_weakref.cpython-310.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "b775b17b9bc34c8b0c8d36ad89041ccc4c763dbbbc1e16a577e6fe7a96e12a84",
+  "size": 73007,
+  "subdir": "noarch",
+  "timestamp": 1653058665472,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/dill-0.3.5.1-pyhd8ed1ab_0.tar.bz2",
+  "version": "0.3.5.1"
+}
