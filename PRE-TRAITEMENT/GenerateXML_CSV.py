@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 import numpy as np
 from SALib.sample import saltelli
 import SALib.sample.morris
+import pandas as pd
 
 """
 This is the Generator XML file for Sensitivity Analysis. This file will generate XML according with the number of samples required and the number of machines to use.
@@ -37,6 +38,8 @@ def createXmlFiles(experimentName: str, gamlFilePath: str, saltelli_values, para
     hasCondition = False
     xmlNumber = autoIndexSelector(xmlFilePath)
     localSeed = seed
+    var=seed
+    print(len(saltelli_values[parametersList[0]["name"]]))
 
     #Generate the good path
     tmp= xmlFilePath.split("/.*/")
@@ -47,12 +50,14 @@ def createXmlFiles(experimentName: str, gamlFilePath: str, saltelli_values, para
     # Number of replication for every simulation
     for i in range(replication):
         # Every dot in the explorable universe
+        #if(localSeed==len(saltelli_values[parametersList[0]["name"]])):
+         #   localSeed=0
         for k in range(len(saltelli_values[parametersList[0]["name"]])):
             #print(k)
             resultSubFolder = ""
 
             simu = ET.SubElement(root, "Simulation", {
-                "id"	: str( localSeed - seed ),
+                "id"	: str( var - seed),
                 "seed"		: str( localSeed ),
                 "experiment": experimentName,
                 "sourcePath": new_str+gamlFilePath
@@ -114,8 +119,9 @@ def createXmlFiles(experimentName: str, gamlFilePath: str, saltelli_values, para
                 xmlNumber = xmlNumber + 1
 
             # Prepare for next loop
-            localSeed = localSeed +1
-
+            #localSeed = localSeed +1
+            var = var + 1
+        localSeed = localSeed + 1
         # Reset universe space list without duplicated simulations
         if i == 0 and len(new_allParamValues) > 0 and hasCondition:
             allParamValues = new_allParamValues
@@ -241,7 +247,7 @@ def register_problem(problem):
 if __name__ == '__main__':
     # 0 _ Get/Set parameters
     #
-    parser = argparse.ArgumentParser(usage='$ python3 %(prog)s [options] -f INT -xml <experiment name> /path/to/file.gaml /path/to/file.xml')
+    parser = argparse.ArgumentParser(usage='$ python3 %(prog)s [options] -f INT -c /path/to/CSV.csv -xml <experiment name> /path/to/file.gaml /path/to/file.xml')
     parser.add_argument('-r', '--replication', metavar='INT',
                         help="Number of replication for each parameter space (default: 1)", default=1, type=int)
     parser.add_argument('-s', '--split', metavar='INT', help="Number of machines (or nodes for HPC) (default: 1)",
@@ -254,6 +260,8 @@ if __name__ == '__main__':
                         help='Classical xml arguments', required=True)
     parser.add_argument('-sample', metavar='INT',help="Number of sampling (default:128)", default=128,type=int)
     parser.add_argument('-analysis',metavar='STR',help="Method analysis (default:sobol), can be: sobol/morris", default="sobol",type=str)
+    parser.add_argument('-c', '--csv', metavar='/path/to/CSV.csv', help="Path to CSV file", type=str,
+                        required=True)
     args = parser.parse_args()
 
     # 0 _ Set used variables
@@ -261,6 +269,7 @@ if __name__ == '__main__':
     expName, gamlFilePath, xmlFilePath = args.xml
     nb_sample=args.sample
     type_analysis=args.analysis
+    path_csv=args.csv
     parametersList= []
 
     print("=== Reading .gaml file...\n")
@@ -294,73 +303,27 @@ if __name__ == '__main__':
     }
     register_problem(problem)
 
-    param_values=None
-    if type_analysis=="sobol":
-        #Saltelli sampling
-        print("=== Sobol sampling starting...\n")
-        param_values = saltelli.sample(problem, nb_sample)
-        #print(param_values)
-    else:
-        if type_analysis=="morris":
-            print("=== Morris sampling starting...\n")
-            param_values = SALib.sample.morris.sample(problem, nb_sample, num_levels=4)
-
-
-    saltelli_values={}
-    i=0
-    for parameter in parametersList:
-        if parameter["value_among"] !="":
-            if parameter["type"]=="BOOLEAN":
-                tmp_values=[]
-                for value in param_values[:,i]:
-                    if value >=0.5:
-                        tmp_values.append(1)
-                    else:
-                        tmp_values.append(0)
-            else:
-                tmp_values=[]
-                stringtemp=parameter["value_among"]
-                stringtemp=re.sub("\[","",stringtemp)
-                stringtemp=re.sub("\]", "",stringtemp)
-                values_among_tmp=re.split(",",stringtemp)
-                nb_value=len(values_among_tmp)
-                for value in param_values[:,i]:
-                    if 0 <= value < 1/nb_value:
-                        tmp_values.append(float(values_among_tmp[0]))
-                    else:
-                        if 1 >= value > (1 / (nb_value))*(nb_value - 1):
-                            tmp_values.append(float(values_among_tmp[nb_value-1]))
-                    for y in range(1,nb_value-1):
-                        if 1/nb_value*y <= value < 1/(nb_value)*(y + 1):
-                            tmp_values.append(float(values_among_tmp[y]))
-                    else:
-                        tmp_values.append(0)
-
-            saltelli_values.update({parameter["name"]:np.array(tmp_values)})
-        else:
-            if parameter["type"]=="BOOLEAN":
-                tmp_values=[]
-                for value in param_values[:,i]:
-                    if value >=0.5:
-                        tmp_values.append(1)
-                    else:
-                        tmp_values.append(0)
-                saltelli_values.update({parameter["name"]:np.array(tmp_values)})
-            else:
-                if parameter["type"]=="INT":
-                    tmp_values = []
-                    for value in param_values[:,i]:
-                        tmp_values.append(round(value))
-                    saltelli_values.update({parameter["name"]: np.array(tmp_values)})
-                else:
-                    saltelli_values.update({parameter["name"]: param_values[:,i]})
-        i = i + 1
+    df = pd.read_csv(path_csv, index_col=False)
+    dic=df.to_dict("list")
 
     print("=== Sampling done\n")
     # 3 _ Generate XML
     #
+    i=0
+    saltelli_values={}
+
+
+
+    for name in dic.keys() :
+        saltelli_values.update({problem["names"][i]: dic[name]})
+        i=i+1
+
+
+
+
     number_of_machine= args.split
-    number_for_split= round(len(saltelli_values[parametersList[0]["name"]])/number_of_machine)
+    number_for_split= round((len(saltelli_values[parametersList[0]["name"]])*args.replication)/number_of_machine)
+
 
 
     print("=== Start generating XML files...\n")
