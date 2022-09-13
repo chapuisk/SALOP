@@ -16,7 +16,7 @@ In general, you'll need to use the _load\_data_ method to load your .csv file. T
 you'll use to cluster your data. Once your data is labeled with the corresponding clusters you can use different 
 visualization methods
 
-- **data** folder contains an example dataset.
-- **results** folder contains the output graphics of the algorithms below.
-- **kmeans.py**, **som.py** and **pareto.py** contain example of use of available algorithm to cluster data.  
-- **utils.py** contains common data loading and visualization methods.
+- [data](data) folder contains an example dataset.
+- [results](results) folder contains the output graphics of the algorithms below.
+- [kmeans.py](kmeans.py), [som.py](som.py) and [pareto.py](pareto.py) contain examples of use of available algorithm to cluster data.  
+- [utils.py](utils.py) contains common data loading and visualization methods.
