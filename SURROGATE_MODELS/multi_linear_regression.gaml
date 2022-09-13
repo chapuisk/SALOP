@@ -1,8 +1,16 @@
 /**
-* Name: submodel
-* Based on the internal empty template. 
-* Author: root
-* Tags: 
+* Name: multi_linear_regression
+* 
+* This file contain a function to train a multilenear model for regression.
+* It uses a .csv file as an input with the model inputs and outputs as columns.
+* (first columns of the .csv should be the inputs)
+* You need to update the init block with the values corresponding to your model and then run the main method
+* You can visualize the residual graphs of each output to see if the multi linear model fits well you data or if 
+* you need a more complex model.
+* 
+* 
+* Author: Dupont Raphaël
+* Tags: surrogate model
 */
 
 
@@ -11,10 +19,10 @@ model multi_linear_regression
 global {	
 	init{
 		do multi_linear_regression(
-			"./Results/COMOKIT_run.csv",
-			",",
-			8,
-			"./Results/linear_regression.txt"
+			"./Results/COMOKIT_run.csv",		//Input path
+			",",								//Separator
+			8,									//Number of variables
+			"./Results/linear_regression.txt"	//Output report path
 		);
 	}
 	
@@ -164,7 +172,6 @@ global {
 experiment main type:gui;
 
 experiment residual_graphs type: gui{
-	
 	output{
 		display residuals refresh:every(5#cycles) and cycle > 0 {
 			chart "residuals vs fited" type: xy {

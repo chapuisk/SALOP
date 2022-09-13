@@ -1,8 +1,18 @@
-model random_forest
+/**
+* Name: multi_linear_regression
+* 
+* This file contains a function to train different regression models from the gama plugin weka.
+* It had only been tested with CART (train_rep_tree) model but seems to work the exact same way with other models.
+* To use it, you need to update the init block with the values corresponding to your model and then run the main method
+* 
+* Author: Dupont Raphaël
+* Tags: surrogate model
+* 
+ */
+
+model weka_regression
 
 global{
-
-	
 	init{
 		do regression_model(
 			"./Results/COMOKIT_run.csv",
