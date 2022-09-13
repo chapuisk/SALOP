@@ -2,7 +2,7 @@
 ## Context
 In this Readme, you will find all information you need for the use of "GenerateXML_Sensitivity.py"
 
-This python script generate XML file that can be runned with gama-headless for simulation.
+This python script generate XML file that can be run with gama-headless for simulation.
 This script build a Morris or Saltelli sampling for a sensitivity analysis.
 This script was think to be use in a HPC (Hight Performance Computing).
 
