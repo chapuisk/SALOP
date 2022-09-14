@@ -68,7 +68,7 @@ def Sobol(problem,Y,path_to_output):
     print("=== Done and Save")
     print("=== END")
 
-def Morris(problem,X,Y,path_to_output):
+def Morris(problem,X,Y,path_to_output,nb_parameter):
     out = open(path_to_output, 'w')
     sys.stdout = out
     sys.stderr = out
@@ -78,14 +78,19 @@ def Morris(problem,X,Y,path_to_output):
     sys.stderr = sys.__stderr__
     out.close()
     names = problem["names"]
-    data = {'mu': [Si["mu"][0], Si["mu"][1], Si["mu"][2], Si["mu"][3]],
-            'sigma': [Si["sigma"][0], Si["sigma"][1], Si["sigma"][2], Si["sigma"][3]]
+    val_mu=[]
+    val_sigma=[]
+    for i in range(nb_parameter):
+        val_mu.append(Si["mu"][i])
+        val_sigma.append(Si["sigma"][i])
+
+    data = {'mu': val_mu,
+            'sigma': val_sigma
             }
+
     plt.scatter('mu', "sigma", data=data)
-    plt.text(Si["mu"][0], Si["sigma"][0], names[0])
-    plt.text(Si["mu"][1], Si["sigma"][1], names[1])
-    plt.text(Si["mu"][2], Si["sigma"][2], names[2])
-    plt.text(Si["mu"][3], Si["sigma"][3], names[3])
+    for y in range(nb_parameter):
+        plt.text(Si["mu"][y], Si["sigma"][y], names[y])
     plt.xlabel('mu')
     plt.ylabel('sigma')
     output_png = re.sub("\.txt", ".png", path_to_output)
@@ -129,7 +134,7 @@ if __name__ == '__main__':
     else:
         if type_analysis=="morris":
             print("=== Starting Morris Analysis...\n")
-            Morris(problem,X,new_Y,path_to_output)
+            Morris(problem,X,new_Y,path_to_output,problem["num_vars"])
         else:
             print("==This Analysis doesn't exist... ( "+type_analysis+" )")
             exit(0)
