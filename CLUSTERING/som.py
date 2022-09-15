@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn import preprocessing
 from sklearn_som.som import SOM
 from utils import load_data, spider_plot, spider_plot_comparison, cluster_projection_plot, cluster_3d_plot, save_boxes, \
     save_clusters
@@ -50,13 +51,18 @@ if __name__ == '__main__':
                       "step_end_epidemiology"]
     )
 
+    # STANDARDIZATION
+    X_std = preprocessing.scale(X)
+    Y_std = preprocessing.scale(Y)
+
     # TRAINS SOM AND CLUSTERS
-    labels = clustering_with_som(data=Y, nrow=1, ncol=7, sigma=0.5, epochs=1000)
+    # Nb of neurons in som = nb of max classes
+    labels = clustering_with_som(data=Y_std, nrow=1, ncol=7, sigma=0.5, epochs=1000)
 
     # VISUALIZATION
-    cluster_projection_plot(Y, labels, headers_y, "./results/SOM/clusters.png")
-    cluster_3d_plot(Y[:, 0], Y[:, 1], Y[:, 2], labels, headers_y, "./results/SOM/3d_clusters.png")
-    spider_plot(X, labels, headers_x, "./results/SOM/classes_mean_quantile.png")
-    spider_plot_comparison(X, labels, headers_x, "./results/SOM/classes_comparison.png")
+    cluster_projection_plot(Y_std, labels, headers_y, "./results/SOM/clusters.png")
+    cluster_3d_plot(Y_std[:, 0], Y_std[:, 1], Y_std[:, 2], labels, headers_y, "./results/SOM/3d_clusters.png")
+    spider_plot(X_std, labels, headers_x, "./results/SOM/classes_mean_quantile.png")
+    spider_plot_comparison(X_std, labels, headers_x, "./results/SOM/classes_comparison.png")
     save_clusters('./data/COMOKIT_Final_Results.csv', labels, "./results/SOM/clustered_data.csv")
     save_boxes(X, labels, headers_x, "./results/SOM/boxes_report.txt")

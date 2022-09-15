@@ -9,7 +9,7 @@ from matplotlib import pyplot as plt
 from sklearn import preprocessing
 
 
-def load_data(path, input_names, output_names, standardize=True):
+def load_data(path, input_names, output_names, standardize=False):
     """
     This function loads data from a .csv file
 

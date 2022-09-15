@@ -1,6 +1,7 @@
 import sys
 from sklearn.cluster import KMeans
 from sklearn.mixture import GaussianMixture
+from sklearn import preprocessing
 from utils import load_data, spider_plot_comparison, spider_plot, cluster_projection_plot, save_clusters, \
     cluster_3d_plot, save_boxes
 
@@ -59,14 +60,18 @@ if __name__ == '__main__':
                           "step_end_epidemiology"]
         )
 
+    # STANDARDIZATION
+    X_std = preprocessing.scale(X)
+    Y_std = preprocessing.scale(Y)
+
     # TRAINS KMEANS AND CLUSTERS
-    labels = clustering_with_kmeans(Y, maxClasses=20)
+    labels = clustering_with_kmeans(Y_std, maxClasses=20)
 
     # VISUALIZATION
-    cluster_projection_plot(Y, labels, headers_y, "./results/kmeans/clusters.png")
-    cluster_3d_plot(Y[:, 0], Y[:, 1], Y[:, 2], labels, headers_y, "./results/kmeans/3d_clusters.png")
-    spider_plot(X, labels, headers_x, "./results/kmeans/classes_mean_quantile.png")
-    spider_plot_comparison(X, labels, headers_x, "./results/kmeans/classes_comparison.png")
+    cluster_projection_plot(Y_std, labels, headers_y, "./results/kmeans/clusters.png")
+    cluster_3d_plot(Y_std[:, 0], Y_std[:, 1], Y_std[:, 2], labels, headers_y, "./results/kmeans/3d_clusters.png")
+    spider_plot(X_std, labels, headers_x, "./results/kmeans/classes_mean_quantile.png")
+    spider_plot_comparison(X_std, labels, headers_x, "./results/kmeans/classes_comparison.png")
     save_clusters('./data/COMOKIT_Final_Results.csv', labels, "./results/kmeans/clustered_data.csv")
     save_boxes(X, labels, headers_x, "./results/kmeans/boxes_report.txt")
 

@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn import preprocessing
 
 from utils import load_data, cluster_2d_plot, spider_plot_comparison, spider_plot, save_boxes, save_clusters
 
@@ -48,15 +49,19 @@ if __name__ == '__main__':
                       "step_end_epidemiology"]
     )
 
+    # STANDARDIZATION
+    X_std = preprocessing.scale(X)
+    Y_std = preprocessing.scale(Y)
+
     # COMPUTE PARETO FRONT
-    is_efficient = is_pareto_efficient(Y)
+    is_efficient = is_pareto_efficient(Y_std)
 
     # VISUALIZATION
     order = np.argsort(is_efficient) # to plot the pareto front in the foreground you need to sort the data
-    cluster_2d_plot(Y[order, 0], Y[order, 1], is_efficient[order], headers_y[:2], "./results/pareto/2d_clusters.png")
-    # cluster_projection_plot(Y[order], is_efficient[order], headers_y, "./results/pareto/clusters.png")
-    # cluster_3d_plot(Y[:, 0], Y[:, 1], Y[:, 2], is_efficient, headers_y, "./results/pareto/3d_clusters.png")
-    spider_plot_comparison(X, is_efficient, headers_x, "./results/pareto/classes_comparison.png", [1])
-    spider_plot(X, is_efficient, headers_x, "./results/pareto/classes_mean_quantile.png")
+    cluster_2d_plot(Y_std[order, 0], Y_std[order, 1], is_efficient[order], headers_y[:2], "./results/pareto/2d_clusters.png")
+    # cluster_projection_plot(Y_std[order], is_efficient[order], headers_y, "./results/pareto/clusters.png")
+    # cluster_3d_plot(Y_std[:, 0], Y_std[:, 1], Y_std[:, 2], is_efficient, headers_y, "./results/pareto/3d_clusters.png")
+    spider_plot_comparison(X_std, is_efficient, headers_x, "./results/pareto/classes_comparison.png", [1])
+    spider_plot(X_std, is_efficient, headers_x, "./results/pareto/classes_mean_quantile.png")
     save_clusters('./data/COMOKIT_Final_Results.csv', is_efficient, "./results/pareto/clustered_data.csv")
     save_boxes(X, is_efficient, headers_x, "./results/pareto/boxes_report.txt", [1])

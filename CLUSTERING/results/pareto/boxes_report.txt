@@ -1,11 +1,11 @@
 Class : 1
-density_ref_contact : [-1.5704380471142587; 1.6787441193290351]
-init_all_ages_successful_contact_rate_human : [-1.0289076860403765; 1.0289076860403767]
-init_all_ages_factor_contact_rate_asymptomatic : [-1.353825902684706; 1.570438047114259]
-init_all_ages_proportion_asymptomatic : [-0.16245910832216467; 1.6787441193290353]
-init_all_ages_proportion_hospitalisation : [0.48737732496649416; 1.6787441193290356]
-init_all_ages_proportion_icu : [-0.7039894693960471; 1.6787441193290356]
-init_all_ages_proportion_dead_symptomatic : [-1.6787441193290353; 1.3538259026847062]
-Barycenter : [ 5.41530361e-02  1.11022302e-16  1.08306072e-01  7.58142506e-01
-  1.08306072e+00  4.87377325e-01 -1.62459108e-01]
+density_ref_contact : [32.96875; 492.34375]
+init_all_ages_successful_contact_rate_human : [0.20371875; 0.79628125]
+init_all_ages_factor_contact_rate_asymptomatic : [0.11015625; 0.95221875]
+init_all_ages_proportion_asymptomatic : [0.45321875; 0.98340625]
+init_all_ages_proportion_hospitalisation : [0.64034375; 0.98340625]
+init_all_ages_proportion_icu : [0.29728125; 0.98340625]
+init_all_ages_proportion_dead_symptomatic : [0.01659375; 0.88984375]
+Barycenter : [262.65625      0.5          0.5311875    0.7183125    0.811875
+   0.64034375   0.45321875]
 
