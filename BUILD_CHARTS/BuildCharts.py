@@ -493,7 +493,7 @@ if __name__ == '__main__':
     #Function to call
 
     #courbe_point(4)
-    #courbe_simu(4)
+    courbe_simu(4)
     #heatmap_time(4)
     #heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output)
 
