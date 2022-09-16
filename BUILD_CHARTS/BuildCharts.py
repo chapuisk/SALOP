@@ -77,27 +77,45 @@ def readProblem(file):
 def courbe_point(id_output):
     print("=== Creating chart...\n")
     for i in range(0, output):
-        df = pd.read_csv("../CSV_FILE/GLOBAL/Results_" + str(y) + ".csv")
+        df = pd.read_csv(path_df+"GLOBAL/Results_" + str(i) + ".csv")
         DFUN = df.drop_duplicates(subset=problem["names"][i])
         DFUN = DFUN.sort_values(by=problem["names"][i])
+
+        list = DFUN[DFUN[problem["names"][i]] == default_value[i]].index.tolist()
+        DFUN=DFUN.drop(list)
+
         moy = np.zeros(len(DFUN))
         STV = np.zeros(len(DFUN))
         STVmax = np.zeros(len(DFUN))
         STVmin = np.zeros(len(DFUN))
         for y in range(0, nb_replicat):
-            df = pd.read_csv("../CSV_FILE/GLOBAL/Results_" + str(y) + ".csv")
+            df = pd.read_csv(path_df+"GLOBAL/Results_" + str(y) + ".csv")
             DFUN = df.drop_duplicates(subset=problem["names"][i])
             DFUN = DFUN.sort_values(by=problem["names"][i])
+
+            list = DFUN[DFUN[problem["names"][i]] == default_value[i]].index.tolist()
+            DFUN = DFUN.drop(list)
+
+
+            DFUN = DFUN.reset_index(drop=True)
             moy = moy + DFUN[problem["names"][id_output]]
+
+
             plt.plot(DFUN[problem["names"][i]].to_numpy(), DFUN[problem["names"][id_output]].to_numpy(), 'o', color='grey',
                      alpha=0.3)
+        moy = moy.replace(np.nan,0)
         moy = moy / nb_replicat
+
+
         for y in range(0, nb_replicat):
-            df = pd.read_csv("../CSV_FILE/GLOBAL/Results_" + str(y) + ".csv")
+            df = pd.read_csv(path_df+"GLOBAL/Results_" + str(y) + ".csv")
             DFUN = df.drop_duplicates(subset=problem["names"][i])
             DFUN = DFUN.sort_values(by=problem["names"][i])
-            STV = STV + ((DFUN[problem["names"][id_output]].to_numpy() - moy) * (
-                        DFUN[problem["names"][id_output]].to_numpy() - moy))
+
+            list = DFUN[DFUN[problem["names"][i]] == default_value[i]].index.tolist()
+            DFUN = DFUN.drop(list)
+
+            STV = STV + (DFUN[problem["names"][id_output]].to_numpy() - moy)**2
         STV = np.sqrt(STV / (nb_replicat - 1))
         plt.plot(DFUN[problem["names"][i]].to_numpy(), moy, label="moy", color="red")
         STVmax = moy + STV
@@ -107,73 +125,76 @@ def courbe_point(id_output):
         plt.xlabel(problem["names"][i])
         plt.ylabel(problem["names"][id_output])
         plt.legend(loc="best")
-        if not os.path.exists("../CSV_FILE/GLOBAL/Analysis_" + problem["names"][id_output]):
-            os.makedirs("../CSV_FILE/GLOBAL/Analysis_" + problem["names"][id_output])
-        plt.savefig("../CSV_FILE/GLOBAL/Analysis_"+problem["names"][id_output]+"/Graph_Input_All_Simu_" + problem["names"][i] + ".png")
+        if not os.path.exists(path_df+"GLOBAL/Analysis_" + problem["names"][id_output]):
+            os.makedirs(path_df+"GLOBAL/Analysis_" + problem["names"][id_output])
+        plt.savefig(path_df+"GLOBAL/Analysis_"+problem["names"][id_output]+"/Graph_Input_All_Simu_" + problem["names"][i] + ".png")
         plt.clf()
     print("===  Chart Save...\n")
 
-#A tester
 def courbe_simu(id_output):
     print("=== Creating chart...\n")
-    for i in range(0, sample):
-        moy = np.zeros(len(time))
-        file_names=[]
-        for name in os.listdir("../CSV_FILE/SAMPLE/"):
-            if os.path.isdir("../CSV_FILE/SAMPLE/"+name):
-                file_names.append(name)
-        for file in file_names:
-            list_replicat = os.path.join("../CSV_FILE/SAMPLE/"+file+"/", "*.csv")
-            list_replicat = glob.glob(list_replicat)
-            first_one=True
-            for replicat in list_replicat:
-                df = pd.read_csv("../CSV_FILE/SAMPLE/"+file+"/replicat_"+replicat)
-                moy = moy + df[problem["names"][id_output]]
-                if first_one:
-                    plt.plot(df["cycle"].to_numpy(), df[problem["names"][id_output]].to_numpy(), c="grey", lw=0.5,
-                             ls="--",
-                             label="replicat")
-                    first_one=False
-                else:
-                    plt.plot(df["cycle"].to_numpy(), df[problem["names"][id_output]].to_numpy(), c="grey", lw=0.5,
+    file_names=[]
+    for name in os.listdir(path_df+"SAMPLE/"):
+        if os.path.isdir(path_df+"SAMPLE/"+name):
+            file_names.append(name)
+    for file in file_names:
+        moy = np.zeros(time)
+        list_replicat = os.path.join(path_df+"SAMPLE/"+file+"/", "*.csv")
+        list_replicat = glob.glob(list_replicat)
+        first_one=True
+        for replicat in list_replicat:
+            df = pd.read_csv(replicat)
+            moy = moy + df[problem["names"][id_output]]
+            if first_one:
+                plt.plot(df["cycle"].to_numpy(), df[problem["names"][id_output]].to_numpy(), c="grey", lw=0.5,
+                            ls="--",
+                            label="replicat")
+                first_one=False
+            else:
+                plt.plot(df["cycle"].to_numpy(), df[problem["names"][id_output]].to_numpy(), c="grey", lw=0.5,
                              ls="--")
-            moy = moy / nb_replicat
-            plt.plot(df["cycle"].to_numpy(), moy, c="red", lw=1.5, ls="--", label="MOY")
-            plt.xlabel("time")
-            plt.ylabel(problem["names"][id_output])
-            plt.title("SAMPLE_" + str(i))
-            plt.legend(loc="best")
-            plt.savefig("../CSV_FILE/SAMPLE/"+file+"/"+problem["names"][id_output]+"/GRAPH.png")
-            plt.clf()
+        moy = moy / nb_replicat
+        plt.plot(df["cycle"].to_numpy(), moy, c="red", lw=1.5, ls="--", label="MOY")
+        plt.xlabel("time")
+        plt.ylabel(problem["names"][id_output])
+        plt.title(file)
+        plt.legend(loc="best")
+        if not os.path.exists(path_df + "SAMPLE/"+file+"/" + problem["names"][id_output]):
+            os.makedirs(path_df + "SAMPLE/"+file+"/" + problem["names"][id_output])
+        plt.savefig(path_df+"SAMPLE/"+file+"/"+problem["names"][id_output]+"/GRAPH.png")
+        plt.clf()
     print("===  Chart Save...\n")
 
-#A tester
 def heatmap_time(id_output):
     print("=== Creating chart...\n")
     for z in range(0,output):
-        df_ini = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+        df_ini = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
         df_ini=df_ini.drop_duplicates(subset=problem["names"][z])
         res = np.zeros(shape= (len(df_ini),time))
         df_ini = df_ini.sort_values(by=problem["names"][z])
+
+        lists = df_ini[df_ini[problem["names"][z]] == default_value[z]].index.tolist()
+        df_ini = df_ini.drop(lists)
+
         l=df_ini.index
         moy=np.zeros(time)
         tmp=0
         for h in l:
             txt=''
             for o in range(0,output-1):
-                txt=txt+str(df_ini.get_value(h,problem["names"][o]))+"_"
-            txt=txt+str(df_ini.get_value(h,problem["names"][output-1]))
-
-            list_replicat = os.path.join("../CSV_FILE/SAMPLE/SAMPLE_" + txt + "/", "*.csv")
+                txt=txt+str(df_ini._get_value(h,problem["names"][o]))+""
+            txt=txt+str(df_ini._get_value(h,problem["names"][output-1]))
+            list_replicat = os.path.join(path_df+"SAMPLE/SAMPLE_" + txt + "/", "*.csv")
             list_replicat = glob.glob(list_replicat)
             for rep in list_replicat:
-                df = pd.read_csv("../CSV_FILE/SAMPLE/SAMPLE_" +txt+"/"+rep)
+                #df = pd.read_csv("../CSV_FILE/SAMPLE/SAMPLE_" +txt+"/"+rep)
+                df = pd.read_csv(rep)
                 moy=moy+df[problem["names"][id_output]]
             moy=moy/nb_replicat
             res[tmp]=moy
             tmp=tmp+1
         times=list(range(0,time))
-        df = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+        df = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
         df = df.sort_values(by=problem["names"][z])
         fig, ax = plt.subplots()
         c = ax.pcolormesh(times, df[problem["names"][z]].unique(), res, cmap='RdBu_r', vmin=0, vmax=1)
@@ -183,10 +204,10 @@ def heatmap_time(id_output):
         fig.colorbar(c, ax=ax,label=problem["names"][id_output])
         plt.xlabel("time")
         plt.ylabel(problem["names"][z])
-        if not os.path.exists("../CSV_FILE/GLOBAL/Analysis_" + problem["names"][id_output]):
-            os.makedirs("../CSV_FILE/GLOBAL/Analysis_" + problem["names"][id_output])
+        if not os.path.exists(path_df+"GLOBAL/Analysis_" + problem["names"][id_output]):
+            os.makedirs(path_df+"GLOBAL/Analysis_" + problem["names"][id_output])
 
-        plt.savefig("../CSV_FILE/GLOBAL/Analysis_"+problem["names"][id_output]+"/" +problem["names"][z] + "_HEAT_MAP.png")
+        plt.savefig(path_df+"GLOBAL/Analysis_"+problem["names"][id_output]+"/" +problem["names"][z] + "_HEAT_MAP.png")
         plt.clf()
     print("===  Chart Save...\n")
 '''
@@ -203,9 +224,16 @@ def heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output):
     for w in range(0,output-1):
         for n in range(w+1,output):
             if w!=n:
-                df = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+                df = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
                 df.sort_values(by=problem["names"][w])
+
+                lists = df[df[problem["names"][w]] == default_value[w]].index.tolist()
+                df = df.drop(lists)
+
                 ValUn = df[problem["names"][w]].unique()
+
+
+
                 NbVal = floor(len(ValUn) / cluster)
                 val = []
                 z = 0
@@ -216,8 +244,12 @@ def heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output):
                             tmp.append(ValUn[z])
                             z = z + 1
                     val.append(tmp)
-                df = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+                df = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
                 df.sort_values(by=problem["names"][n])
+
+                lists = df[df[problem["names"][n]] == default_value[n]].index.tolist()
+                df = df.drop(lists)
+
                 ValUn_2 = df[problem["names"][n]].unique()
                 NbVal_2 = floor(len(ValUn_2) / cluster)
                 val_2 = []
@@ -231,7 +263,7 @@ def heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output):
                     val_2.append(tmp)
                 fig, axs = plt.subplots(cluster, cluster)
                 for i in range(0, cluster):
-                    df = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+                    df = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
                     df = df.drop_duplicates(subset=problem["names"][w])
                     res = np.zeros(shape=(cluster, time))
                     tmp_moy = np.zeros(shape=(cluster, time))
@@ -239,31 +271,44 @@ def heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output):
                         for y in range(0, cluster):
                             moy = np.zeros(time)
                             for v in val_2[y]:
-                                df_ini = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
-                                df_ini = df_ini.loc[df_ini[problem["names"][w]] == u]
-                                df_ini = df_ini.loc[df_ini[problem["names"][n]] == v]
-                                df_ini = df_ini[df_ini[problem["names"][w]] != np.nan]
-                                if (len(df) == 1):
-                                    l = df_ini.index
-                                    for h in l:
-                                        txt = ''
-                                        for o in range(0, output - 1):
-                                            txt = txt + str(df_ini.get_value(h, problem["names"][o])) + "_"
-                                        txt = txt + str(df_ini.get_value(h, problem["names"][output - 1]))
-                                        list_replicat = os.path.join("../CSV_FILE/SAMPLE/SAMPLE_" + txt + "/",
+                                #df_ini = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
+                                #df_ini = df_ini.loc[df_ini[problem["names"][w]] == u]
+
+                                #df_ini = df_ini.loc[df_ini[problem["names"][n]] == v]
+
+                                #df_ini = df_ini[df_ini[problem["names"][w]] != np.nan]
+
+                                txt = ''
+                                for o in range(0, output ):
+
+                                    if(o==w):
+
+                                        txt = txt +str(u) +""
+                                    else:
+                                        if(o==n):
+
+                                            txt = txt +str(v) +""
+                                        else:
+
+                                            txt = txt + str(default_value[o]) +""
+                                    #txt = txt + str(df_ini.get_value(h, problem["names"][o])) + ""
+                                #txt = txt + str(df_ini.get_value(h, problem["names"][output - 1]))
+                                list_replicat = os.path.join(path_df+"SAMPLE/SAMPLE_" + txt + "/",
                                                                          "*.csv")
-                                        list_replicat = glob.glob(list_replicat)
-                                        for rep in list_replicat:
-                                            df = pd.read_csv("../CSV_FILE/SAMPLE/SAMPLE_" + txt + "/" + rep)
-                                            moy = moy + df[problem["names"][id_output]]
-                                            axs[y, i].plot(df["cycle"].to_numpy(),
+
+                                list_replicat = glob.glob(list_replicat)
+
+                                for rep in list_replicat:
+                                    df = pd.read_csv( rep)
+                                    moy = moy + df[problem["names"][id_output]]
+                                    axs[y, i].plot(df["cycle"].to_numpy(),
                                                            df[problem["names"][id_output]].to_numpy(), c="grey", lw=0.5,
                                                            ls="--")
                             moy = moy / (len(val_2[y]) * nb_replicat)
                             tmp_moy[y] = tmp_moy[y] + moy
                     for m in range(0,cluster):
                         res[m] = tmp_moy[m] / (len(val[i]))
-                    df = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+                    df = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
                     ymin = np.amin(df[problem["names"][w]].to_numpy())
                     ymax = np.amax(df[problem["names"][w]].to_numpy())
                     if (i == 0):
@@ -276,7 +321,7 @@ def heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output):
                             else:
                                 text = "[" + str(round(border_min, 3)) + "," + str(round(border_max, 3)) + "]"
                                 axs[g, 0].set_ylabel(text)
-                    times = list(range(0, 502))
+                    times = list(range(0, time))
                     border_min = np.amin(val[i])
                     border_max = np.amax(val[i])
                     if (border_max == border_min):
@@ -294,9 +339,9 @@ def heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output):
                     ax.label_outer()
                 fig.suptitle("x: " + problem["names"][w] + " / y: " + problem["names"][n])
                 fig.tight_layout()
-                if not os.path.exists("../CSV_FILE/GLOBAL/Analysis_" + problem["names"][id_output]):
-                    os.makedirs("../CSV_FILE/GLOBAL/Analysis_" + problem["names"][id_output])
-                plt.savefig("../CSV_FILE/GLOBAL/Analysis_"+problem["names"][id_output]+"/" + problem["names"][w] +"_"+problem["names"][n] +"_HEAT_MAP_2.png")
+                if not os.path.exists(path_df+"GLOBAL/Analysis_" + problem["names"][id_output]):
+                    os.makedirs(path_df+"GLOBAL/Analysis_" + problem["names"][id_output])
+                plt.savefig(path_df+"GLOBAL/Analysis_"+problem["names"][id_output]+"/" + problem["names"][w] +"_"+problem["names"][n] +"_HEAT_MAP_2.png")
                 plt.clf()
     print("===  Chart Save...\n")
 
@@ -333,9 +378,11 @@ def build_chart_prio_facteur(problem,morris,sobolT,sobol,id_output):
     print("===  Chart Save...\n")
 
 def morris_fit_data(morris):
-    momo=morris / np.sqrt(np.sum(morris**2))
+    momo=abs(morris) / np.sqrt(np.sum(morris**2))
     return momo
 
+
+#METHOD NOT FINISH
 def chart3D(Innames,Outnames,result,AnalyseName):
     print("=== Creating chart...\n")
     result = np.array(result)
@@ -380,11 +427,11 @@ def analyseResult3D(morris,sobol):
 #A tester
 def Cluster_time(id_output):
     print("=== Creating chart...\n")
-    df = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+    df = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
     nb_cluster = df["cluster"].unique()
     fig, axs = plt.subplots(1, nb_cluster)
     for i in range(0,nb_cluster):
-        df_ini = pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+        df_ini = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
         df_ini = df_ini.loc[df_ini["cluster"] == i]
         df_ini = df_ini[df_ini["cluster"] != np.nan]
         l = df_ini.index
@@ -394,16 +441,16 @@ def Cluster_time(id_output):
             for o in range(0, output - 1):
                 txt = txt + str(df_ini.get_value(y, problem["names"][o])) + "_"
             txt = txt + str(df_ini.get_value(y, problem["names"][output - 1]))
-            list_replicat = os.path.join("../CSV_FILE/SAMPLE/SAMPLE_" + txt + "/", "*.csv")
+            list_replicat = os.path.join(path_df+"SAMPLE/SAMPLE_" + txt + "/", "*.csv")
             list_replicat = glob.glob(list_replicat)
             for rep in list_replicat:
-                df = pd.read_csv("../CSV_FILE/SAMPLE/SAMPLE_" + txt + "/" + rep)
+                df = pd.read_csv(path_df+"SAMPLE/SAMPLE_" + txt + "/" + rep)
                 moy = moy + df[problem["names"][id_output]]
                 axs[0, i].plot(df["cycle"].to_numpy(),
                                df[problem["names"][id_output]].to_numpy(), c="grey", lw=0.5,
                                ls="--")
         moy = moy / (len(l) * nb_replicat)
-        times = list(range(0, 502))
+        times = list(range(0, time))
         axs[0, i].plot(times, moy, c="red", lw=1.5, ls="--")
         axs[0, i].axis([0, time, 0, 1])
     plt.show()
@@ -412,33 +459,64 @@ def Cluster_time(id_output):
 
 if __name__ == '__main__':
 
-    problem = readProblem("../PRE-TRAITEMENT/model.txt")
-    df=pd.read_csv("../CSV_FILE/GLOBAL/Results_0.csv")
+    #Path to data folder
+    path_df="../CSV_FILE/Results_OFATx2/"
+
+    #Path to problem file
+    problem = readProblem("../PRE-PROCESSING/model.txt")
+
+
+    df=pd.read_csv(path_df+"GLOBAL/Results_0.csv")
     problem["names"]=df.columns
     output=problem["num_vars"]
 
     #Parameters to change
-
-    nb_replicat=4
-    sample=204
+    nb_replicat=15
+    sample=2646
     time=502
     cluster=6
+    id_output=4
+    default_value = [0.05, 0.025, 5, 0.001]
 
-    morris=[0.497743,0.482880,0.02996,0.465042]
+    morris=[]
+    morris=np.array(morris)
+    morris=morris_fit_data(morris)
+
+    sobol=[]
+    sobol=np.array(sobol)
+    sobol=morris_fit_data(sobol)
+
+    sobolT=[]
+    sobolT=np.array(sobolT)
+    sobolT=morris_fit_data(sobolT)
+
+    #Function to call
+
+    #courbe_point(4)
+    #courbe_simu(4)
+    #heatmap_time(4)
+    #heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output)
+
+    #morris=[0.497743,0.482880,0.02996,0.465042]
+    '''
+    morris=[17915.04,61627.04,26886.77,3726.10,-654810.39,-1211.12,-14.89,510831.85]
+    #morris=[-182.60,-319.25,-478.04,-117.833,-121.270833,-10.4167,-33.6666,6.625]
     morris=np.array(morris)
     morris=morris_fit_data(morris)
 
 
-    sobol=[0.187035,0.106427,0.003549,0.372382]
-    sobolT = [0.398204, 0.236124, 0.000781, 0.52928]
+    #sobol=[0.187035,0.106427,0.003549,0.372382]
+    sobol=[0.195029,0.17318,0.038157,0.136995,-0.17756,0.2257833,0.2739,-0.065]
+    #sobol=[0.0755,0.4279,0.2891,0.24415,-0.2604,0.26712,-0.2949725,-0.1437]
+    sobol=np.array(sobol)
+    sobol=morris_fit_data(sobol)
+    sobolT=[1.02963,1.2767,1.18495,0.905012,0.8749,0.8824,0.7467792,1.1075]
+    #sobolT=[0.7409,0.9040,1.083944,0.97609,0.1760,1.003077,0.78562,0.556739]
+    sobolT=np.array(sobolT)
+    sobolT=morris_fit_data(sobolT)
+    #sobolT = [0.398204, 0.236124, 0.000781, 0.52928]
 
-    morris2=[0.497743,0.482880,0.02996,0.465042]
-    morris2=np.array(morris2)
-    morris2=morris_fit_data(morris2)
-
-
-    sobol2=[0.187035,0.106427,0.003549,0.372382]
-    sobolT2 = [0.398204, 0.236124, 0.000781, 0.52928]
     build_chart_prio_facteur(problem,morris,sobolT,sobol,output)
 
     #chart3D(["Infection Probability","Probability Dodge Disease","Nb initial infected","Probability to cure"],["Infection Rate","Test"],[sobolT,morris],"Analysis")
+    '''
