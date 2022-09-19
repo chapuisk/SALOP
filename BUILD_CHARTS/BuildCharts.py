@@ -182,7 +182,7 @@ def heatmap_time(id_output):
         for h in l:
             txt=''
             for o in range(0,output-1):
-                txt=txt+str(df_ini._get_value(h,problem["names"][o]))+""
+                txt=txt+str(df_ini._get_value(h,problem["names"][o]))+separator
             txt=txt+str(df_ini._get_value(h,problem["names"][output-1]))
             list_replicat = os.path.join(path_df+"SAMPLE/SAMPLE_" + txt + "/", "*.csv")
             list_replicat = glob.glob(list_replicat)
@@ -271,31 +271,24 @@ def heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output):
                         for y in range(0, cluster):
                             moy = np.zeros(time)
                             for v in val_2[y]:
-                                #df_ini = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
-                                #df_ini = df_ini.loc[df_ini[problem["names"][w]] == u]
-
-                                #df_ini = df_ini.loc[df_ini[problem["names"][n]] == v]
-
-                                #df_ini = df_ini[df_ini[problem["names"][w]] != np.nan]
-
                                 txt = ''
                                 for o in range(0, output ):
 
                                     if(o==w):
 
-                                        txt = txt +str(u) +""
+                                        txt = txt +str(u)
                                     else:
                                         if(o==n):
 
-                                            txt = txt +str(v) +""
+                                            txt = txt +str(v)
                                         else:
 
                                             txt = txt + str(default_value[o]) +""
-                                    #txt = txt + str(df_ini.get_value(h, problem["names"][o])) + ""
-                                #txt = txt + str(df_ini.get_value(h, problem["names"][output - 1]))
+                                    if(o!=output-1):
+                                        txt= txt +separator
+
                                 list_replicat = os.path.join(path_df+"SAMPLE/SAMPLE_" + txt + "/",
                                                                          "*.csv")
-
                                 list_replicat = glob.glob(list_replicat)
 
                                 for rep in list_replicat:
@@ -424,7 +417,7 @@ def analyseResult3D(morris,sobol):
     chart3D(parameterNames,
             output, [morris], "Analyse")
 
-#A tester
+#Need to be tested
 def Cluster_time(id_output):
     print("=== Creating chart...\n")
     df = pd.read_csv(path_df+"GLOBAL/Results_0.csv")
@@ -439,7 +432,7 @@ def Cluster_time(id_output):
         for y in l:
             txt = ''
             for o in range(0, output - 1):
-                txt = txt + str(df_ini.get_value(y, problem["names"][o])) + "_"
+                txt = txt + str(df_ini.get_value(y, problem["names"][o])) + separator
             txt = txt + str(df_ini.get_value(y, problem["names"][output - 1]))
             list_replicat = os.path.join(path_df+"SAMPLE/SAMPLE_" + txt + "/", "*.csv")
             list_replicat = glob.glob(list_replicat)
@@ -461,6 +454,8 @@ if __name__ == '__main__':
 
     #Path to data folder
     path_df="../CSV_FILE/Results_OFATx2/"
+
+    separator=""
 
     #Path to problem file
     problem = readProblem("../PRE-PROCESSING/model.txt")
@@ -493,30 +488,10 @@ if __name__ == '__main__':
     #Function to call
 
     #courbe_point(4)
-    courbe_simu(4)
+    #courbe_simu(4)
     #heatmap_time(4)
     #heatmap_time_2_factor_Not_Defined_Cluster(cluster,id_output)
+    #build_chart_prio_facteur(problem,morris,sobolT,sobol,output)
 
-    #morris=[0.497743,0.482880,0.02996,0.465042]
-    '''
-    morris=[17915.04,61627.04,26886.77,3726.10,-654810.39,-1211.12,-14.89,510831.85]
-    #morris=[-182.60,-319.25,-478.04,-117.833,-121.270833,-10.4167,-33.6666,6.625]
-    morris=np.array(morris)
-    morris=morris_fit_data(morris)
-
-
-    #sobol=[0.187035,0.106427,0.003549,0.372382]
-    sobol=[0.195029,0.17318,0.038157,0.136995,-0.17756,0.2257833,0.2739,-0.065]
-    #sobol=[0.0755,0.4279,0.2891,0.24415,-0.2604,0.26712,-0.2949725,-0.1437]
-    sobol=np.array(sobol)
-    sobol=morris_fit_data(sobol)
-    sobolT=[1.02963,1.2767,1.18495,0.905012,0.8749,0.8824,0.7467792,1.1075]
-    #sobolT=[0.7409,0.9040,1.083944,0.97609,0.1760,1.003077,0.78562,0.556739]
-    sobolT=np.array(sobolT)
-    sobolT=morris_fit_data(sobolT)
-    #sobolT = [0.398204, 0.236124, 0.000781, 0.52928]
-
-    build_chart_prio_facteur(problem,morris,sobolT,sobol,output)
-
+    #Not working yet
     #chart3D(["Infection Probability","Probability Dodge Disease","Nb initial infected","Probability to cure"],["Infection Rate","Test"],[sobolT,morris],"Analysis")
-    '''
