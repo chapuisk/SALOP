@@ -23,6 +23,6 @@ This script is used to merge each CSV file generate by each machine/nodes.
 # Rename File
 This python script rename all files in a folder with the name "Results_i" with i 0 to the number of file in the selected folder
 
-##Use
+## Use
 ***python3 RenaFile.py -data ../CSV_FILE/GLOBAL***
 
