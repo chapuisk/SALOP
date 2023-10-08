@@ -39,7 +39,7 @@ global {
 	
 }
 
-experiment ppd_batch type:batch virtual:true {
+experiment ppg_batch type:batch virtual:true {
 	
 	// Full analysis
 	parameter "Prey number" var: nb_preys_init min: 100 max: 2000;
@@ -55,13 +55,13 @@ experiment ppd_batch type:batch virtual:true {
 	
 }
 
-experiment ppd_stoch parent:ppd_batch type:batch until: length(prey)=0 or length(predator)=0 or cycle=LIMIT 
-	repeat:20 keep_simulations:false {
-	method stochanalyse outputs:["prey_nrj", "prey_nb", "predator_nrj", "predator_nb", "grass_nrj"] 
-		report:"Results/stochanalysis.txt" results:"Results/stochanalysis_raw.csv" sample:2;
+experiment ppd_stoch parent:ppg_batch type:batch until: length(prey)=0 or length(predator)=0 or cycle=LIMIT 
+	repeat:50 keep_simulations:false {
+	method stochanalyse outputs:["prey_nrj", "prey_nb", "predator_nrj", "predator_nb", "grass_nrj", "cycle"] 
+		report:"Results/stochanalysis.csv" results:"Results/stochanalysis_raw.csv" sample:50;
 }
 
-experiment ppd_lhc parent:ppd_batch type:batch until: length(prey)=0 or length(predator)=0 or cycle=LIMIT 
+experiment ppd_lhc parent:ppg_batch type:batch until: length(prey)=0 or length(predator)=0 or cycle=LIMIT 
 	repeat:100 keep_simulations:false {
 	method exploration sampling:"latinhypercube" sample:1000;
 	init {batch_record <- true;}
